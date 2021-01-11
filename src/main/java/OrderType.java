@@ -1,5 +1,5 @@
 public enum OrderType {
-    MARKET, LIMIT;
+    market, limit;
 
     private OrderType type;
 
