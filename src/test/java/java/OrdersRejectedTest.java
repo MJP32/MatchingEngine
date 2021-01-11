@@ -19,32 +19,12 @@ public class OrdersRejectedTest {
     }
 
     @Test
-    public void createBuyBook() {
+    public void HaltedSymbolTest() {
         List<Order> orders = new ArrayList<>();
         orders.add(new Order("AAPL", "buy", "limit", new BigDecimal(130.99), (long) 1608917403));
         orders.add(new Order("AAPL", "buy", "limit", new BigDecimal(130.98), (long) 1608917402));
-        orders.add(new Order("AAPL", "buy", "limit", new BigDecimal(130.98), (long) 1608917404));
-        orders.add(new Order("AAPL", "buy", "limit", new BigDecimal(130.99), (long) 1608917405));
-        orders.add(new Order("AAPL", "buy", "limit", new BigDecimal(130.98), (long) 1608917406));
-        orders.add(new Order("AAPL", "buy", "limit", new BigDecimal(130.98), (long) 1608917402));
         exchange.processTrades(orders, new HashSet<>());
 
-        /*{
-            AAPL={
-                    130.990000000000009094947017729282379150390625=
-                    [
-                            Order{symbol='AAPL', side='buy', type='limit', price=130.990000000000009094947017729282379150390625, timeStamp=1608917403},
-                            Order{symbol='AAPL', side='buy', type='limit', price=130.990000000000009094947017729282379150390625, timeStamp=1608917405}
-                    ],
-                    130.979999999999989768184605054557323455810546875=
-                    [
-                            Order{symbol='AAPL', side='buy', type='limit', price=130.979999999999989768184605054557323455810546875, timeStamp=1608917402},
-                            Order{symbol='AAPL', side='buy', type='limit', price=130.979999999999989768184605054557323455810546875, timeStamp=1608917404},
-                            Order{symbol='AAPL', side='buy', type='limit', price=130.979999999999989768184605054557323455810546875, timeStamp=1608917406},
-                            Order{symbol='AAPL', side='buy', type='limit', price=130.979999999999989768184605054557323455810546875, timeStamp=1608917402}
-                    ]
-            }
-        }*/
 
         Iterator<Map.Entry<String, SortedMap<BigDecimal, List<Order>>>> ordersIter = exchange.buyOrderBook.entrySet().iterator();
 
