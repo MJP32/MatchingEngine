@@ -6,6 +6,10 @@ import java.math.BigInteger;
 
 public class Order {
 
+    public BigInteger getId() {
+        return id;
+    }
+
     private BigInteger id;
 
     @CsvBindByName

@@ -23,20 +23,12 @@ public class SimpleMatchingEngine {
     public static void main(String[] args) {
         System.out.println(" Matching Engine");
         Exchange matchingEngine = new Exchange();
-//        BufferedReader bufferedReaderOrders = null;
 
-        BufferedWriter bufferedWriterRejections = null;
-        BufferedWriter bufferedWriterTrades = null;
-        BufferedWriter bufferedWriterOrderBook = null;
-        try {
-//            bufferedReaderOrders = new BufferedReader(new FileReader(INPUT_DIR + INPUT_ORDERS));
-
-            bufferedWriterTrades = new BufferedWriter(new FileWriter(OUTPUT_DIR + OUTPUT_TRADES));
-            bufferedWriterRejections = new BufferedWriter(new FileWriter(OUTPUT_DIR + OUTPUT_REJECTED));
-            bufferedWriterOrderBook = new BufferedWriter(new FileWriter(OUTPUT_DIR + OUTPUT_ORDERBOOK));
-
+        try (BufferedWriter bufferedWriterTrades = new BufferedWriter(new FileWriter(OUTPUT_DIR + OUTPUT_TRADES));
+             BufferedWriter bufferedWriterRejections = new BufferedWriter(new FileWriter(OUTPUT_DIR + OUTPUT_REJECTED));
+             BufferedWriter bufferedWriterOrderBook = new BufferedWriter(new FileWriter(OUTPUT_DIR + OUTPUT_ORDERBOOK))) {
             Set<String> haltedSymbols = getHaltedSymbolsFromFile(INPUT_DIR + INPUT_SYMBOLS);
-            haltedSymbols.forEach(k-> System.out.println(k));
+            haltedSymbols.forEach(System.out::println);
 
             List<Order> orders = getOrderDataFromFile(INPUT_DIR + INPUT_ORDERS);
             matchingEngine.processTrades(orders, haltedSymbols);
@@ -46,9 +38,9 @@ public class SimpleMatchingEngine {
             //matchingEngine.rejectedOrders.forEach(k-> System.out.println(k));
 
             System.out.println("Buy Book");
-            matchingEngine.printBook(matchingEngine.buyOrderBook);
+            OrderBook.printBook(OrderBook.buyOrderBook);
             System.out.println("Sell Book");
-            matchingEngine.printBook(matchingEngine.sellOrderBook);
+            OrderBook.printBook(OrderBook.sellOrderBook);
 
 /*
 
@@ -62,30 +54,11 @@ public class SimpleMatchingEngine {
 
         } catch (IOException e) {
             System.err.println(e.toString());
-        } finally {
-            try {
-                if (bufferedWriterTrades != null) {
-                    bufferedWriterTrades.close();
-                }
-            } catch (IOException e) {
-            }
-            try {
-                if (bufferedWriterRejections != null) {
-                    bufferedWriterRejections.close();
-                }
-            } catch (IOException e) {
-            }
-            try {
-                if (bufferedWriterOrderBook != null) {
-                    bufferedWriterOrderBook.close();
-                }
-            } catch (IOException e) {
-            }
         }
     }
 
     private static List<Order> getOrderDataFromFile(String fileName) throws FileNotFoundException {
-        List<Order> beans = new CsvToBeanBuilder(new FileReader(fileName))
+        List beans = new CsvToBeanBuilder(new FileReader(fileName))
                 .withType(Order.class)
                 .build()
                 .parse();
