@@ -1,4 +1,5 @@
 package matching;
+
 import com.opencsv.bean.CsvBindByName;
 
 import java.math.BigDecimal;
@@ -6,9 +7,6 @@ import java.math.BigInteger;
 
 public class Order {
 
-    public BigInteger getId() {
-        return id;
-    }
 
     private BigInteger id;
 
@@ -31,7 +29,7 @@ public class Order {
     }
 
     public Order(String symbol, String side, String type, BigDecimal price, Long timeStamp) {
-        this.id = Util.getNextOrderId() ;
+        this.id = Util.next();
         this.symbol = symbol;
         this.side = side;
         this.type = type;
@@ -59,10 +57,15 @@ public class Order {
         return timeStamp;
     }
 
+    public BigInteger getId() {
+        return id;
+    }
+
     @Override
     public String toString() {
         return "Order{" +
-                "symbol='" + symbol + '\'' +
+                "id=" + id +
+                ", symbol='" + symbol + '\'' +
                 ", side='" + side + '\'' +
                 ", type='" + type + '\'' +
                 ", price=" + price +

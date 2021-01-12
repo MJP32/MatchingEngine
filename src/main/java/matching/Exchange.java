@@ -9,12 +9,10 @@ public class Exchange {
     <AAPL,<130.98, <1608917401, 1608917401 >>>
           <130.99, <1608917401, 1608917401 >>>
     */
-    public final Map<String, List<Long>> tradeTime = new HashMap<>();
-    public final Map<Order, Order> crossedOrders = new HashMap<>();
+    public static final Map<Order, Order> crossedOrders = new HashMap<>();
 
     //<AAPL,<1608917401, 3>
     public final Map<String, Map<Long, Integer>> symbolTimeCount = new HashMap<>();
-    private final Comparator<Order> orderComparator = Comparator.comparing(Order::getTimeStamp);
     public List<Order> rejectedOrders = new ArrayList<>();
 
     public void processTrades(List<Order> orders, Set<String> haltedSymbols) {
@@ -30,33 +28,25 @@ public class Exchange {
 
     private boolean cross(Order order) {
         String orderSide = order.getSide();
-        String orderType = order.getType();
-        BigDecimal orderPrice = order.getPrice();
         Map<String, SortedMap<BigDecimal, List<Order>>> orderBook;
         if (orderSide.equals("buy")) {
             orderBook = OrderBook.sellOrderBook;
         } else {
             orderBook = OrderBook.buyOrderBook;
         }
-
         if (orderBook == null || orderBook.size() == 0 || orderBook.values().size() == 0) {
             return false;
         }
-
         SortedMap<BigDecimal, List<Order>> map = orderBook.get(order.getSymbol());
-        Set<BigDecimal> prices = map.keySet();
+
         for (Map.Entry<BigDecimal, List<Order>> entries : map.entrySet()) {
             BigDecimal key = entries.getKey();
             List<Order> value = entries.getValue();
-
-
             BigInteger matchedTradeId = getOrderToMatch(order, value, key);
-
-            if (matchedTradeId == (BigInteger.valueOf(-1))) {
+            if (matchedTradeId != (BigInteger.valueOf(-1))) {
                 int timeCount = getTimesTradedThisSecond(order.getSymbol(), order.getTimeStamp());
                 if (timeCount < 3) {
                     updateTimesTradedThisSecond(order);
-                    //crossedOrders.put(order, o)
                     OrderBook.removeOrderFromBook(order, orderBook, matchedTradeId);
                     return true;
                 } else {
@@ -77,25 +67,20 @@ public class Exchange {
         for (Order ord : value) {
             if (orderType.equals("limit")) {
                 BigDecimal orderPrice = order.getPrice();
-                //order.getPrice()
                 if (orderSide.equals("buy")) {
                     if (orderPrice.compareTo(key) >= 0) {
+                        crossedOrders.put(order, ord);
                         return ord.getId();
                     }
                 } else {
                     if (orderPrice.compareTo(key) <= 0) {
+                        crossedOrders.put(order, ord);
                         return ord.getId();
                     }
                 }
             } else {
                 if (orderSide.equals("buy")) {
-
                     return ord.getId();
-
-                } else {
-
-                    return ord.getId();
-
                 }
             }
         }

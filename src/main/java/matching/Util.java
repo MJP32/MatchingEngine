@@ -3,11 +3,11 @@ package matching;
 import java.math.BigInteger;
 
 public class Util {
-    private static BigInteger nextOrderID = BigInteger.ZERO;
+    private static BigInteger next = BigInteger.ZERO;
 
 
-    static BigInteger getNextOrderId() {
-        nextOrderID = nextOrderID.add(BigInteger.ONE);
-        return nextOrderID;
+    static BigInteger next() {
+        next = next.add(BigInteger.ONE);
+        return next;
     }
 }

@@ -5,6 +5,7 @@ import com.opencsv.bean.CsvToBeanBuilder;
 import java.io.*;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -42,6 +43,12 @@ public class SimpleMatchingEngine {
             System.out.println("Sell Book");
             OrderBook.printBook(OrderBook.sellOrderBook);
 
+            System.out.println("Matched Orders");
+            Map<Order, Order> crossedOrders = Exchange.crossedOrders;
+            for(Map.Entry<Order,Order> entry : crossedOrders.entrySet()){
+                System.out.println(entry.getKey() +" " + entry.getValue());
+            }
+
 /*
 
             List<String> unmatched = ((MyEngine) matchingEngine).buyOrderBook.getTrades();
@@ -62,9 +69,6 @@ public class SimpleMatchingEngine {
                 .withType(Order.class)
                 .build()
                 .parse();
-
-//        beans.forEach(k-> System.out.println(k.toString()));
-
         return beans;
     }
 
