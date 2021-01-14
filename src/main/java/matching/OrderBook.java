@@ -5,33 +5,34 @@ import java.math.BigInteger;
 import java.util.*;
 
 public class OrderBook {
-    public static final Map<String, SortedMap<BigDecimal, List<Order>>> buyOrderBook;
 
-    static {
-        buyOrderBook = new HashMap<>();
+    String side;
+    private final Map<String, SortedMap<BigDecimal, List<Order>>> orderBook = new HashMap<>();
+    public Map<String, SortedMap<BigDecimal, List<Order>>> getOrderBook() {
+        return orderBook;
+    }
+    public OrderBook(String side) {
+        this.side = side;
+    }
+    public int getSize(){
+        return orderBook.size();
     }
 
-    public static final Map<String, SortedMap<BigDecimal, List<Order>>> sellOrderBook;
-
-    static {
-        sellOrderBook = new HashMap<>();
+    public static OrderBook createOrderBook(String side){
+        return new OrderBook(side);
     }
+    public void removeOrderFromBook(Order order, OrderBook orderBook, BigInteger matchedTradeId) {
 
-    private static final Comparator<BigDecimal> priceComparator = Comparator.reverseOrder();
 
-    public static void removeOrderFromBook(Order order, Map<String, SortedMap<BigDecimal, List<Order>>> orderBook, BigInteger matchedTradeId) {
-        if (order.getSide().equals("buy")) {
-            orderBook = sellOrderBook;
-        } else {
-            orderBook = buyOrderBook;
-        }
-        Set<String> symbols = orderBook.keySet();
-        List<Order> orders = orderBook.get(order.getSymbol()).get(order.getPrice());
+        List<Order> orders = orderBook.getOrderBook().get(order.getSymbol()).get(order.getPrice());
         if (orders.size() != 0)
             orders.remove(0);
 
-        if (orderBook.get(order.getSymbol()).get(order.getPrice()).size() == 0) {
-            orderBook.get(order.getSymbol()).remove(order.getPrice());
+        if (orderBook.getOrderBook().get(order.getSymbol()).get(order.getPrice()).size() == 0) {
+            orderBook.getOrderBook().get(order.getSymbol()).remove(order.getPrice());
+        }
+        if(orderBook.getOrderBook().get(order.getSymbol()).size() ==0){
+            orderBook.getOrderBook().remove(order.getSymbol());
         }
     }
 
@@ -52,24 +53,18 @@ public class OrderBook {
         }
     }
 
-
-
-    public static void addToOrderBook(Order order) {
-
-
+    public void addToOrderBook(Order order) {
         BigDecimal price = order.getPrice();
         if (Objects.equals(price, null)) {
             price = BigDecimal.valueOf(0);
         }
         if(order.getSide().equals("buy")) {
-            buyOrderBook.putIfAbsent(order.getSymbol(), new TreeMap<>(priceComparator));
-            buyOrderBook.get(order.getSymbol()).putIfAbsent(price, new ArrayList<Order>());
-            buyOrderBook.get(order.getSymbol()).get(price).add(order);
+            orderBook.putIfAbsent(order.getSymbol(), new TreeMap<>(Comparator.reverseOrder()));
         }
         else{
-            sellOrderBook.putIfAbsent(order.getSymbol(), new TreeMap<>());
-            sellOrderBook.get(order.getSymbol()).putIfAbsent(price, new ArrayList<Order>());
-            sellOrderBook.get(order.getSymbol()).get(price).add(order);
+            orderBook.putIfAbsent(order.getSymbol(), new TreeMap<>());
         }
+        orderBook.get(order.getSymbol()).putIfAbsent(price, new ArrayList<Order>());
+        orderBook.get(order.getSymbol()).get(price).add(order);
     }
 }

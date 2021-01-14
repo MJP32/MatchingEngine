@@ -9,35 +9,35 @@ public class Exchange {
     <AAPL,<130.98, <1608917401, 1608917401 >>>
           <130.99, <1608917401, 1608917401 >>>
     */
+
     public static final Map<Order, Order> crossedOrders = new HashMap<>();
+    private final OrderBook buyOrderBook = OrderBook.createOrderBook("buy");
+    private final OrderBook sellOrderBook = OrderBook.createOrderBook("sell");
 
     //<AAPL,<1608917401, 3>
     public final Map<String, Map<Long, Integer>> symbolTimeCount = new HashMap<>();
     public List<Order> rejectedOrders = new ArrayList<>();
+
 
     public void processTrades(List<Order> orders, Set<String> haltedSymbols) {
         for (Order order : orders) {
             System.out.println("Entered " + order.toString());
             if (canTrade(order, haltedSymbols)) {
                 if (!cross(order)) {
-                    OrderBook.addToOrderBook(order);
+                    getOrderBook(order.getSide()).addToOrderBook(order);
                 }
             }
         }
     }
 
     private boolean cross(Order order) {
-        String orderSide = order.getSide();
-        Map<String, SortedMap<BigDecimal, List<Order>>> orderBook;
-        if (orderSide.equals("buy")) {
-            orderBook = OrderBook.sellOrderBook;
-        } else {
-            orderBook = OrderBook.buyOrderBook;
-        }
-        if (orderBook == null || orderBook.size() == 0 || orderBook.values().size() == 0) {
+
+        OrderBook orderBook = getTradingBook(order.getSide());
+
+        if (orderBook == null || orderBook.getSize() == 0) {
             return false;
         }
-        SortedMap<BigDecimal, List<Order>> map = orderBook.get(order.getSymbol());
+        SortedMap<BigDecimal, List<Order>> map = orderBook.getOrderBook().get(order.getSymbol());
 
         for (Map.Entry<BigDecimal, List<Order>> entries : map.entrySet()) {
             BigDecimal key = entries.getKey();
@@ -47,17 +47,13 @@ public class Exchange {
                 int timeCount = getTimesTradedThisSecond(order.getSymbol(), order.getTimeStamp());
                 if (timeCount < 3) {
                     updateTimesTradedThisSecond(order);
-                    OrderBook.removeOrderFromBook(order, orderBook, matchedTradeId);
+                    orderBook.removeOrderFromBook(order, orderBook, matchedTradeId);
                     return true;
                 } else {
                     System.out.println(order.getSymbol() + " already traded 3 times this second " + order.getTimeStamp());
-                    System.out.println(" Trying to find another match ");
-                    //return false;
                 }
             }
         }
-
-
         return false;
     }
 
@@ -119,6 +115,24 @@ public class Exchange {
             return false;
         }
         return true;
+    }
+
+    public OrderBook getOrderBook(String side) {
+        if (side.equals("buy"))
+            return buyOrderBook;
+        else if (side.equals("sell"))
+            return sellOrderBook;
+        else
+            return null;
+    }
+
+    public OrderBook getTradingBook(String side) {
+        if (side.equals("buy"))
+            return sellOrderBook;
+        else if (side.equals("sell"))
+            return buyOrderBook;
+        else
+            return null;
     }
 
 }

@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 import java.util.*;
 
 public class OrdersRejectedTest {
-    Exchange exchange = new Exchange();
+    /*Exchange exchange = new Exchange();
 
     @Before
     public void beforeEachTestMethod() {
@@ -27,7 +27,7 @@ public class OrdersRejectedTest {
         exchange.processTrades(orders, new HashSet<>());
 
 
-        Iterator<Map.Entry<String, SortedMap<BigDecimal, List<Order>>>> ordersIter = OrderBook.buyOrderBook.entrySet().iterator();
+        Iterator<Map.Entry<String, SortedMap<BigDecimal, List<Order>>>> ordersIter = new OrderBook().getBuyOrderBook().entrySet().iterator();
 
         //Iterator it = mp.entrySet().iterator();
         Set<String> symbols = new HashSet<>();
@@ -49,9 +49,9 @@ public class OrdersRejectedTest {
 
         }
 
-        String expectedMessage = "[{130.990000000000009094947017729282379150390625=[Order{symbol='AAPL', side='buy', type='limit', price=130.990000000000009094947017729282379150390625, timeStamp=1608917403}, Order{symbol='AAPL', side='buy', type='limit', price=130.990000000000009094947017729282379150390625, timeStamp=1608917405}], 130.979999999999989768184605054557323455810546875=[Order{symbol='AAPL', side='buy', type='limit', price=130.979999999999989768184605054557323455810546875, timeStamp=1608917402}, Order{symbol='AAPL', side='buy', type='limit', price=130.979999999999989768184605054557323455810546875, timeStamp=1608917404}, Order{symbol='AAPL', side='buy', type='limit', price=130.979999999999989768184605054557323455810546875, timeStamp=1608917406}, Order{symbol='AAPL', side='buy', type='limit', price=130.979999999999989768184605054557323455810546875, timeStamp=1608917402}]}]";
-        Assert.assertEquals(expectedMessage, ((HashMap) OrderBook.buyOrderBook).values().toString());
-        Assert.assertEquals(true, OrderBook.buyOrderBook.keySet().contains("AAPL"));
+        String expectedMessage = "[{130.990000000000009094947017729282379150390625=[Order{id=1, symbol='AAPL', side='buy', type='limit', price=130.990000000000009094947017729282379150390625, timeStamp=1608917403}], 130.979999999999989768184605054557323455810546875=[Order{id=2, symbol='AAPL', side='buy', type='limit', price=130.979999999999989768184605054557323455810546875, timeStamp=1608917402}]}]";
+        Assert.assertEquals(expectedMessage, ((HashMap) new OrderBook().getBuyOrderBook()).values().toString());
+        Assert.assertEquals(true, new OrderBook().getBuyOrderBook().keySet().contains("AAPL"));
         Assert.assertEquals(2, prices2.size());
 
     }
@@ -67,7 +67,7 @@ public class OrdersRejectedTest {
         orders.add(new Order("AAPL", "sell", "limit", new BigDecimal(130.98), (long) 1608917402));
         exchange.processTrades(orders, new HashSet<>());
 
-        /*{
+        *//*{
             AAPL={
                     130.990000000000009094947017729282379150390625=
                     [
@@ -82,14 +82,14 @@ public class OrdersRejectedTest {
                             Order{symbol='AAPL', side='sell', type='limit', price=130.979999999999989768184605054557323455810546875, timeStamp=1608917402}
                     ]
             }
-        }*/
+        }*//*
 
-        Collection values = ((HashMap) OrderBook.sellOrderBook).values();
+        Collection values = ((HashMap) new OrderBook().getSellOrderBook()).values();
 
-        String expectedMessage = "[{130.979999999999989768184605054557323455810546875=[Order{symbol='AAPL', side='sell', type='limit', price=130.979999999999989768184605054557323455810546875, timeStamp=1608917402}, Order{symbol='AAPL', side='sell', type='limit', price=130.979999999999989768184605054557323455810546875, timeStamp=1608917404}, Order{symbol='AAPL', side='sell', type='limit', price=130.979999999999989768184605054557323455810546875, timeStamp=1608917406}, Order{symbol='AAPL', side='sell', type='limit', price=130.979999999999989768184605054557323455810546875, timeStamp=1608917402}], 130.990000000000009094947017729282379150390625=[Order{symbol='AAPL', side='sell', type='limit', price=130.990000000000009094947017729282379150390625, timeStamp=1608917403}, Order{symbol='AAPL', side='sell', type='limit', price=130.990000000000009094947017729282379150390625, timeStamp=1608917405}]}]";
-        Assert.assertEquals(expectedMessage, ((HashMap) OrderBook.sellOrderBook).values().toString());
-        Assert.assertEquals(true, OrderBook.sellOrderBook.keySet().contains("AAPL"));
+        String expectedMessage = "[{130.979999999999989768184605054557323455810546875=[Order{id=2, symbol='AAPL', side='sell', type='limit', price=130.979999999999989768184605054557323455810546875, timeStamp=1608917402}, Order{id=3, symbol='AAPL', side='sell', type='limit', price=130.979999999999989768184605054557323455810546875, timeStamp=1608917404}, Order{id=5, symbol='AAPL', side='sell', type='limit', price=130.979999999999989768184605054557323455810546875, timeStamp=1608917406}, Order{id=6, symbol='AAPL', side='sell', type='limit', price=130.979999999999989768184605054557323455810546875, timeStamp=1608917402}], 130.990000000000009094947017729282379150390625=[Order{id=1, symbol='AAPL', side='sell', type='limit', price=130.990000000000009094947017729282379150390625, timeStamp=1608917403}, Order{id=4, symbol='AAPL', side='sell', type='limit', price=130.990000000000009094947017729282379150390625, timeStamp=1608917405}]}]";
+        Assert.assertEquals(expectedMessage, ((HashMap) new OrderBook().getSellOrderBook()).values().toString());
+        Assert.assertEquals(true, new OrderBook().getSellOrderBook().keySet().contains("AAPL"));
 
-    }
+    }*/
 
 }

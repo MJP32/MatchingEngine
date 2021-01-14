@@ -3,65 +3,105 @@ package matching;
 import com.opencsv.bean.CsvToBeanBuilder;
 
 import java.io.*;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.math.BigDecimal;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class SimpleMatchingEngine {
-//    private static final String INPUT_ORDERS = "orders_basic_cross.csv";
-    private static final String INPUT_ORDERS = "orders_apple2.csv";
+    private static final String INPUT_ORDERS = "orders_basic_cross.csv";
+    //    private static final String INPUT_ORDERS = "orders_apple2.csv";
 //    private static final String INPUT_ORDERS = "orders_apple.csv";
     private static final String INPUT_SYMBOLS = "symbols.csv";
     private static final String OUTPUT_TRADES = "trades.txt";
     private static final String OUTPUT_REJECTED = "rejected.txt";
     private static final String OUTPUT_ORDERBOOK = "orderbook.txt";
 
-    private static final String OUTPUT_DIR = "output/";
+    private static final String OUTPUT_DIR = "output/1/";
     private static final String INPUT_DIR = "input/";
+    private static Exchange matchingEngine = new Exchange();
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         System.out.println(" Matching Engine");
-        Exchange matchingEngine = new Exchange();
 
+        createOutputFiles();
         try (BufferedWriter bufferedWriterTrades = new BufferedWriter(new FileWriter(OUTPUT_DIR + OUTPUT_TRADES));
-             BufferedWriter bufferedWriterRejections = new BufferedWriter(new FileWriter(OUTPUT_DIR + OUTPUT_REJECTED));
-             BufferedWriter bufferedWriterOrderBook = new BufferedWriter(new FileWriter(OUTPUT_DIR + OUTPUT_ORDERBOOK))) {
-            Set<String> haltedSymbols = getHaltedSymbolsFromFile(INPUT_DIR + INPUT_SYMBOLS);
-            haltedSymbols.forEach(System.out::println);
 
+             BufferedWriter bufferedWriterOrderBook = new BufferedWriter(new FileWriter(OUTPUT_DIR + OUTPUT_ORDERBOOK))) {
+
+            Set<String> haltedSymbols = getHaltedSymbolsFromFile(INPUT_DIR + INPUT_SYMBOLS);
             List<Order> orders = getOrderDataFromFile(INPUT_DIR + INPUT_ORDERS);
+
             matchingEngine.processTrades(orders, haltedSymbols);
 
+            //matched trades
+            writeCrossedOrdersToFile(bufferedWriterTrades);
 
-//            Exchange me = new matching.Exchange();
-            //matchingEngine.rejectedOrders.forEach(k-> System.out.println(k));
+            //whats left on the books
+            OrderBook buyBook = matchingEngine.getOrderBook("buy");
+            OrderBook sellBook = matchingEngine.getOrderBook("sell");
+            writeOrderBookToFile(bufferedWriterOrderBook, buyBook);
+            writeOrderBookToFile(bufferedWriterOrderBook, sellBook);
 
-            System.out.println("Buy Book");
-            OrderBook.printBook(OrderBook.buyOrderBook);
-            System.out.println("Sell Book");
-            OrderBook.printBook(OrderBook.sellOrderBook);
-
-            System.out.println("Matched Orders");
-            Map<Order, Order> crossedOrders = Exchange.crossedOrders;
-            for(Map.Entry<Order,Order> entry : crossedOrders.entrySet()){
-                System.out.println(entry.getKey() +" " + entry.getValue());
-            }
-
-/*
-
-            List<String> unmatched = ((MyEngine) matchingEngine).buyOrderBook.getTrades();
-            bufferedWriterOrderBook.write("Unmatched Orders\n");
-            for (String u : unmatched) {
-                System.out.println("-->unmatched -->: " + u);
-                bufferedWriterOrderBook.write(u + "\n");
-            }*/
+            //write rejected orders
+            writeRejectedOrders();
 
 
         } catch (IOException e) {
             System.err.println(e.toString());
         }
+    }
+
+    private static void writeRejectedOrders() throws IOException {
+        List<Order> rejectedOrders = matchingEngine.rejectedOrders;
+        BufferedWriter bufferedWriterRejections = new BufferedWriter(new FileWriter(OUTPUT_DIR + OUTPUT_REJECTED));
+        for (Order ord : rejectedOrders) {
+            System.out.println(ord.toString());
+            bufferedWriterRejections.write(ord.toString() + "\n");
+        }
+    }
+
+    private static void writeCrossedOrdersToFile(BufferedWriter bufferedWriterTrades) throws IOException {
+        String msg = "Matched Orders";
+        System.out.println(msg);
+        bufferedWriterTrades.write(msg + "\n");
+        Map<Order, Order> crossedOrders = Exchange.crossedOrders;
+        for (Map.Entry<Order, Order> entry : crossedOrders.entrySet()) {
+            System.out.println(entry.getKey() + " " + entry.getValue());
+            bufferedWriterTrades.write(entry.getKey() + "\n");
+        }
+    }
+
+    private static void writeOrderBookToFile(BufferedWriter bufferedWriterOrderBook, OrderBook tradeBook) throws IOException {
+        //bufferedWriterOrderBook.write("Unmatched Orders\n");
+        for (Map.Entry<String, SortedMap<BigDecimal, List<Order>>> entry : tradeBook.getOrderBook().entrySet()) {
+            System.out.println(entry.getKey());
+            bufferedWriterOrderBook.write(entry.getKey() + "\n");
+            SortedMap<BigDecimal, List<Order>> value = entry.getValue();
+            for (BigDecimal price : value.keySet()) {
+                Iterator<List<Order>> orderIter = value.values().iterator();
+                while (orderIter.hasNext()) {
+                    List<Order> next = orderIter.next();
+                    for (Order ord : next) {
+                        System.out.println(ord.toString());
+                        bufferedWriterOrderBook.write(ord.toString() + "\n");
+                    }
+                }
+            }
+        }
+    }
+
+    private static void createOutputFiles() throws IOException {
+        File file = new File(OUTPUT_DIR + OUTPUT_TRADES);
+        file.getParentFile().mkdirs();
+        file.createNewFile();
+
+        File file2 = new File(OUTPUT_DIR + OUTPUT_REJECTED);
+        file2.getParentFile().mkdirs();
+        file2.createNewFile();
+
+        File file3 = new File(OUTPUT_DIR + OUTPUT_ORDERBOOK);
+        file3.getParentFile().mkdirs();
+        file3.createNewFile();
     }
 
     private static List<Order> getOrderDataFromFile(String fileName) throws FileNotFoundException {
@@ -73,6 +113,7 @@ public class SimpleMatchingEngine {
     }
 
     private static Set<String> getHaltedSymbolsFromFile(String fileName) throws IOException {
+
         Set<String> haltedSymbols = new HashSet<>();
         List<HaltedTrades> beans = new CsvToBeanBuilder(new FileReader(fileName))
                 .withType(HaltedTrades.class)
@@ -82,7 +123,7 @@ public class SimpleMatchingEngine {
         List<HaltedTrades> result = beans.stream()                // convert list to stream
                 .filter(line -> "TRUE".equals(line.getIsHalted()))     // we dont like mkyong
                 .collect(Collectors.toList());
-        for(HaltedTrades ht : result){
+        for (HaltedTrades ht : result) {
             haltedSymbols.add(ht.getSymbol());
         }
         return haltedSymbols;
