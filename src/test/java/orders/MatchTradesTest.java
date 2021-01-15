@@ -46,15 +46,23 @@ public class MatchTradesTest {
         orders.add(new Order("AAPL", "buy", "limit", new BigDecimal(130.99), (long) 1608917404));
         orders.add(new Order("AAPL", "sell", "limit", new BigDecimal(130.98), (long) 1608917402));
         orders.add(new Order("AAPL", "buy", "limit", new BigDecimal(130.98), (long) 1608917405));
+        orders.add(new Order("AAPL", "buy", "limit", new BigDecimal(130.98), (long) 1608917405));
+        orders.add(new Order("AAPL", "buy", "limit", new BigDecimal(130.98), (long) 1608917405));
         Exchange exchange = new Exchange();
         exchange.processTrades(orders, new HashSet<>());
         OrderBook buyOrderBook = exchange.getOrderBook("buy");
-//        SortedMap<BigDecimal, List<Order>> map = buyOrderBook.getOrderBook().get(orders.get(0).getSymbol());
+        SortedMap<BigDecimal, List<Order>> map = buyOrderBook.getOrderBook().get(orders.get(0).getSymbol());
+        List<Order> value = null;
+        for(Map.Entry<BigDecimal, List<Order>> entries : map.entrySet()){
+            BigDecimal key = entries.getKey();
+            value = entries.getValue();
+        }
+
 
 
         Map<Order, Order> crossedOrders = Exchange.crossedOrders;
         Assert.assertEquals(2, crossedOrders.size());
-//        Assert.assertEquals(0, value.size());
+        Assert.assertEquals(2, value.size());
 
     }
 
