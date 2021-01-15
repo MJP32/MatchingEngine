@@ -9,7 +9,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class SimpleMatchingEngine {
-//        private static final String INPUT_ORDERS = "orders_no_halted.csv";
+    //        private static final String INPUT_ORDERS = "orders_no_halted.csv";
 //    private static final String INPUT_ORDERS = "orders_tsla.csv";
 //    private static final String INPUT_ORDERS = "orders_50.csv";
 //    private static final String INPUT_ORDERS = "orders.csv";
@@ -113,37 +113,22 @@ public class SimpleMatchingEngine {
     }
 
     private static List<Order> getOrderDataFromFile(String fileName) throws FileNotFoundException {
-//        List beans = new CsvToBeanBuilder(new FileReader(fileName))
-//                .withType(Order.class)
-//                .build()
-//                .parse();
-//        return beans;
-
         List<Order> orders = new ArrayList<>();
         BufferedReader fileReader = null;
-
-        //Delimiter used in CSV file
         final String DELIMITER = ",";
         try {
             String line = "";
-            //Create the file reader
             fileReader = new BufferedReader(new FileReader(fileName));
 
+            //skip first line
             line = fileReader.readLine();
-            //Read the file line by line
             while ((line = fileReader.readLine()) != null) {
-                //Get all tokens available in line
                 String[] tokens = line.split(DELIMITER);
                 if (Objects.equals(tokens[3], "")) {
-                    //tokens[3] = null;
-                    orders.add(new Order(tokens[0], tokens[1], tokens[2],  null, Long.valueOf(tokens[4])));
+                    orders.add(new Order(tokens[0], tokens[1], tokens[2], null, Long.valueOf(tokens[4])));
+                } else {
+                    orders.add(new Order(tokens[0], tokens[1], tokens[2], new BigDecimal(tokens[3]), Long.valueOf(tokens[4])));
                 }
-                else{
-
-                    orders.add(new Order(tokens[0], tokens[1], tokens[2],  new BigDecimal(tokens[3]), Long.valueOf(tokens[4])));
-                }
-
-
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -154,12 +139,10 @@ public class SimpleMatchingEngine {
                 e.printStackTrace();
             }
         }
-
         return orders;
     }
 
     private static Set<String> getHaltedSymbolsFromFile(String fileName) throws IOException {
-
         Set<String> haltedSymbols = new HashSet<>();
         List<HaltedTrades> beans = new CsvToBeanBuilder(new FileReader(fileName))
                 .withType(HaltedTrades.class)
