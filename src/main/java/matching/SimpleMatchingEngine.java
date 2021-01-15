@@ -21,7 +21,7 @@ public class SimpleMatchingEngine {
     private static final String OUTPUT_REJECTED = "rejected.txt";
     private static final String OUTPUT_ORDERBOOK = "orderbook.txt";
 
-    private static final String OUTPUT_DIR = "output/1/";
+    private static final String OUTPUT_DIR = "output/results/";
     private static final String INPUT_DIR = "input/";
     private static final Exchange matchingEngine = new Exchange();
 
@@ -103,9 +103,7 @@ public class SimpleMatchingEngine {
             //bufferedWriterOrderBook.write(entry.getKey() + "\n");
             SortedMap<BigDecimal, List<Order>> value = entry.getValue();
 
-            Iterator<List<Order>> orderIter = value.values().iterator();
-            while (orderIter.hasNext()) {
-                List<Order> next = orderIter.next();
+            for (List<Order> next : value.values()) {
                 for (Order ord : next) {
                     count++;
                     //System.out.println(ord.toString());
@@ -178,25 +176,7 @@ public class SimpleMatchingEngine {
         return haltedSymbols;
     }
 
-    private static void processTrades() throws IOException {
-        /*for (String line; (line = bufferedReaderOrders.readLine()) != null; ) {
-            try {
-                matching.Exchange me = new matching.Exchange();
-                Order order = new Order(line);
-                System.out.println("--Entered order : " + order);
-                List<Trade> trades = matchingEngine.enterOrder(order);
-                for (Trade trade : trades) {
-                    System.out.println("----Trade : " + trade);
-                    bufferedWriterTrades.write(trade.toStringShort() + "\n");
-                }
-            } catch (IllegalArgumentException e) {
-                bufferedWriterRejections.write(line.toString() + "\n");
-                bufferedWriterRejections.write(e.toString() + "\n");
-                System.err.println(e.toString());
-                System.err.println("Skipping line : " + line);
-            }
-        }*/
-    }
+
 }
 
 

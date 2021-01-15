@@ -93,7 +93,6 @@ public class Exchange {
     }
 
     private boolean canBeTradedThisSecond(Order order) {
-
         int timeCount = getNumTimesTradedThisSecond(order.getSymbol(), order.getTimeStamp());
         if (timeCount < 3) {
             updateTimesTradedThisSecond(order);
@@ -145,13 +144,25 @@ public class Exchange {
         }
         if (!(order.getType().equals("limit") || order.getType().equals("market"))) {
             rejectedOrders.add(order);
-            String err = "Only buy and limit orders supported";
+            String err = "Only limit and market orders supported";
+            System.err.println(err);
+            return false;
+        }
+        if (!(order.getSide().equals("buy") || order.getSide().equals("sell"))) {
+            rejectedOrders.add(order);
+            String err = "Only buy and sell orders supported";
             System.err.println(err);
             return false;
         }
         if (order.getSymbol().equals("")) {
             rejectedOrders.add(order);
-            String err = "Symbol required";
+            String err = "Symbol required field";
+            System.err.println(err);
+            return false;
+        }
+        if (order.getTimeStamp().equals("")) {
+            rejectedOrders.add(order);
+            String err = "TimeStamp required field";
             System.err.println(err);
             return false;
         }
@@ -175,5 +186,4 @@ public class Exchange {
         else
             return null;
     }
-
 }

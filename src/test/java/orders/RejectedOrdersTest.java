@@ -27,9 +27,39 @@ public class RejectedOrdersTest {
         Assert.assertEquals(4, rejectedOrders.size());
         Assert.assertEquals("FB", rejectedOrders.get(0).getSymbol());
         Assert.assertEquals("GOOG", rejectedOrders.get(1).getSymbol());
-
-
     }
+
+    @Test
+    public void LimitOrderPriceTest() {
+        List<Order> orders = new ArrayList<>();
+        Exchange exchange = new Exchange();
+        orders.add(new Order("AMZN", "sell", "limit", null, (long) 1608917403));
+        orders.add(new Order("TSLA", "sell", "limit", null, (long) 1608917403));
+
+        exchange.processTrades(orders, new HashSet<>(Arrays.asList("FB", "GOOG")));
+
+        List<Order> rejectedOrders = exchange.rejectedOrders;
+        Assert.assertEquals(2, rejectedOrders.size());
+        Assert.assertEquals("AMZN", rejectedOrders.get(0).getSymbol());
+        Assert.assertEquals("TSLA", rejectedOrders.get(1).getSymbol());
+    }
+    @Test
+    public void InvalidInputTest() {
+        List<Order> orders = new ArrayList<>();
+        Exchange exchange = new Exchange();
+        orders.add(new Order("AMZN", "sellabc", "limit", null, (long) 1608917403));
+        orders.add(new Order("TSLA", "sell", "limitabc", null, (long) 1608917403));
+        orders.add(new Order("", "sell", "market", null, (long) 1608917403));
+
+        exchange.processTrades(orders, new HashSet<>(Arrays.asList("FB", "GOOG")));
+
+        List<Order> rejectedOrders = exchange.rejectedOrders;
+        Assert.assertEquals(3, rejectedOrders.size());
+        Assert.assertEquals("AMZN", rejectedOrders.get(0).getSymbol());
+        Assert.assertEquals("TSLA", rejectedOrders.get(1).getSymbol());
+        Assert.assertEquals("", rejectedOrders.get(2).getSymbol());
+    }
+
     @Test
     public void ThreeSecondTest() {
         List<Order> orders = new ArrayList<>();
@@ -54,15 +84,14 @@ public class RejectedOrdersTest {
 
         Map<String, SortedMap<BigDecimal, List<Order>>> sell = exchange.getOrderBook("sell").getOrderBook();
         SortedMap<BigDecimal, List<Order>> sellOrders = sell.values().iterator().next();
-        //should be 3 orders traded
+
+        //only 3 orders traded
         Assert.assertEquals(3, crossedOrders.size());
 
-        //two orders remain on the buy book
+        //2 orders remain on the buy book
         Assert.assertEquals(2,buyOrders.values().iterator().next().size());
 
-        //two orders remain on the sell book
+        //2 orders remain on the sell book
         Assert.assertEquals(2,sellOrders.values().iterator().next().size());
     }
-
-
 }
