@@ -1,28 +1,15 @@
 package matching;
 
-import com.opencsv.bean.CsvBindByName;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
 
 public class Order {
-
-
     private BigInteger id;
-
-    @CsvBindByName
     private String symbol;
-
-    @CsvBindByName
     private String side;
-
-    @CsvBindByName
     private String type;
-
-    @CsvBindByName
     private BigDecimal price;
-
-    @CsvBindByName
     private Long timeStamp;
 
     public Order() {
