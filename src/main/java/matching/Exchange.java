@@ -68,11 +68,11 @@ public class Exchange {
         String orderToMatchSide = orderToMatch.getSide();
         String orderToMatchType = orderToMatch.getType();
         for (Order orderFromBook : Collections.unmodifiableList(value)) {
-            if (orderToMatchType.equals("limit")) {
+            if (orderToMatchType.equals("limit")&& orderFromBook.getType().equals("limit") ) {
                 BigDecimal orderToMatchPrice = orderToMatch.getPrice();
                 BigDecimal orderFromBookPrice = getPriceAsBigDecimal(orderFromBook);
                 if (orderToMatchSide.equals("buy")) {
-                    if (orderToMatchPrice.compareTo(orderFromBookPrice) >= 0 && orderFromBook.getType().equals("limit")) {
+                    if (orderToMatchPrice.compareTo(orderFromBookPrice) >= 0 ) {
                         System.out.println("1. "+orderToMatch.getId() +" matches with  " +orderFromBook.getId());
                         System.out.println("1. "+orderToMatchPrice +" ->  " +orderFromBookPrice);
 

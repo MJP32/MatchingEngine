@@ -9,12 +9,12 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class SimpleMatchingEngine {
-        private static final String INPUT_ORDERS = "orders_no_halted.csv";
+//        private static final String INPUT_ORDERS = "orders_no_halted.csv";
 //    private static final String INPUT_ORDERS = "orders_tsla.csv";
 //    private static final String INPUT_ORDERS = "orders_50.csv";
 //    private static final String INPUT_ORDERS = "orders.csv";
 //    private static final String INPUT_ORDERS = "orders_large.csv";
-//    private static final String INPUT_ORDERS = "orders_basic_cross.csv";
+    private static final String INPUT_ORDERS = "orders_basic_cross.csv";
     //    private static final String INPUT_ORDERS = "orders_apple2.csv";
 //    private static final String INPUT_ORDERS = "orders_apple.csv";
     private static final String INPUT_SYMBOLS = "symbols.csv";
