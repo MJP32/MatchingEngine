@@ -1,6 +1,5 @@
 package matching;
 
-import com.opencsv.CSVReader;
 import com.opencsv.bean.CsvToBeanBuilder;
 
 import java.io.*;
@@ -9,12 +8,12 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class SimpleMatchingEngine {
+    private static final String INPUT_ORDERS = "orders.csv";
     //        private static final String INPUT_ORDERS = "orders_no_halted.csv";
-//    private static final String INPUT_ORDERS = "orders_tsla.csv";
-//    private static final String INPUT_ORDERS = "orders_50.csv";
-//    private static final String INPUT_ORDERS = "orders.csv";
+    //    private static final String INPUT_ORDERS = "orders_tsla.csv";
+//        private static final String INPUT_ORDERS = "orders_50.csv";
 //    private static final String INPUT_ORDERS = "orders_large.csv";
-    private static final String INPUT_ORDERS = "orders_basic_cross.csv";
+//    private static final String INPUT_ORDERS = "orders_basic_cross.csv";
     //    private static final String INPUT_ORDERS = "orders_apple2.csv";
 //    private static final String INPUT_ORDERS = "orders_apple.csv";
     private static final String INPUT_SYMBOLS = "symbols.csv";
@@ -24,7 +23,7 @@ public class SimpleMatchingEngine {
 
     private static final String OUTPUT_DIR = "output/1/";
     private static final String INPUT_DIR = "input/";
-    private static Exchange matchingEngine = new Exchange();
+    private static final Exchange matchingEngine = new Exchange();
 
     public static void main(String[] args) throws IOException {
         System.out.println(" Matching Engine");
@@ -40,62 +39,82 @@ public class SimpleMatchingEngine {
             matchingEngine.processTrades(orders, haltedSymbols);
 
             //matched trades
-            writeCrossedOrdersToFile(bufferedWriterTrades);
+            int crossedTrades = writeCrossedOrdersToFile(bufferedWriterTrades);
 
             //whats left on the books
             OrderBook buyBook = matchingEngine.getOrderBook("buy");
             OrderBook sellBook = matchingEngine.getOrderBook("sell");
-            writeOrderBookToFile(bufferedWriterOrderBook, buyBook);
-            writeOrderBookToFile(bufferedWriterOrderBook, sellBook);
+            int buyBookOrders = writeOrderBookToFile(bufferedWriterOrderBook, buyBook);
+            int sellBookOrders = writeOrderBookToFile(bufferedWriterOrderBook, sellBook);
 
             //write rejected orders
-            writeRejectedOrders(bufferedWriterRejections);
+            int rejectedOrders = writeRejectedOrders(bufferedWriterRejections);
 
+            printSummary(crossedTrades, buyBookOrders, sellBookOrders, rejectedOrders);
 
         } catch (IOException e) {
             System.err.println(e.toString());
         }
     }
 
-    private static void writeRejectedOrders(BufferedWriter bufferedWriterRejections) throws IOException {
+    private static void printSummary(int crossedTrades, int buyBookOrders, int sellBookOrders, int rejectedOrders) {
+        System.out.println("********************************************");
+        System.out.println("\t" + crossedTrades + " Orders crossed");
+        System.out.println("\t" + buyBookOrders + " Orders were left on the Buy Book");
+        System.out.println("\t" + sellBookOrders + " Orders were left on the Sell Book");
+        System.out.println("\t" + rejectedOrders + " Orders were rejected");
+        int total = crossedTrades * 2 + buyBookOrders + sellBookOrders + rejectedOrders;
+        System.out.println("\t" + total + " Total number of orders processed: ");
+        System.out.println("********************************************");
+    }
+
+    private static int writeRejectedOrders(BufferedWriter bufferedWriterRejections) throws IOException {
+        int count = 0;
         List<Order> rejectedOrders = matchingEngine.rejectedOrders;
         for (Order ord : rejectedOrders) {
+            count++;
             System.out.println(ord.toString());
             bufferedWriterRejections.write(ord.toString() + "\n");
         }
+        return count;
     }
 
-    private static void writeCrossedOrdersToFile(BufferedWriter bufferedWriterTrades) throws IOException {
+    private static int writeCrossedOrdersToFile(BufferedWriter bufferedWriterTrades) throws IOException {
+        int count = 0;
         String msg = "Matched Trades";
         //System.out.println(msg);
         bufferedWriterTrades.write(msg + "\n");
-        Map<Order, Order> crossedOrders = Exchange.crossedOrders;
+        Map<Order, Order> crossedOrders = Exchange.MatchedOrders;
         for (Map.Entry<Order, Order> entry : crossedOrders.entrySet()) {
+            count++;
             //System.out.println(entry.getKey() + " " + entry.getValue());
             bufferedWriterTrades.write(entry.getKey() + "\n");
             bufferedWriterTrades.write(entry.getValue() + "\n");
-
-
+            bufferedWriterTrades.write("\n");
         }
+        return count;
     }
 
-    private static void writeOrderBookToFile(BufferedWriter bufferedWriterOrderBook, OrderBook tradeBook) throws IOException {
+    private static int writeOrderBookToFile(BufferedWriter bufferedWriterOrderBook, OrderBook tradeBook) throws IOException {
+        int count = 0;
         //bufferedWriterOrderBook.write("Unmatched Orders\n");
         for (Map.Entry<String, SortedMap<BigDecimal, List<Order>>> entry : tradeBook.getOrderBook().entrySet()) {
             //System.out.println(entry.getKey());
-            bufferedWriterOrderBook.write(entry.getKey() + "\n");
+            //bufferedWriterOrderBook.write(entry.getKey() + "\n");
             SortedMap<BigDecimal, List<Order>> value = entry.getValue();
-            for (BigDecimal price : value.keySet()) {
-                Iterator<List<Order>> orderIter = value.values().iterator();
-                while (orderIter.hasNext()) {
-                    List<Order> next = orderIter.next();
-                    for (Order ord : next) {
-                        //System.out.println(ord.toString());
-                        bufferedWriterOrderBook.write(ord.toString() + "\n");
-                    }
+
+            Iterator<List<Order>> orderIter = value.values().iterator();
+            while (orderIter.hasNext()) {
+                List<Order> next = orderIter.next();
+                for (Order ord : next) {
+                    count++;
+                    //System.out.println(ord.toString());
+                    bufferedWriterOrderBook.write(ord.toString() + "\n");
                 }
             }
+
         }
+        return count;
     }
 
     private static void createOutputFiles() throws IOException {
@@ -134,6 +153,7 @@ public class SimpleMatchingEngine {
             e.printStackTrace();
         } finally {
             try {
+                assert fileReader != null;
                 fileReader.close();
             } catch (IOException e) {
                 e.printStackTrace();

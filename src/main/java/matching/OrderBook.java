@@ -21,7 +21,7 @@ public class OrderBook {
     public static OrderBook createOrderBook(String side){
         return new OrderBook(side);
     }
-    public void removeOrderFromBook(Order order, OrderBook orderBook, List<Order> value, BigInteger matchedTradeId) {
+    /*public void removeOrderFromBook(Order order, OrderBook orderBook, List<Order> value, BigInteger matchedTradeId) {
         List<Order> orders;
         BigDecimal price;
         if (order.getType().equals("market")) {
@@ -44,24 +44,9 @@ public class OrderBook {
         if(orderBook.getOrderBook().get(order.getSymbol()).size() ==0){
             orderBook.getOrderBook().remove(order.getSymbol());
         }
-    }
+    }*/
 
-    public static void printBook(Map<String, SortedMap<BigDecimal, List<Order>>> orderBook) {
-        for (Map.Entry<String, SortedMap<BigDecimal, List<Order>>> entry : orderBook.entrySet()) {
-            String key = entry.getKey();
-            SortedMap<BigDecimal, List<Order>> values = entry.getValue();
-            for (Map.Entry<BigDecimal, List<Order>> value : values.entrySet()) {
-                BigDecimal price = value.getKey();
-                List<Order> timeStamps = value.getValue();
-                Collections.sort(timeStamps, Comparator.comparing(order -> order.getTimeStamp()));
-                StringBuilder timeStampsString = new StringBuilder();
-                for (Order ord : timeStamps) {
-                    timeStampsString.append(ord.getTimeStamp() + " ");
-                }
-                System.out.println(key + " " + price + " " + timeStampsString.toString());
-            }
-        }
-    }
+
 
     public void addToOrderBook(Order order) {
         BigDecimal price = order.getPrice();
@@ -74,7 +59,24 @@ public class OrderBook {
         else{
             orderBook.putIfAbsent(order.getSymbol(), new TreeMap<>());
         }
-        orderBook.get(order.getSymbol()).putIfAbsent(price, new ArrayList<Order>());
+        orderBook.get(order.getSymbol()).putIfAbsent(price, new ArrayList<>());
         orderBook.get(order.getSymbol()).get(price).add(order);
+    }
+
+    public static void printBook(Map<String, SortedMap<BigDecimal, List<Order>>> orderBook) {
+        for (Map.Entry<String, SortedMap<BigDecimal, List<Order>>> entry : orderBook.entrySet()) {
+            String key = entry.getKey();
+            SortedMap<BigDecimal, List<Order>> values = entry.getValue();
+            for (Map.Entry<BigDecimal, List<Order>> value : values.entrySet()) {
+                BigDecimal price = value.getKey();
+                List<Order> timeStamps = value.getValue();
+                timeStamps.sort(Comparator.comparing(Order::getTimeStamp));
+                StringBuilder timeStampsString = new StringBuilder();
+                for (Order ord : timeStamps) {
+                    StringBuilder append = timeStampsString.append(ord.getTimeStamp()).append(" ");
+                }
+                System.out.println(key + " " + price + " " + timeStampsString.toString());
+            }
+        }
     }
 }

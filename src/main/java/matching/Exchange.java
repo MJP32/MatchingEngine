@@ -1,7 +1,6 @@
 package matching;
 
 import java.math.BigDecimal;
-import java.math.BigInteger;
 import java.util.*;
 
 public class Exchange {
@@ -10,14 +9,13 @@ public class Exchange {
           <130.99, <1608917401, 1608917401 >>>
     */
 
-    public static final Map<Order, Order> crossedOrders = new HashMap<>();
+    public static final Map<Order, Order> MatchedOrders = new HashMap<>();
     private final OrderBook buyOrderBook = OrderBook.createOrderBook("buy");
     private final OrderBook sellOrderBook = OrderBook.createOrderBook("sell");
 
     //<AAPL,<1608917401, 3>
     public final Map<String, Map<Long, Integer>> symbolTimeCount = new HashMap<>();
     public List<Order> rejectedOrders = new ArrayList<>();
-
 
     public void processTrades(List<Order> orders, Set<String> haltedSymbols) {
         for (Order order : orders) {
@@ -35,7 +33,7 @@ public class Exchange {
         if (orderBook == null || orderBook.getSize() == 0) {
             return false;
         }
-        if(!orderBook.getOrderBook().containsKey(order.getSymbol())){
+        if (!orderBook.getOrderBook().containsKey(order.getSymbol())) {
             return false;
         }
         SortedMap<BigDecimal, List<Order>> map = orderBook.getOrderBook().get(order.getSymbol());
@@ -44,22 +42,9 @@ public class Exchange {
             BigDecimal key = entries.getKey();
             List<Order> value = entries.getValue();
             //System.out.println("key " + key);
-            if(getOrderToMatch(order, value, key)){
+            if (getOrderToMatch(order, value, key)) {
                 return true;
             }
-
-            /*if (matchedTradeId != (BigInteger.valueOf(-1))) {
-                int timeCount = getNumTimesTradedThisSecond(order.getSymbol(), order.getTimeStamp());
-                if (timeCount < 3) {
-                    updateTimesTradedThisSecond(order);
-                    System.out.println("matchedTradeId "+matchedTradeId);
-         
-                    //orderBook.removeOrderFromBook(order, orderBook,value, matchedTradeId);
-                    return true;
-                } else {
-                    System.out.println(order.getSymbol() + " already traded 3 times this second " + order.getTimeStamp());
-                }
-            }*/
         }
         return false;
     }
@@ -67,27 +52,27 @@ public class Exchange {
     private boolean getOrderToMatch(Order orderToMatch, List<Order> value, BigDecimal key) {
         String orderToMatchSide = orderToMatch.getSide();
         String orderToMatchType = orderToMatch.getType();
-        for (Order orderFromBook : Collections.unmodifiableList(value)) {
-            if (orderToMatchType.equals("limit")&& orderFromBook.getType().equals("limit") ) {
+        for (Order orderFromBook : value) {
+            if (orderToMatchType.equals("limit") && orderFromBook.getType().equals("limit")) {
                 BigDecimal orderToMatchPrice = orderToMatch.getPrice();
                 BigDecimal orderFromBookPrice = getPriceAsBigDecimal(orderFromBook);
                 if (orderToMatchSide.equals("buy")) {
-                    if (orderToMatchPrice.compareTo(orderFromBookPrice) >= 0 ) {
-                        System.out.println("1. "+orderToMatch.getId() +" matches with  " +orderFromBook.getId());
-                        System.out.println("1. "+orderToMatchPrice +" ->  " +orderFromBookPrice);
+                    if (orderToMatchPrice.compareTo(orderFromBookPrice) >= 0) {
+                        System.out.println("1. " + orderToMatch.getId() + " matches with  " + orderFromBook.getId());
+                        System.out.println("1. " + orderToMatchPrice + " ->  " + orderFromBookPrice);
 
-                        if(canBeTradedThisSecond(orderToMatch)){
-                            crossedOrders.put(orderToMatch, orderFromBook);
+                        if (canBeTradedThisSecond(orderToMatch)) {
+                            MatchedOrders.put(orderToMatch, orderFromBook);
                             value.remove(orderFromBook);
                             return true;
                         }
                     }
                 } else {
-                    if (orderToMatchPrice.compareTo(orderFromBookPrice) <= 0 && orderFromBook.getType().equals("limit")) {
-                        System.out.println("2. "+orderToMatch.getId() +" matches with  " +orderFromBook.getId());
-                        System.out.println("2. "+orderToMatchPrice +" ->  " +orderFromBookPrice);
-                        if(canBeTradedThisSecond(orderToMatch)){
-                            crossedOrders.put(orderToMatch, orderFromBook);
+                    if (orderToMatchPrice.compareTo(orderFromBookPrice) <= 0 ) {
+                        System.out.println("2. " + orderToMatch.getId() + " matches with  " + orderFromBook.getId());
+                        System.out.println("2. " + orderToMatchPrice + " ->  " + orderFromBookPrice);
+                        if (canBeTradedThisSecond(orderToMatch)) {
+                            MatchedOrders.put(orderToMatch, orderFromBook);
                             value.remove(orderFromBook);
                             return true;
                         }
@@ -95,9 +80,9 @@ public class Exchange {
                 }
             } else {
                 if (orderToMatchSide.equals("buy")) {
-                    System.out.println("3. "+orderToMatch.getId() +" matches with  " +orderFromBook.getId());
-                    if(canBeTradedThisSecond(orderToMatch)) {
-                        crossedOrders.put(orderToMatch, orderFromBook);
+                    System.out.println("3. " + orderToMatch.getId() + " matches with  " + orderFromBook.getId());
+                    if (canBeTradedThisSecond(orderToMatch)) {
+                        MatchedOrders.put(orderToMatch, orderFromBook);
                         value.remove(orderFromBook);
                         return true;
                     }
@@ -119,17 +104,16 @@ public class Exchange {
 
     public BigDecimal getPriceAsBigDecimal(Order ord) {
         BigDecimal price;
-        if(ord.getPrice() == null){
-             price = new BigDecimal(0);
-        }
-        else{
-             price = ord.getPrice();
+        if (ord.getPrice() == null) {
+            price = new BigDecimal(0);
+        } else {
+            price = ord.getPrice();
         }
         return price;
     }
 
     private void updateTimesTradedThisSecond(Order order) {
-        symbolTimeCount.putIfAbsent(order.getSymbol(), new HashMap<Long, Integer>());
+        symbolTimeCount.putIfAbsent(order.getSymbol(), new HashMap<>());
         symbolTimeCount.get(order.getSymbol()).putIfAbsent(order.getTimeStamp(), 0);
         Integer prevCount = symbolTimeCount.get(order.getSymbol()).get(order.getTimeStamp());
         symbolTimeCount.get(order.getSymbol()).put(order.getTimeStamp(), prevCount + 1);
@@ -165,13 +149,12 @@ public class Exchange {
             System.err.println(err);
             return false;
         }
-        if (order.getSymbol().equals("") ) {
+        if (order.getSymbol().equals("")) {
             rejectedOrders.add(order);
             String err = "Symbol required";
             System.err.println(err);
             return false;
         }
-
         return true;
     }
 

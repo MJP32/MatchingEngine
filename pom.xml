@@ -19,11 +19,6 @@
             </plugin>
         </plugins>
     </build>
-    <dependency>
-        <groupId>com.opencsv</groupId>
-        <artifactId>opencsv</artifactId>
-        <version>5.3</version>
-    </dependency>
 
     <dependencies>
         <dependency>
@@ -37,14 +32,15 @@
             <version>4.11</version>
         </dependency>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.11</version>
-        </dependency>
-        <dependency>
             <groupId>com.opencsv</groupId>
             <artifactId>opencsv</artifactId>
             <version>5.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
     

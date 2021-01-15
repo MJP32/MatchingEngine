@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.math.BigInteger;
 
 public class Util {
+    //first id will be 2, to account for column header
     private static BigInteger next = BigInteger.ONE;
 
 
