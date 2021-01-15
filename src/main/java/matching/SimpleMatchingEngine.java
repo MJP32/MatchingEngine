@@ -1,5 +1,6 @@
 package matching;
 
+import com.opencsv.CSVReader;
 import com.opencsv.bean.CsvToBeanBuilder;
 
 import java.io.*;
@@ -8,7 +9,12 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class SimpleMatchingEngine {
-    private static final String INPUT_ORDERS = "orders_basic_cross.csv";
+        private static final String INPUT_ORDERS = "orders_no_halted.csv";
+//    private static final String INPUT_ORDERS = "orders_tsla.csv";
+//    private static final String INPUT_ORDERS = "orders_50.csv";
+//    private static final String INPUT_ORDERS = "orders.csv";
+//    private static final String INPUT_ORDERS = "orders_large.csv";
+//    private static final String INPUT_ORDERS = "orders_basic_cross.csv";
     //    private static final String INPUT_ORDERS = "orders_apple2.csv";
 //    private static final String INPUT_ORDERS = "orders_apple.csv";
     private static final String INPUT_SYMBOLS = "symbols.csv";
@@ -25,7 +31,7 @@ public class SimpleMatchingEngine {
 
         createOutputFiles();
         try (BufferedWriter bufferedWriterTrades = new BufferedWriter(new FileWriter(OUTPUT_DIR + OUTPUT_TRADES));
-
+             BufferedWriter bufferedWriterRejections = new BufferedWriter(new FileWriter(OUTPUT_DIR + OUTPUT_REJECTED));
              BufferedWriter bufferedWriterOrderBook = new BufferedWriter(new FileWriter(OUTPUT_DIR + OUTPUT_ORDERBOOK))) {
 
             Set<String> haltedSymbols = getHaltedSymbolsFromFile(INPUT_DIR + INPUT_SYMBOLS);
@@ -43,7 +49,7 @@ public class SimpleMatchingEngine {
             writeOrderBookToFile(bufferedWriterOrderBook, sellBook);
 
             //write rejected orders
-            writeRejectedOrders();
+            writeRejectedOrders(bufferedWriterRejections);
 
 
         } catch (IOException e) {
@@ -51,9 +57,8 @@ public class SimpleMatchingEngine {
         }
     }
 
-    private static void writeRejectedOrders() throws IOException {
+    private static void writeRejectedOrders(BufferedWriter bufferedWriterRejections) throws IOException {
         List<Order> rejectedOrders = matchingEngine.rejectedOrders;
-        BufferedWriter bufferedWriterRejections = new BufferedWriter(new FileWriter(OUTPUT_DIR + OUTPUT_REJECTED));
         for (Order ord : rejectedOrders) {
             System.out.println(ord.toString());
             bufferedWriterRejections.write(ord.toString() + "\n");
@@ -61,20 +66,23 @@ public class SimpleMatchingEngine {
     }
 
     private static void writeCrossedOrdersToFile(BufferedWriter bufferedWriterTrades) throws IOException {
-        String msg = "Matched Orders";
-        System.out.println(msg);
+        String msg = "Matched Trades";
+        //System.out.println(msg);
         bufferedWriterTrades.write(msg + "\n");
         Map<Order, Order> crossedOrders = Exchange.crossedOrders;
         for (Map.Entry<Order, Order> entry : crossedOrders.entrySet()) {
-            System.out.println(entry.getKey() + " " + entry.getValue());
+            //System.out.println(entry.getKey() + " " + entry.getValue());
             bufferedWriterTrades.write(entry.getKey() + "\n");
+            bufferedWriterTrades.write(entry.getValue() + "\n");
+
+
         }
     }
 
     private static void writeOrderBookToFile(BufferedWriter bufferedWriterOrderBook, OrderBook tradeBook) throws IOException {
         //bufferedWriterOrderBook.write("Unmatched Orders\n");
         for (Map.Entry<String, SortedMap<BigDecimal, List<Order>>> entry : tradeBook.getOrderBook().entrySet()) {
-            System.out.println(entry.getKey());
+            //System.out.println(entry.getKey());
             bufferedWriterOrderBook.write(entry.getKey() + "\n");
             SortedMap<BigDecimal, List<Order>> value = entry.getValue();
             for (BigDecimal price : value.keySet()) {
@@ -82,7 +90,7 @@ public class SimpleMatchingEngine {
                 while (orderIter.hasNext()) {
                     List<Order> next = orderIter.next();
                     for (Order ord : next) {
-                        System.out.println(ord.toString());
+                        //System.out.println(ord.toString());
                         bufferedWriterOrderBook.write(ord.toString() + "\n");
                     }
                 }
@@ -105,11 +113,49 @@ public class SimpleMatchingEngine {
     }
 
     private static List<Order> getOrderDataFromFile(String fileName) throws FileNotFoundException {
-        List beans = new CsvToBeanBuilder(new FileReader(fileName))
-                .withType(Order.class)
-                .build()
-                .parse();
-        return beans;
+//        List beans = new CsvToBeanBuilder(new FileReader(fileName))
+//                .withType(Order.class)
+//                .build()
+//                .parse();
+//        return beans;
+
+        List<Order> orders = new ArrayList<>();
+        BufferedReader fileReader = null;
+
+        //Delimiter used in CSV file
+        final String DELIMITER = ",";
+        try {
+            String line = "";
+            //Create the file reader
+            fileReader = new BufferedReader(new FileReader(fileName));
+
+            line = fileReader.readLine();
+            //Read the file line by line
+            while ((line = fileReader.readLine()) != null) {
+                //Get all tokens available in line
+                String[] tokens = line.split(DELIMITER);
+                if (Objects.equals(tokens[3], "")) {
+                    //tokens[3] = null;
+                    orders.add(new Order(tokens[0], tokens[1], tokens[2],  null, Long.valueOf(tokens[4])));
+                }
+                else{
+
+                    orders.add(new Order(tokens[0], tokens[1], tokens[2],  new BigDecimal(tokens[3]), Long.valueOf(tokens[4])));
+                }
+
+
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                fileReader.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+        return orders;
     }
 
     private static Set<String> getHaltedSymbolsFromFile(String fileName) throws IOException {

@@ -1,7 +1,8 @@
 symbol,side,type,price,timestamp
+AAPL,sell,market,130.98,1608917401
 AAPL,sell,limit,130.98,1608917401
-AAPL,sell,limit,130.98,1608917401
 AAPL,buy,limit,130.98,1608917401
 AAPL,buy,limit,130.98,1608917401
 AAPL,buy,limit,130.98,1608917401
 AAPL,buy,limit,130.98,1608917401
+AAPL,buy,limit,,1608917401
