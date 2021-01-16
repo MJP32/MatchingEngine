@@ -1,6 +1,6 @@
-# Foobar
+# Simple Matching Engine
 
-Foobar is a Python library for dealing with word pluralization.
+Simple Matching Engine is lightweight matching engine
 
 ## Installation
 
