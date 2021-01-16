@@ -1,19 +1,16 @@
 package matching;
 
-import com.opencsv.bean.CsvToBeanBuilder;
-
 import java.io.*;
 import java.math.BigDecimal;
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class SimpleMatchingEngine {
+    //    private static final String INPUT_ORDERS = "orders_basic_cross.csv";
     private static final String INPUT_ORDERS = "orders.csv";
     //        private static final String INPUT_ORDERS = "orders_no_halted.csv";
     //    private static final String INPUT_ORDERS = "orders_tsla.csv";
-//        private static final String INPUT_ORDERS = "orders_50.csv";
-//    private static final String INPUT_ORDERS = "orders_large.csv";
-//    private static final String INPUT_ORDERS = "orders_basic_cross.csv";
+    //        private static final String INPUT_ORDERS = "orders_50.csv";
+    //    private static final String INPUT_ORDERS = "orders_large.csv";
     //    private static final String INPUT_ORDERS = "orders_apple2.csv";
 //    private static final String INPUT_ORDERS = "orders_apple.csv";
     private static final String INPUT_SYMBOLS = "symbols.csv";
@@ -21,12 +18,12 @@ public class SimpleMatchingEngine {
     private static final String OUTPUT_REJECTED = "rejected.txt";
     private static final String OUTPUT_ORDERBOOK = "orderbook.txt";
 
-    private static final String OUTPUT_DIR = "output/results/";
+    private static final String OUTPUT_DIR = "output/results2/";
     private static final String INPUT_DIR = "input/";
     private static final Exchange matchingEngine = new Exchange();
 
     public static void main(String[] args) throws IOException {
-        System.out.println(" Matching Engine");
+        System.out.println("Matching Engine");
 
         createOutputFiles();
         try (BufferedWriter bufferedWriterTrades = new BufferedWriter(new FileWriter(OUTPUT_DIR + OUTPUT_TRADES));
@@ -39,18 +36,18 @@ public class SimpleMatchingEngine {
             matchingEngine.processTrades(orders, haltedSymbols);
 
             //matched trades
-            int crossedTrades = writeCrossedOrdersToFile(bufferedWriterTrades);
+            int numCrossedTrades = writeCrossedOrdersToFile(bufferedWriterTrades);
 
             //whats left on the books
             OrderBook buyBook = matchingEngine.getOrderBook("buy");
             OrderBook sellBook = matchingEngine.getOrderBook("sell");
-            int buyBookOrders = writeOrderBookToFile(bufferedWriterOrderBook, buyBook);
-            int sellBookOrders = writeOrderBookToFile(bufferedWriterOrderBook, sellBook);
+            int numBuyBookOrders = writeOrderBookToFile(bufferedWriterOrderBook, buyBook);
+            int numSellBookOrders = writeOrderBookToFile(bufferedWriterOrderBook, sellBook);
 
             //write rejected orders
-            int rejectedOrders = writeRejectedOrders(bufferedWriterRejections);
+            int numRejectedOrders = writeRejectedOrders(bufferedWriterRejections);
 
-            printSummary(crossedTrades, buyBookOrders, sellBookOrders, rejectedOrders);
+            printSummary(numCrossedTrades, numBuyBookOrders, numSellBookOrders, numRejectedOrders);
 
         } catch (IOException e) {
             System.err.println(e.toString());
@@ -129,16 +126,15 @@ public class SimpleMatchingEngine {
         file3.createNewFile();
     }
 
-    private static List<Order> getOrderDataFromFile(String fileName) throws FileNotFoundException {
+    private static List<Order> getOrderDataFromFile(String fileName) {
         List<Order> orders = new ArrayList<>();
         BufferedReader fileReader = null;
         final String DELIMITER = ",";
         try {
-            String line = "";
+            String line;
             fileReader = new BufferedReader(new FileReader(fileName));
-
             //skip first line
-            line = fileReader.readLine();
+            fileReader.readLine();
             while ((line = fileReader.readLine()) != null) {
                 String[] tokens = line.split(DELIMITER);
                 if (Objects.equals(tokens[3], "")) {
@@ -160,23 +156,33 @@ public class SimpleMatchingEngine {
         return orders;
     }
 
-    private static Set<String> getHaltedSymbolsFromFile(String fileName) throws IOException {
+    private static Set<String> getHaltedSymbolsFromFile(String fileName) {
         Set<String> haltedSymbols = new HashSet<>();
-        List<HaltedTrades> beans = new CsvToBeanBuilder(new FileReader(fileName))
-                .withType(HaltedTrades.class)
-                .build()
-                .parse();
-        //beans.forEach(k-> System.out.println(k.toString()));
-        List<HaltedTrades> result = beans.stream()                // convert list to stream
-                .filter(line -> "TRUE".equals(line.getIsHalted()))     // we dont like mkyong
-                .collect(Collectors.toList());
-        for (HaltedTrades ht : result) {
-            haltedSymbols.add(ht.getSymbol());
+        BufferedReader fileReader = null;
+        final String DELIMITER = ",";
+        try {
+            String line;
+            fileReader = new BufferedReader(new FileReader(fileName));
+            //skip first line
+            fileReader.readLine();
+            while ((line = fileReader.readLine()) != null) {
+                String[] tokens = line.split(DELIMITER);
+                if (tokens[1].equals("TRUE"))
+                    haltedSymbols.add(tokens[0]);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                assert fileReader != null;
+                fileReader.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
+        //haltedSymbols.forEach(System.out::println);
         return haltedSymbols;
     }
-
-
 }
 
 

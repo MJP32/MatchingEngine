@@ -5,7 +5,6 @@ import java.math.BigInteger;
 import java.util.*;
 
 public class OrderBook {
-
     String side;
     private final Map<String, SortedMap<BigDecimal, List<Order>>> orderBook = new HashMap<>();
     public Map<String, SortedMap<BigDecimal, List<Order>>> getOrderBook() {
@@ -21,32 +20,6 @@ public class OrderBook {
     public static OrderBook createOrderBook(String side){
         return new OrderBook(side);
     }
-    /*public void removeOrderFromBook(Order order, OrderBook orderBook, List<Order> value, BigInteger matchedTradeId) {
-        List<Order> orders;
-        BigDecimal price;
-        if (order.getType().equals("market")) {
-            price = new BigDecimal(0);
-        }
-        else{
-            price = order.getPrice();
-        }
-
-        printBook(orderBook.orderBook);
-        orders = orderBook.getOrderBook().get(order.getSymbol()).get(price);
-
-
-        if (orders.size() != 0)
-            orders.remove(0);
-
-        if (orderBook.getOrderBook().get(order.getSymbol()).get(price).size() == 0||orderBook.getOrderBook().get(order.getSymbol()).get(new BigDecimal(0)).size()==0) {
-            orderBook.getOrderBook().get(order.getSymbol()).remove(price);
-        }
-        if(orderBook.getOrderBook().get(order.getSymbol()).size() ==0){
-            orderBook.getOrderBook().remove(order.getSymbol());
-        }
-    }*/
-
-
 
     public void addToOrderBook(Order order) {
         BigDecimal price = order.getPrice();

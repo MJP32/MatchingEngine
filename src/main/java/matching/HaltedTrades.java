@@ -1,21 +1,22 @@
 package matching;
 
-import com.opencsv.bean.CsvBindByName;
+
 
 public class HaltedTrades {
-    @CsvBindByName
+
+
     private String symbol;
-
-    @CsvBindByName(column = "is_halted")
     private String isHalted;
-
-
     public String getSymbol() {
         return symbol;
     }
-
     public String getIsHalted() {
         return isHalted;
+    }
+
+    public HaltedTrades(String symbol, String isHalted) {
+        this.symbol = symbol;
+        this.isHalted = isHalted;
     }
 
     @Override

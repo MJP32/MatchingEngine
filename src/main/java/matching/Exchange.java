@@ -42,14 +42,65 @@ public class Exchange {
             BigDecimal key = entries.getKey();
             List<Order> value = entries.getValue();
             //System.out.println("key " + key);
-            if (getOrderToMatch(order, value, key)) {
+            if (findOrderToMatchAndRemoveFromBook2(order, value, key)) {
                 return true;
             }
         }
         return false;
     }
 
-    private boolean getOrderToMatch(Order orderToMatch, List<Order> value, BigDecimal key) {
+    private boolean findOrderToMatchAndRemoveFromBook2(Order orderToTrade, List<Order> value, BigDecimal key) {
+        String orderToMatchSide = orderToTrade.getSide();
+        String orderToMatchType = orderToTrade.getType();
+        for (Order orderFromBook : value) {
+            String orderFromBookSide = orderFromBook.getSide();
+            String orderFromBookType = orderFromBook.getType();
+
+            switch (orderFromBookType) {
+                case "limit":
+                    if (orderToMatchType.equals(orderFromBookType)) {
+                        BigDecimal orderToMatchPrice = orderToTrade.getPrice();
+                        BigDecimal orderFromBookPrice = getPriceAsBigDecimal(orderFromBook);
+                        if (orderToMatchSide.equals("buy")) {
+                            if (orderToMatchPrice.compareTo(orderFromBookPrice) >= 0) {
+                                if (canBeTradedThisSecond(orderToTrade)) {
+                                    MatchedOrders.put(orderToTrade, orderFromBook);
+                                    value.remove(orderFromBook);
+                                    return true;
+                                }
+                            }
+                        } else {
+                            if (orderToMatchPrice.compareTo(orderFromBookPrice) <= 0) {
+                                if (canBeTradedThisSecond(orderToTrade)) {
+                                    MatchedOrders.put(orderToTrade, orderFromBook);
+                                    value.remove(orderFromBook);
+                                    return true;
+                                }
+                            }
+                        }
+                    }
+                case "market":
+                    if (orderToMatchSide.equals("buy")) {
+                        if (canBeTradedThisSecond(orderToTrade)) {
+                            MatchedOrders.put(orderToTrade, orderFromBook);
+                            value.remove(orderFromBook);
+                            return true;
+                        }
+                    } else { // (orderToMatchSide.equals("buy")) {
+                        if (canBeTradedThisSecond(orderToTrade)) {
+                            MatchedOrders.put(orderToTrade, orderFromBook);
+                            value.remove(orderFromBook);
+                            return true;
+                        }
+                    }
+                    break;
+            }
+        }
+
+        return false;
+    }
+
+    private boolean findOrderToMatchAndRemoveFromBook(Order orderToMatch, List<Order> value, BigDecimal key) {
         String orderToMatchSide = orderToMatch.getSide();
         String orderToMatchType = orderToMatch.getType();
         for (Order orderFromBook : value) {
@@ -58,9 +109,6 @@ public class Exchange {
                 BigDecimal orderFromBookPrice = getPriceAsBigDecimal(orderFromBook);
                 if (orderToMatchSide.equals("buy")) {
                     if (orderToMatchPrice.compareTo(orderFromBookPrice) >= 0) {
-                        System.out.println("1. " + orderToMatch.getId() + " matches with  " + orderFromBook.getId());
-                        System.out.println("1. " + orderToMatchPrice + " ->  " + orderFromBookPrice);
-
                         if (canBeTradedThisSecond(orderToMatch)) {
                             MatchedOrders.put(orderToMatch, orderFromBook);
                             value.remove(orderFromBook);
@@ -68,9 +116,7 @@ public class Exchange {
                         }
                     }
                 } else {
-                    if (orderToMatchPrice.compareTo(orderFromBookPrice) <= 0 ) {
-                        System.out.println("2. " + orderToMatch.getId() + " matches with  " + orderFromBook.getId());
-                        System.out.println("2. " + orderToMatchPrice + " ->  " + orderFromBookPrice);
+                    if (orderToMatchPrice.compareTo(orderFromBookPrice) <= 0) {
                         if (canBeTradedThisSecond(orderToMatch)) {
                             MatchedOrders.put(orderToMatch, orderFromBook);
                             value.remove(orderFromBook);
@@ -80,7 +126,12 @@ public class Exchange {
                 }
             } else {
                 if (orderToMatchSide.equals("buy")) {
-                    System.out.println("3. " + orderToMatch.getId() + " matches with  " + orderFromBook.getId());
+                    if (canBeTradedThisSecond(orderToMatch)) {
+                        MatchedOrders.put(orderToMatch, orderFromBook);
+                        value.remove(orderFromBook);
+                        return true;
+                    }
+                } else { // (orderToMatchSide.equals("buy")) {
                     if (canBeTradedThisSecond(orderToMatch)) {
                         MatchedOrders.put(orderToMatch, orderFromBook);
                         value.remove(orderFromBook);

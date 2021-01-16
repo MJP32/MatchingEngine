@@ -6,18 +6,11 @@ import matching.OrderBook;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.jupiter.api.MethodOrderer;
-import org.junit.jupiter.api.TestMethodOrder;
 //import org.junit.jupiter.api.Order;
 //import org.junit.jupiter.api.Test;
 import java.math.BigDecimal;
 import java.util.*;
 
-
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class MatchTradesTest {
     Exchange exchange = new Exchange();
     List<Order> orders;

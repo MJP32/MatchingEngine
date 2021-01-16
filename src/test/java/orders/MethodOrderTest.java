@@ -2,22 +2,19 @@ package orders;
 import matching.Exchange;
 import matching.OrderBook;
 import org.junit.Assert;
-import org.junit.jupiter.api.MethodOrderer;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestMethodOrder;
+import org.junit.Test;
+
 
 import java.math.BigDecimal;
 import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+
 public class MethodOrderTest {
 
 
     @Test
-    @Order(1)
     void test2() {
         List<matching.Order> orders = new ArrayList<>();
         orders.add(new matching.Order("AAPL", "sell", "limit", new BigDecimal(130.99), (long) 1608917403));
@@ -36,7 +33,6 @@ public class MethodOrderTest {
 
 
     @Test
-    @Order(2)
     void test3() {
         List<matching.Order> orders = new ArrayList<>();
         orders.add(new matching.Order("AAPL", "buy", "market", null, (long) 1608917405));
@@ -58,7 +54,6 @@ public class MethodOrderTest {
     }
 
     @Test
-    @Order(3)
     void test1() {
         assertEquals(2, 1 + 1);
     }

@@ -74,7 +74,8 @@ public class CreateOrdersTest {
         }
         Assert.assertEquals(new BigDecimal(0), key);
         Assert.assertEquals(1, value.size());
-    }@Test
+    }
+    @Test
     public void createBuySellOrders_DoNotCross_Test() {
         List<Order> orders = new ArrayList<>();
         Exchange exchange = new Exchange();
