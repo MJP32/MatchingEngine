@@ -3,21 +3,28 @@
 Simple Matching Engine is lightweight matching engine
 
 ## Installation
-clone the project
-https://github.com/MJP32/MatchingEngine.git
+
 
 ```bash
-pip install foobar
+clone the project
+https://github.com/MJP32/MatchingEngine.git
 ```
 
 ## Usage
 
 ```python
-import foobar
+run SimpleMatchingEngine.java
 
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
+needs two input files
+- input/orders.csv
+- input/symbols.csv
+
+output will be in 
+- output/results/orderbook.txt
+- output/results/rejected.txt
+- output/results/trades.txt
+
+
 ```
 
 ## Contributing
