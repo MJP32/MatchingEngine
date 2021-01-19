@@ -4,20 +4,27 @@ Simple Matching Engine is lightweight matching engine
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
 ```bash
-pip install foobar
+clone the project
+https://github.com/MJP32/MatchingEngine.git
 ```
 
 ## Usage
 
-```python
-import foobar
+```
+run SimpleMatchingEngine.java
 
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
+needs two input files
+- input/orders.csv
+- input/symbols.csv
+
+output will be in 3 files
+- output/results/orderbook.txt
+- output/results/rejected.txt
+- output/results/trades.txt
+
+
 ```
 
 ## Contributing
