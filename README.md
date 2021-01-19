@@ -30,8 +30,6 @@ output will be in 3 files
 ```
 Read Input from stream
 Add more unit tests
-
-
 ```
 
 ## Contributing
