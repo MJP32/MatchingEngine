@@ -1,0 +1,9 @@
+Order{id=46405, symbol='AAPL', side='buy', type='limit', price=130.48, timeStamp=1608940799}
+Order{id=46408, symbol='AAPL', side='buy', type='limit', price=130.06, timeStamp=1608940800}
+Order{id=46396, symbol='TSLA', side='buy', type='limit', price=658.9, timeStamp=1608940796}
+Order{id=46389, symbol='AMZN', side='buy', type='limit', price=3170.56, timeStamp=1608940793}
+Order{id=46352, symbol='AMZN', side='buy', type='limit', price=3170.53, timeStamp=1608940776}
+Order{id=46329, symbol='AAPL', side='sell', type='limit', price=131.58, timeStamp=1608940766}
+Order{id=46297, symbol='AAPL', side='sell', type='limit', price=131.86, timeStamp=1608940751}
+Order{id=46289, symbol='TSLA', side='sell', type='limit', price=659.78, timeStamp=1608940746}
+Order{id=46154, symbol='TSLA', side='sell', type='limit', price=659.99, timeStamp=1608940673}
