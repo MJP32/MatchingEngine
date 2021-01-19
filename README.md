@@ -1,6 +1,6 @@
 # Simple Matching Engine
 
-Simple Matching Engine is lightweight matching engine
+Simple Matching Engine is a lightweight matching engine.  Matches up buy and sell orders for market/limit orders.
 
 ## Installation
 
@@ -13,7 +13,7 @@ https://github.com/MJP32/MatchingEngine.git
 ## Usage
 
 ```
-run SimpleMatchingEngine.java
+run matching/SimpleMatchingEngine.java
 
 needs two input files
 - input/orders.csv
@@ -25,6 +25,11 @@ output will be in 3 files
 - output/results/trades.txt
 
 
+```
+## Nice to add
+```
+Read Input from stream
+Add more unit tests
 ```
 
 ## Contributing
