@@ -5,20 +5,14 @@ import java.math.BigDecimal;
 import java.util.*;
 
 public class SimpleMatchingEngine {
-    //    private static final String INPUT_ORDERS = "orders_basic_cross.csv";
+
     private static final String INPUT_ORDERS = "orders.csv";
-    //        private static final String INPUT_ORDERS = "orders_no_halted.csv";
-    //    private static final String INPUT_ORDERS = "orders_tsla.csv";
-    //        private static final String INPUT_ORDERS = "orders_50.csv";
-    //    private static final String INPUT_ORDERS = "orders_large.csv";
-    //    private static final String INPUT_ORDERS = "orders_apple2.csv";
-//    private static final String INPUT_ORDERS = "orders_apple.csv";
     private static final String INPUT_SYMBOLS = "symbols.csv";
     private static final String OUTPUT_TRADES = "trades.txt";
     private static final String OUTPUT_REJECTED = "rejected.txt";
     private static final String OUTPUT_ORDERBOOK = "orderbook.txt";
 
-    private static final String OUTPUT_DIR = "output/results2/";
+    private static final String OUTPUT_DIR = "output/results/";
     private static final String INPUT_DIR = "input/";
     private static final Exchange matchingEngine = new Exchange();
 

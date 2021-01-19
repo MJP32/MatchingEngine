@@ -1,4 +1,4 @@
-package orders;
+package Test;
 
 import matching.Exchange;
 import matching.Order;
@@ -18,24 +18,7 @@ public class CreateOrdersTest {
     }
 
 
-    @Test
-    public void createMarketOrder_Test() {
-        List<Order> orders = new ArrayList<>();
-        Exchange exchange = new Exchange();
 
-        orders.add(new Order("AAPL", "buy", "market", null, (long) 1608917403));
-        exchange.processTrades(orders, new HashSet<>());
-        OrderBook buyOrderBook = exchange.getOrderBook("buy");
-        SortedMap<BigDecimal, List<Order>> map = buyOrderBook.getOrderBook().get(orders.get(0).getSymbol());
-        BigDecimal key = null;
-        List<Order> value = null;
-        for (Map.Entry<BigDecimal, List<Order>> entries : map.entrySet()) {
-            key = entries.getKey();
-            value = entries.getValue();
-        }
-        Assert.assertEquals(new BigDecimal(0), key);
-        Assert.assertEquals(1, value.size());
-    }
     @Test
     public void createLimitOrder_Test() {
         List<Order> orders = new ArrayList<>();
@@ -53,28 +36,7 @@ public class CreateOrdersTest {
         Assert.assertEquals(new BigDecimal(130.44), key);
         Assert.assertEquals(1, value.size());
     }
-    @Test
-    public void createOrders_DoNotCross_Test() {
-        List<Order> orders = new ArrayList<>();
-        Exchange exchange = new Exchange();
-        orders.add(new Order("AAPL", "buy", "market", null, (long) 1608917403));
-        orders.add(new Order("AAPL", "sell", "market", null, (long) 1608917403));
-        orders.add(new Order("AAPL", "buy", "market", null, (long) 1608917403));
-        orders.add(new Order("AAPL", "sell", "market", null, (long) 1608917403));
 
-        exchange.processTrades(orders, new HashSet<>());
-
-        OrderBook buyOrderBook = exchange.getOrderBook("buy");
-        SortedMap<BigDecimal, List<Order>> map = buyOrderBook.getOrderBook().get(orders.get(0).getSymbol());
-        BigDecimal key = null;
-        List<Order> value = null;
-        for (Map.Entry<BigDecimal, List<Order>> entries : map.entrySet()) {
-            key = entries.getKey();
-            value = entries.getValue();
-        }
-        Assert.assertEquals(new BigDecimal(0), key);
-        Assert.assertEquals(1, value.size());
-    }
     @Test
     public void createBuySellOrders_DoNotCross_Test() {
         List<Order> orders = new ArrayList<>();

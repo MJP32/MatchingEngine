@@ -37,40 +37,4 @@ public class OrderBook {
         orderBook.get(order.getSymbol()).putIfAbsent(price, new ArrayList<>());
         orderBook.get(order.getSymbol()).get(price).add(order);
     }
-
-    public void remove(Order orderToRemove, OrderBook book) {
-        BigDecimal price = Util.getPriceAsBigDecimal(orderToRemove);
-
-        if (book.getOrderBook().containsKey(orderToRemove.getSymbol())) {
-            SortedMap<BigDecimal, List<Order>> bigDecimalListSortedMap = book.getOrderBook().get(orderToRemove.getSymbol());
-            if (bigDecimalListSortedMap.containsKey(price)) {
-                List<Order> values = bigDecimalListSortedMap.get(price);
-
-                for (Order val : values) {
-                    if (val.getId() == orderToRemove.getId()) {
-                        values.remove(val);
-                    }
-                }
-            }
-        }
-    }
-
-    public static void printBook(Map<String, SortedMap<BigDecimal, List<Order>>> orderBook) {
-        for (Map.Entry<String, SortedMap<BigDecimal, List<Order>>> entry : orderBook.entrySet()) {
-            String key = entry.getKey();
-            SortedMap<BigDecimal, List<Order>> values = entry.getValue();
-            for (Map.Entry<BigDecimal, List<Order>> value : values.entrySet()) {
-                BigDecimal price = value.getKey();
-                List<Order> timeStamps = value.getValue();
-                timeStamps.sort(Comparator.comparing(Order::getTimeStamp));
-                StringBuilder timeStampsString = new StringBuilder();
-                for (Order ord : timeStamps) {
-                    StringBuilder append = timeStampsString.append(ord.getTimeStamp()).append(" ");
-                }
-                System.out.println(key + " " + price + " " + timeStampsString.toString());
-            }
-        }
-    }
-
-
 }

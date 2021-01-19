@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Simple Matching Engine"  preserve-order="true">
+    <test name="order">
+        <classes>
+            <class name="Test.RejectedOrdersTest" />
+            <class name="Test.TradeOrderTest" />
+            <class name="Test.CreateOrdersTest" />
+        </classes>
+    </test>
+
+</suite>

@@ -25,7 +25,6 @@ public class Exchange {
     public static final Map<Order, Order> matchedOrders = new HashMap<>();
     public List<Order> rejectedOrders = new LinkedList<>();
 
-
     public void processTrades(List<Order> orders, Set<String> haltedSymbols) {
         //process orders one at a time
         for (Order order : orders) {
@@ -52,7 +51,6 @@ public class Exchange {
             return false;
         }
         SortedMap<BigDecimal, List<Order>> map = orderBook.getOrderBook().get(order.getSymbol());
-
         for (Map.Entry<BigDecimal, List<Order>> entries : map.entrySet()) {
             BigDecimal key = entries.getKey();
             List<Order> value = entries.getValue();
@@ -67,12 +65,9 @@ public class Exchange {
         String orderToTradeSide = orderToTrade.getSide();
         String orderToTradeType = orderToTrade.getType();
         for (Order orderFromBook : value) {
-            String orderFromBookSide = orderFromBook.getSide();
             String orderFromBookType = orderFromBook.getType();
-
             switch (orderFromBookType) {
                 case "limit":
-                    //if (orderToTradeType.equals(orderFromBookType)) {
                     BigDecimal orderToMatchPrice = Util.getPriceAsBigDecimal(orderToTrade);
                     BigDecimal orderFromBookPrice = Util.getPriceAsBigDecimal(orderFromBook);
                     if (orderToTradeSide.equals("buy")) {
