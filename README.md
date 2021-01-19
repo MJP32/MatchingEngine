@@ -3,8 +3,8 @@
 Simple Matching Engine is lightweight matching engine
 
 ## Installation
-
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+clone the project
+https://github.com/MJP32/MatchingEngine.git
 
 ```bash
 pip install foobar
