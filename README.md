@@ -1,6 +1,6 @@
 # Simple Matching Engine
 
-Simple Matching Engine is lightweight matching engine
+Simple Matching Engine is a lightweight matching engine.  Matches up buy and sell orders for market/limit orders.
 
 ## Installation
 
