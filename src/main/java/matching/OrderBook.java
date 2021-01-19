@@ -7,17 +7,20 @@ import java.util.*;
 public class OrderBook {
     String side;
     private final Map<String, SortedMap<BigDecimal, List<Order>>> orderBook = new HashMap<>();
+
     public Map<String, SortedMap<BigDecimal, List<Order>>> getOrderBook() {
         return orderBook;
     }
+
     public OrderBook(String side) {
         this.side = side;
     }
-    public int getSize(){
+
+    public int getSize() {
         return orderBook.size();
     }
 
-    public static OrderBook createOrderBook(String side){
+    public static OrderBook createOrderBook(String side) {
         return new OrderBook(side);
     }
 
@@ -26,14 +29,30 @@ public class OrderBook {
         if (Objects.equals(price, null)) {
             price = BigDecimal.valueOf(0);
         }
-        if(order.getSide().equals("buy")) {
+        if (order.getSide().equals("buy")) {
             orderBook.putIfAbsent(order.getSymbol(), new TreeMap<>(Comparator.reverseOrder()));
-        }
-        else{
+        } else {
             orderBook.putIfAbsent(order.getSymbol(), new TreeMap<>());
         }
         orderBook.get(order.getSymbol()).putIfAbsent(price, new ArrayList<>());
         orderBook.get(order.getSymbol()).get(price).add(order);
+    }
+
+    public void remove(Order orderToRemove, OrderBook book) {
+        BigDecimal price = Util.getPriceAsBigDecimal(orderToRemove);
+
+        if (book.getOrderBook().containsKey(orderToRemove.getSymbol())) {
+            SortedMap<BigDecimal, List<Order>> bigDecimalListSortedMap = book.getOrderBook().get(orderToRemove.getSymbol());
+            if (bigDecimalListSortedMap.containsKey(price)) {
+                List<Order> values = bigDecimalListSortedMap.get(price);
+
+                for (Order val : values) {
+                    if (val.getId() == orderToRemove.getId()) {
+                        values.remove(val);
+                    }
+                }
+            }
+        }
     }
 
     public static void printBook(Map<String, SortedMap<BigDecimal, List<Order>>> orderBook) {
@@ -52,4 +71,6 @@ public class OrderBook {
             }
         }
     }
+
+
 }

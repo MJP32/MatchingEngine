@@ -81,7 +81,7 @@ public class SimpleMatchingEngine {
         String msg = "Matched Trades";
         //System.out.println(msg);
         bufferedWriterTrades.write(msg + "\n");
-        Map<Order, Order> crossedOrders = Exchange.MatchedOrders;
+        Map<Order, Order> crossedOrders = Exchange.matchedOrders;
         for (Map.Entry<Order, Order> entry : crossedOrders.entrySet()) {
             count++;
             //System.out.println(entry.getKey() + " " + entry.getValue());

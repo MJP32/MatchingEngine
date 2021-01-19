@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 import java.math.BigInteger;
 
 public class Order {
-    private BigInteger id;
+    private int id;
     private String symbol;
     private String side;
     private String type;
@@ -44,7 +44,7 @@ public class Order {
         return timeStamp;
     }
 
-    public BigInteger getId() {
+    public int getId() {
         return id;
     }
 

@@ -2,14 +2,13 @@ package Test2;
 
 import matching.Exchange;
 import matching.Order;
-import matching.OrderBook;
 import org.junit.Assert;
 import org.testng.annotations.Test;
 
 import java.math.BigDecimal;
 import java.util.*;
 
-public class App {
+public class TradeTest {
     Exchange exchange = new Exchange();
     List<Order> orders;
     //This test will be failed.
@@ -27,7 +26,7 @@ public class App {
         orders.add(new Order("AAPL", "sell", "market", null, (long) 1608917405));
         orders.add(new Order("AAPL", "buy", "market", null, (long) 1608917405));
         exchange.processTrades(orders, new HashSet<>());
-        Map<Order, Order> crossedOrders = Exchange.MatchedOrders;
+        Map<Order, Order> crossedOrders = Exchange.matchedOrders;
         Assert.assertEquals(5, crossedOrders.size());
 
 

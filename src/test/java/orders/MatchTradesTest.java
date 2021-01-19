@@ -33,7 +33,7 @@ public class MatchTradesTest {
         orders.add(new Order("AAPL", "buy", "market", null, (long) 1608917405));
         orders.add(new Order("AAPL", "buy", "market", null, (long) 1608917405));
         exchange.processTrades(orders, new HashSet<>());
-        Map<Order, Order> crossedOrders = Exchange.MatchedOrders;
+        Map<Order, Order> crossedOrders = Exchange.matchedOrders;
         Assert.assertEquals(8, crossedOrders.size());
 
         OrderBook buyOrderBook = exchange.getOrderBook("buy");

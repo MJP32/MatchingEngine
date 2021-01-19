@@ -27,7 +27,7 @@ public class MethodOrderTest {
         orders.add(new matching.Order("AAPL", "buy", "market", null, (long) 1608917405));
         Exchange exchange = new Exchange();
         exchange.processTrades(orders, new HashSet<>());
-        Map<matching.Order, matching.Order> crossedOrders = Exchange.MatchedOrders;
+        Map<matching.Order, matching.Order> crossedOrders = Exchange.matchedOrders;
         Assert.assertEquals(4, crossedOrders.size());
     }
 
