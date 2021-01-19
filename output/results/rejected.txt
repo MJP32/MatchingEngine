@@ -302,7 +302,6 @@ Order{id=576, symbol='GOOG', side='buy', type='limit', price=1733.63, timeStamp=
 Order{id=579, symbol='GOOG', side='buy', type='limit', price=1732.95, timeStamp=1608917703}
 Order{id=580, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608917704}
 Order{id=581, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608917704}
-Order{id=582, symbol='AAPL', side='sell', type='market', price=131.57, timeStamp=1608917705}
 Order{id=584, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608917706}
 Order{id=586, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608917707}
 Order{id=588, symbol='FB', side='sell', type='limit', price=265.19, timeStamp=1608917708}
@@ -384,6 +383,7 @@ Order{id=714, symbol='FB', side='sell', type='limit', price=265.76, timeStamp=16
 Order{id=716, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608917769}
 Order{id=723, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608917772}
 Order{id=724, symbol='FB', side='buy', type='limit', price=265.4, timeStamp=1608917772}
+Order{id=725, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608917772}
 Order{id=726, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608917773}
 Order{id=728, symbol='FB', side='sell', type='market', price=265.46, timeStamp=1608917773}
 Order{id=730, symbol='GOOG', side='buy', type='limit', price=1732.06, timeStamp=1608917775}
@@ -444,7 +444,6 @@ Order{id=814, symbol='TSLA', side='buy', type='market', price=659.95, timeStamp=
 Order{id=815, symbol='FB', side='sell', type='limit', price=265.48, timeStamp=1608917813}
 Order{id=817, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608917815}
 Order{id=820, symbol='GOOG', side='buy', type='limit', price=1733.88, timeStamp=1608917816}
-Order{id=821, symbol='AAPL', side='sell', type='market', price=130.95, timeStamp=1608917816}
 Order{id=824, symbol='FB', side='sell', type='limit', price=266.13, timeStamp=1608917818}
 Order{id=826, symbol='AAPL', side='sell', type='limit', price=null, timeStamp=1608917819}
 Order{id=827, symbol='FB', side='sell', type='limit', price=null, timeStamp=1608917820}
@@ -480,6 +479,7 @@ Order{id=877, symbol='TSLA', side='buy', type='market', price=null, timeStamp=16
 Order{id=878, symbol='FB', side='sell', type='limit', price=265.7, timeStamp=1608917845}
 Order{id=879, symbol='GOOG', side='buy', type='limit', price=1733.72, timeStamp=1608917845}
 Order{id=880, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608917846}
+Order{id=884, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608917847}
 Order{id=885, symbol='GOOG', side='buy', type='limit', price=1732.03, timeStamp=1608917848}
 Order{id=888, symbol='GOOG', side='sell', type='limit', price=1733.86, timeStamp=1608917849}
 Order{id=890, symbol='GOOG', side='sell', type='limit', price=1733.43, timeStamp=1608917851}
@@ -1100,7 +1100,6 @@ Order{id=1972, symbol='FB', side='buy', type='limit', price=265.22, timeStamp=16
 Order{id=1974, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608918401}
 Order{id=1975, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608918402}
 Order{id=1979, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608918403}
-Order{id=1980, symbol='AAPL', side='sell', type='market', price=131.07, timeStamp=1608918404}
 Order{id=1982, symbol='GOOG', side='sell', type='limit', price=1733.41, timeStamp=1608918404}
 Order{id=1983, symbol='FB', side='buy', type='market', price=null, timeStamp=1608918405}
 Order{id=1985, symbol='FB', side='sell', type='limit', price=265.74, timeStamp=1608918405}
@@ -1241,7 +1240,6 @@ Order{id=2232, symbol='AMZN', side='sell', type='market', price=null, timeStamp=
 Order{id=2233, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608918538}
 Order{id=2235, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608918538}
 Order{id=2236, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608918539}
-Order{id=2237, symbol='TSLA', side='sell', type='market', price=659.4, timeStamp=1608918540}
 Order{id=2238, symbol='FB', side='sell', type='limit', price=266.5, timeStamp=1608918540}
 Order{id=2239, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608918541}
 Order{id=2241, symbol='FB', side='buy', type='limit', price=265.48, timeStamp=1608918542}
@@ -1252,6 +1250,7 @@ Order{id=2250, symbol='FB', side='sell', type='market', price=null, timeStamp=16
 Order{id=2252, symbol='FB', side='sell', type='limit', price=265.02, timeStamp=1608918547}
 Order{id=2254, symbol='FB', side='sell', type='limit', price=266.52, timeStamp=1608918547}
 Order{id=2255, symbol='FB', side='sell', type='market', price=null, timeStamp=1608918548}
+Order{id=2258, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608918549}
 Order{id=2259, symbol='FB', side='buy', type='limit', price=266.49, timeStamp=1608918550}
 Order{id=2260, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608918551}
 Order{id=2262, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608918552}
@@ -1294,7 +1293,6 @@ Order{id=2322, symbol='FB', side='buy', type='limit', price=265.56, timeStamp=16
 Order{id=2323, symbol='GOOG', side='buy', type='limit', price=1732.88, timeStamp=1608918581}
 Order{id=2324, symbol='FB', side='sell', type='limit', price=265.7, timeStamp=1608918582}
 Order{id=2327, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608918584}
-Order{id=2330, symbol='TSLA', side='sell', type='market', price=658.6, timeStamp=1608918585}
 Order{id=2332, symbol='FB', side='buy', type='limit', price=265.32, timeStamp=1608918587}
 Order{id=2333, symbol='FB', side='sell', type='limit', price=265.9, timeStamp=1608918587}
 Order{id=2335, symbol='GOOG', side='buy', type='limit', price=1733.21, timeStamp=1608918588}
@@ -1318,6 +1316,7 @@ Order{id=2360, symbol='GOOG', side='buy', type='limit', price=1732.61, timeStamp
 Order{id=2361, symbol='FB', side='sell', type='limit', price=266.44, timeStamp=1608918601}
 Order{id=2364, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608918602}
 Order{id=2365, symbol='FB', side='buy', type='market', price=null, timeStamp=1608918602}
+Order{id=2367, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608918603}
 Order{id=2371, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608918605}
 Order{id=2374, symbol='FB', side='buy', type='market', price=null, timeStamp=1608918607}
 Order{id=2375, symbol='GOOG', side='buy', type='limit', price=1733.06, timeStamp=1608918607}
@@ -1334,7 +1333,6 @@ Order{id=2396, symbol='FB', side='sell', type='limit', price=265.2, timeStamp=16
 Order{id=2397, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608918620}
 Order{id=2399, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608918621}
 Order{id=2400, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608918622}
-Order{id=2404, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608918624}
 Order{id=2405, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608918625}
 Order{id=2406, symbol='FB', side='sell', type='limit', price=265.54, timeStamp=1608918625}
 Order{id=2407, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608918626}
@@ -1479,11 +1477,11 @@ Order{id=2666, symbol='GOOG', side='sell', type='limit', price=1733.25, timeStam
 Order{id=2667, symbol='FB', side='sell', type='market', price=null, timeStamp=1608918757}
 Order{id=2668, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608918758}
 Order{id=2670, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608918759}
-Order{id=2672, symbol='AMZN', side='sell', type='market', price=3171.44, timeStamp=1608918759}
 Order{id=2674, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608918760}
 Order{id=2676, symbol='FB', side='sell', type='limit', price=266.16, timeStamp=1608918761}
 Order{id=2677, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608918761}
 Order{id=2678, symbol='FB', side='sell', type='market', price=null, timeStamp=1608918762}
+Order{id=2679, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608918762}
 Order{id=2687, symbol='FB', side='buy', type='limit', price=265.49, timeStamp=1608918766}
 Order{id=2689, symbol='GOOG', side='sell', type='limit', price=1733.06, timeStamp=1608918767}
 Order{id=2690, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608918767}
@@ -1624,7 +1622,6 @@ Order{id=2934, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1
 Order{id=2936, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608918897}
 Order{id=2939, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608918899}
 Order{id=2941, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608918899}
-Order{id=2943, symbol='AMZN', side='sell', type='market', price=3170.9, timeStamp=1608918900}
 Order{id=2946, symbol='FB', side='sell', type='limit', price=265.77, timeStamp=1608918901}
 Order{id=2947, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608918902}
 Order{id=2949, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608918903}
@@ -1633,6 +1630,7 @@ Order{id=2951, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1
 Order{id=2953, symbol='FB', side='sell', type='market', price=null, timeStamp=1608918905}
 Order{id=2954, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608918905}
 Order{id=2955, symbol='FB', side='sell', type='market', price=266.57, timeStamp=1608918905}
+Order{id=2956, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608918906}
 Order{id=2961, symbol='GOOG', side='sell', type='limit', price=1733.94, timeStamp=1608918908}
 Order{id=2966, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608918909}
 Order{id=2967, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608918910}
@@ -2084,7 +2082,6 @@ Order{id=3780, symbol='GOOG', side='sell', type='market', price=null, timeStamp=
 Order{id=3781, symbol='FB', side='sell', type='market', price=null, timeStamp=1608919319}
 Order{id=3782, symbol='FB', side='buy', type='market', price=null, timeStamp=1608919319}
 Order{id=3784, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608919320}
-Order{id=3785, symbol='AAPL', side='sell', type='market', price=131.82, timeStamp=1608919321}
 Order{id=3786, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608919322}
 Order{id=3787, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608919323}
 Order{id=3788, symbol='FB', side='sell', type='limit', price=265.8, timeStamp=1608919323}
@@ -2092,14 +2089,12 @@ Order{id=3791, symbol='FB', side='sell', type='market', price=null, timeStamp=16
 Order{id=3792, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608919325}
 Order{id=3793, symbol='FB', side='sell', type='limit', price=265.69, timeStamp=1608919326}
 Order{id=3794, symbol='GOOG', side='buy', type='limit', price=1733.71, timeStamp=1608919326}
-Order{id=3795, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608919326}
 Order{id=3796, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608919326}
 Order{id=3797, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608919327}
 Order{id=3798, symbol='GOOG', side='buy', type='market', price=1733.29, timeStamp=1608919328}
 Order{id=3799, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608919328}
 Order{id=3800, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608919329}
 Order{id=3802, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608919330}
-Order{id=3807, symbol='AAPL', side='sell', type='market', price=131.81, timeStamp=1608919333}
 Order{id=3808, symbol='FB', side='sell', type='market', price=null, timeStamp=1608919333}
 Order{id=3809, symbol='GOOG', side='sell', type='market', price=1733.95, timeStamp=1608919333}
 Order{id=3810, symbol='FB', side='sell', type='limit', price=266.41, timeStamp=1608919334}
@@ -2128,6 +2123,7 @@ Order{id=3855, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1
 Order{id=3858, symbol='FB', side='buy', type='limit', price=266.75, timeStamp=1608919361}
 Order{id=3859, symbol='FB', side='buy', type='market', price=null, timeStamp=1608919362}
 Order{id=3861, symbol='FB', side='sell', type='limit', price=265.29, timeStamp=1608919363}
+Order{id=3864, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608919365}
 Order{id=3866, symbol='FB', side='sell', type='market', price=null, timeStamp=1608919366}
 Order{id=3867, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608919367}
 Order{id=3871, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608919369}
@@ -2372,7 +2368,6 @@ Order{id=4276, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1
 Order{id=4277, symbol='FB', side='sell', type='market', price=null, timeStamp=1608919575}
 Order{id=4278, symbol='FB', side='sell', type='market', price=null, timeStamp=1608919576}
 Order{id=4283, symbol='FB', side='buy', type='limit', price=265.9, timeStamp=1608919578}
-Order{id=4285, symbol='TSLA', side='sell', type='market', price=659.75, timeStamp=1608919580}
 Order{id=4286, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608919580}
 Order{id=4290, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608919583}
 Order{id=4293, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608919584}
@@ -2454,12 +2449,12 @@ Order{id=4447, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1
 Order{id=4449, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608919665}
 Order{id=4451, symbol='GOOG', side='buy', type='limit', price=1732.75, timeStamp=1608919666}
 Order{id=4453, symbol='FB', side='sell', type='market', price=null, timeStamp=1608919667}
-Order{id=4454, symbol='AAPL', side='sell', type='market', price=131.79, timeStamp=1608919667}
 Order{id=4455, symbol='FB', side='sell', type='limit', price=266.05, timeStamp=1608919668}
 Order{id=4457, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608919669}
 Order{id=4458, symbol='FB', side='buy', type='limit', price=266.39, timeStamp=1608919670}
 Order{id=4466, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608919673}
 Order{id=4470, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608919675}
+Order{id=4474, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608919677}
 Order{id=4475, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608919678}
 Order{id=4476, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608919678}
 Order{id=4477, symbol='GOOG', side='sell', type='limit', price=1733.64, timeStamp=1608919678}
@@ -2488,7 +2483,6 @@ Order{id=4519, symbol='GOOG', side='sell', type='limit', price=1732.74, timeStam
 Order{id=4523, symbol='FB', side='buy', type='limit', price=null, timeStamp=1608919703}
 Order{id=4524, symbol='FB', side='buy', type='limit', price=265.01, timeStamp=1608919703}
 Order{id=4526, symbol='FB', side='sell', type='limit', price=266.17, timeStamp=1608919704}
-Order{id=4527, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608919705}
 Order{id=4528, symbol='GOOG', side='buy', type='limit', price=1733.35, timeStamp=1608919706}
 Order{id=4530, symbol='FB', side='buy', type='market', price=null, timeStamp=1608919707}
 Order{id=4531, symbol='GOOG', side='sell', type='limit', price=1732.04, timeStamp=1608919708}
@@ -2609,7 +2603,6 @@ Order{id=4753, symbol='GOOG', side='buy', type='limit', price=null, timeStamp=16
 Order{id=4756, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608919821}
 Order{id=4759, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608919822}
 Order{id=4760, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608919823}
-Order{id=4761, symbol='AMZN', side='sell', type='market', price=3170.73, timeStamp=1608919823}
 Order{id=4762, symbol='FB', side='buy', type='market', price=null, timeStamp=1608919823}
 Order{id=4763, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608919824}
 Order{id=4766, symbol='GOOG', side='buy', type='limit', price=1732.65, timeStamp=1608919825}
@@ -2661,6 +2654,7 @@ Order{id=4837, symbol='GOOG', side='buy', type='limit', price=1733.14, timeStamp
 Order{id=4838, symbol='GOOG', side='buy', type='limit', price=1733.71, timeStamp=1608919859}
 Order{id=4839, symbol='FB', side='sell', type='limit', price=265.09, timeStamp=1608919860}
 Order{id=4840, symbol='GOOG', side='sell', type='limit', price=1732.74, timeStamp=1608919860}
+Order{id=4841, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608919860}
 Order{id=4842, symbol='GOOG', side='sell', type='limit', price=1732.03, timeStamp=1608919861}
 Order{id=4844, symbol='GOOG', side='sell', type='limit', price=1732.78, timeStamp=1608919862}
 Order{id=4847, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608919864}
@@ -2777,7 +2771,6 @@ Order{id=5062, symbol='FB', side='buy', type='limit', price=266.04, timeStamp=16
 Order{id=5063, symbol='GOOG', side='buy', type='limit', price=1732.25, timeStamp=1608919966}
 Order{id=5064, symbol='GOOG', side='buy', type='limit', price=1732.43, timeStamp=1608919967}
 Order{id=5065, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608919967}
-Order{id=5066, symbol='AMZN', side='sell', type='market', price=3171.4, timeStamp=1608919968}
 Order{id=5067, symbol='TSLA', side='sell', type='market', price=659.35, timeStamp=1608919968}
 Order{id=5070, symbol='FB', side='sell', type='limit', price=266.79, timeStamp=1608919969}
 Order{id=5071, symbol='FB', side='buy', type='limit', price=266.87, timeStamp=1608919970}
@@ -2797,6 +2790,7 @@ Order{id=5103, symbol='GOOG', side='buy', type='limit', price=1733.3, timeStamp=
 Order{id=5104, symbol='FB', side='buy', type='market', price=null, timeStamp=1608919986}
 Order{id=5105, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608919987}
 Order{id=5106, symbol='GOOG', side='buy', type='limit', price=1732.6, timeStamp=1608919987}
+Order{id=5108, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608919988}
 Order{id=5110, symbol='GOOG', side='sell', type='limit', price=1733.82, timeStamp=1608919989}
 Order{id=5111, symbol='GOOG', side='sell', type='limit', price=1732.33, timeStamp=1608919990}
 Order{id=5114, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608919992}
@@ -2904,7 +2898,6 @@ Order{id=5299, symbol='FB', side='sell', type='market', price=null, timeStamp=16
 Order{id=5306, symbol='GOOG', side='sell', type='limit', price=1733.01, timeStamp=1608920094}
 Order{id=5307, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608920094}
 Order{id=5308, symbol='FB', side='sell', type='limit', price=265.54, timeStamp=1608920094}
-Order{id=5312, symbol='AAPL', side='sell', type='market', price=130.26, timeStamp=1608920096}
 Order{id=5313, symbol='GOOG', side='sell', type='limit', price=1732.55, timeStamp=1608920096}
 Order{id=5316, symbol='FB', side='buy', type='limit', price=266.28, timeStamp=1608920097}
 Order{id=5317, symbol='FB', side='buy', type='limit', price=265.91, timeStamp=1608920098}
@@ -2964,6 +2957,7 @@ Order{id=5425, symbol='FB', side='buy', type='limit', price=265.56, timeStamp=16
 Order{id=5430, symbol='GOOG', side='sell', type='limit', price=1733.84, timeStamp=1608920153}
 Order{id=5431, symbol='GOOG', side='sell', type='limit', price=1732.09, timeStamp=1608920153}
 Order{id=5436, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608920156}
+Order{id=5438, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608920157}
 Order{id=5440, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608920158}
 Order{id=5443, symbol='FB', side='buy', type='market', price=null, timeStamp=1608920160}
 Order{id=5446, symbol='FB', side='sell', type='limit', price=265, timeStamp=1608920162}
@@ -3128,7 +3122,6 @@ Order{id=5710, symbol='AMZN', side='sell', type='market', price=null, timeStamp=
 Order{id=5711, symbol='FB', side='buy', type='market', price=null, timeStamp=1608920294}
 Order{id=5712, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608920294}
 Order{id=5715, symbol='FB', side='sell', type='market', price=null, timeStamp=1608920296}
-Order{id=5717, symbol='AAPL', side='sell', type='market', price=131.9, timeStamp=1608920297}
 Order{id=5720, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608920297}
 Order{id=5721, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608920298}
 Order{id=5723, symbol='GOOG', side='buy', type='limit', price=1732.32, timeStamp=1608920298}
@@ -3272,20 +3265,19 @@ Order{id=5962, symbol='GOOG', side='buy', type='limit', price=1732.58, timeStamp
 Order{id=5965, symbol='FB', side='buy', type='limit', price=265.61, timeStamp=1608920417}
 Order{id=5967, symbol='GOOG', side='buy', type='limit', price=1733.23, timeStamp=1608920418}
 Order{id=5968, symbol='FB', side='sell', type='market', price=null, timeStamp=1608920419}
-Order{id=5971, symbol='TSLA', side='sell', type='market', price=659.16, timeStamp=1608920421}
 Order{id=5974, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608920423}
 Order{id=5975, symbol='GOOG', side='sell', type='limit', price=1732.68, timeStamp=1608920423}
 Order{id=5976, symbol='FB', side='sell', type='limit', price=265.35, timeStamp=1608920423}
 Order{id=5977, symbol='FB', side='buy', type='market', price=null, timeStamp=1608920424}
 Order{id=5980, symbol='FB', side='sell', type='limit', price=265.69, timeStamp=1608920426}
 Order{id=5982, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608920427}
+Order{id=5985, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608920427}
 Order{id=5987, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608920428}
 Order{id=5989, symbol='FB', side='buy', type='limit', price=266.65, timeStamp=1608920429}
 Order{id=5990, symbol='FB', side='buy', type='market', price=null, timeStamp=1608920430}
 Order{id=5992, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608920431}
 Order{id=5993, symbol='GOOG', side='buy', type='limit', price=1732.32, timeStamp=1608920431}
 Order{id=5994, symbol='FB', side='sell', type='market', price=null, timeStamp=1608920432}
-Order{id=5996, symbol='AAPL', side='sell', type='market', price=130.98, timeStamp=1608920433}
 Order{id=5998, symbol='GOOG', side='buy', type='limit', price=1732.24, timeStamp=1608920434}
 Order{id=6001, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608920435}
 Order{id=6002, symbol='GOOG', side='buy', type='limit', price=1733.8, timeStamp=1608920436}
@@ -3336,7 +3328,9 @@ Order{id=6090, symbol='FB', side='buy', type='market', price=null, timeStamp=160
 Order{id=6092, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608920478}
 Order{id=6093, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608920479}
 Order{id=6094, symbol='AMZN', side='sell', type='market', price=3171.3, timeStamp=1608920480}
+Order{id=6096, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608920481}
 Order{id=6097, symbol='GOOG', side='buy', type='limit', price=1732.88, timeStamp=1608920481}
+Order{id=6098, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608920481}
 Order{id=6099, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608920482}
 Order{id=6100, symbol='FB', side='buy', type='market', price=null, timeStamp=1608920483}
 Order{id=6101, symbol='GOOG', side='buy', type='market', price=1732.93, timeStamp=1608920483}
@@ -3420,7 +3414,6 @@ Order{id=6254, symbol='FB', side='sell', type='market', price=null, timeStamp=16
 Order{id=6256, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608920563}
 Order{id=6257, symbol='GOOG', side='sell', type='limit', price=1732.35, timeStamp=1608920563}
 Order{id=6258, symbol='GOOG', side='buy', type='limit', price=1733.03, timeStamp=1608920563}
-Order{id=6259, symbol='TSLA', side='sell', type='market', price=659.7, timeStamp=1608920564}
 Order{id=6261, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608920565}
 Order{id=6262, symbol='FB', side='sell', type='market', price=null, timeStamp=1608920565}
 Order{id=6263, symbol='FB', side='buy', type='market', price=265.48, timeStamp=1608920565}
@@ -3430,6 +3423,7 @@ Order{id=6268, symbol='GOOG', side='sell', type='limit', price=1732.29, timeStam
 Order{id=6270, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608920569}
 Order{id=6271, symbol='AAPL', side='sell', type='market', price=131.14, timeStamp=1608920569}
 Order{id=6273, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608920570}
+Order{id=6274, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608920570}
 Order{id=6275, symbol='GOOG', side='buy', type='limit', price=1732.62, timeStamp=1608920571}
 Order{id=6276, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608920572}
 Order{id=6278, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608920572}
@@ -3451,7 +3445,6 @@ Order{id=6300, symbol='TSLA', side='sell', type='market', price=null, timeStamp=
 Order{id=6301, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608920584}
 Order{id=6304, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608920585}
 Order{id=6305, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608920585}
-Order{id=6306, symbol='AMZN', side='sell', type='market', price=3171.55, timeStamp=1608920586}
 Order{id=6307, symbol='FB', side='buy', type='market', price=null, timeStamp=1608920587}
 Order{id=6308, symbol='GOOG', side='buy', type='limit', price=1732.33, timeStamp=1608920587}
 Order{id=6309, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608920588}
@@ -3472,11 +3465,11 @@ Order{id=6338, symbol='AAPL', side='sell', type='market', price=null, timeStamp=
 Order{id=6341, symbol='FB', side='sell', type='market', price=null, timeStamp=1608920606}
 Order{id=6343, symbol='FB', side='sell', type='limit', price=265.1, timeStamp=1608920608}
 Order{id=6344, symbol='FB', side='sell', type='limit', price=265.49, timeStamp=1608920608}
-Order{id=6346, symbol='AAPL', side='sell', type='market', price=130.37, timeStamp=1608920610}
 Order{id=6349, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608920610}
 Order{id=6351, symbol='FB', side='buy', type='limit', price=265.03, timeStamp=1608920611}
 Order{id=6353, symbol='FB', side='buy', type='limit', price=266.98, timeStamp=1608920612}
 Order{id=6354, symbol='FB', side='buy', type='limit', price=265.24, timeStamp=1608920612}
+Order{id=6355, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608920612}
 Order{id=6357, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608920613}
 Order{id=6358, symbol='GOOG', side='sell', type='limit', price=1733.98, timeStamp=1608920613}
 Order{id=6359, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608920614}
@@ -3532,6 +3525,7 @@ Order{id=6459, symbol='GOOG', side='buy', type='limit', price=1733.61, timeStamp
 Order{id=6460, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608920666}
 Order{id=6461, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608920667}
 Order{id=6462, symbol='FB', side='sell', type='limit', price=null, timeStamp=1608920668}
+Order{id=6463, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608920668}
 Order{id=6469, symbol='FB', side='sell', type='limit', price=265.76, timeStamp=1608920671}
 Order{id=6471, symbol='GOOG', side='buy', type='limit', price=1732.82, timeStamp=1608920672}
 Order{id=6472, symbol='GOOG', side='sell', type='limit', price=null, timeStamp=1608920673}
@@ -3975,7 +3969,6 @@ Order{id=7184, symbol='GOOG', side='buy', type='limit', price=1732.09, timeStamp
 Order{id=7185, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608921041}
 Order{id=7187, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608921042}
 Order{id=7188, symbol='GOOG', side='sell', type='limit', price=1732.38, timeStamp=1608921042}
-Order{id=7189, symbol='TSLA', side='sell', type='market', price=658.34, timeStamp=1608921043}
 Order{id=7191, symbol='FB', side='buy', type='limit', price=266.36, timeStamp=1608921045}
 Order{id=7193, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608921046}
 Order{id=7198, symbol='FB', side='buy', type='market', price=null, timeStamp=1608921049}
@@ -4012,7 +4005,6 @@ Order{id=7260, symbol='TSLA', side='sell', type='limit', price=null, timeStamp=1
 Order{id=7261, symbol='FB', side='sell', type='market', price=null, timeStamp=1608921084}
 Order{id=7262, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608921084}
 Order{id=7264, symbol='GOOG', side='sell', type='limit', price=1733.38, timeStamp=1608921085}
-Order{id=7265, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608921086}
 Order{id=7266, symbol='FB', side='sell', type='limit', price=266.24, timeStamp=1608921086}
 Order{id=7267, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608921087}
 Order{id=7269, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608921088}
@@ -4119,7 +4111,6 @@ Order{id=7475, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1
 Order{id=7477, symbol='GOOG', side='buy', type='limit', price=1733.23, timeStamp=1608921193}
 Order{id=7478, symbol='FB', side='buy', type='limit', price=266.18, timeStamp=1608921194}
 Order{id=7479, symbol='FB', side='buy', type='market', price=null, timeStamp=1608921194}
-Order{id=7483, symbol='AMZN', side='sell', type='market', price=3170.88, timeStamp=1608921196}
 Order{id=7484, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608921196}
 Order{id=7485, symbol='FB', side='sell', type='market', price=null, timeStamp=1608921197}
 Order{id=7486, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608921198}
@@ -4133,6 +4124,7 @@ Order{id=7494, symbol='AAPL', side='sell', type='market', price=null, timeStamp=
 Order{id=7495, symbol='FB', side='sell', type='market', price=null, timeStamp=1608921202}
 Order{id=7496, symbol='FB', side='sell', type='limit', price=265.46, timeStamp=1608921202}
 Order{id=7497, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608921203}
+Order{id=7499, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608921204}
 Order{id=7500, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608921204}
 Order{id=7501, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608921204}
 Order{id=7502, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608921205}
@@ -4419,7 +4411,6 @@ Order{id=8055, symbol='GOOG', side='sell', type='limit', price=1733.65, timeStam
 Order{id=8057, symbol='FB', side='sell', type='limit', price=265.71, timeStamp=1608921469}
 Order{id=8058, symbol='GOOG', side='buy', type='limit', price=1732.33, timeStamp=1608921470}
 Order{id=8060, symbol='FB', side='buy', type='limit', price=null, timeStamp=1608921471}
-Order{id=8061, symbol='TSLA', side='sell', type='market', price=659.01, timeStamp=1608921471}
 Order{id=8062, symbol='FB', side='sell', type='limit', price=265.34, timeStamp=1608921471}
 Order{id=8064, symbol='GOOG', side='sell', type='limit', price=1733.03, timeStamp=1608921472}
 Order{id=8066, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608921473}
@@ -4455,6 +4446,7 @@ Order{id=8117, symbol='FB', side='buy', type='limit', price=265.32, timeStamp=16
 Order{id=8118, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608921499}
 Order{id=8119, symbol='GOOG', side='buy', type='limit', price=1732.22, timeStamp=1608921500}
 Order{id=8120, symbol='FB', side='sell', type='limit', price=265.48, timeStamp=1608921500}
+Order{id=8121, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608921501}
 Order{id=8122, symbol='TSLA', side='sell', type='market', price=658.8, timeStamp=1608921501}
 Order{id=8123, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608921502}
 Order{id=8124, symbol='FB', side='sell', type='limit', price=266.38, timeStamp=1608921502}
@@ -5338,7 +5330,7 @@ Order{id=9600, symbol='AMZN', side='sell', type='market', price=null, timeStamp=
 Order{id=9601, symbol='GOOG', side='buy', type='limit', price=1732.9, timeStamp=1608922254}
 Order{id=9602, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608922255}
 Order{id=9606, symbol='GOOG', side='sell', type='market', price=1732.46, timeStamp=1608922257}
-Order{id=9612, symbol='AMZN', side='sell', type='market', price=3171.26, timeStamp=1608922260}
+Order{id=9616, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608922263}
 Order{id=9619, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608922265}
 Order{id=9621, symbol='FB', side='sell', type='market', price=null, timeStamp=1608922265}
 Order{id=9624, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608922266}
@@ -5611,7 +5603,6 @@ Order{id=10103, symbol='TSLA', side='sell', type='market', price=null, timeStamp
 Order{id=10104, symbol='FB', side='buy', type='limit', price=266.55, timeStamp=1608922510}
 Order{id=10110, symbol='GOOG', side='buy', type='limit', price=1732.49, timeStamp=1608922513}
 Order{id=10111, symbol='GOOG', side='buy', type='limit', price=1732.76, timeStamp=1608922513}
-Order{id=10114, symbol='AMZN', side='sell', type='market', price=3170.62, timeStamp=1608922516}
 Order{id=10117, symbol='FB', side='sell', type='market', price=null, timeStamp=1608922517}
 Order{id=10119, symbol='GOOG', side='sell', type='limit', price=1732.35, timeStamp=1608922518}
 Order{id=10120, symbol='TSLA', side='sell', type='market', price=658.96, timeStamp=1608922518}
@@ -5657,6 +5648,7 @@ Order{id=10210, symbol='GOOG', side='sell', type='market', price=null, timeStamp
 Order{id=10215, symbol='GOOG', side='buy', type='limit', price=1733.43, timeStamp=1608922565}
 Order{id=10216, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608922566}
 Order{id=10218, symbol='GOOG', side='buy', type='limit', price=1733.3, timeStamp=1608922566}
+Order{id=10219, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608922566}
 Order{id=10222, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608922568}
 Order{id=10224, symbol='FB', side='buy', type='limit', price=266.76, timeStamp=1608922568}
 Order{id=10226, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608922569}
@@ -5822,10 +5814,10 @@ Order{id=10524, symbol='FB', side='buy', type='limit', price=266.3, timeStamp=16
 Order{id=10525, symbol='FB', side='sell', type='limit', price=266.18, timeStamp=1608922715}
 Order{id=10526, symbol='FB', side='buy', type='limit', price=266.41, timeStamp=1608922716}
 Order{id=10527, symbol='FB', side='buy', type='market', price=null, timeStamp=1608922716}
-Order{id=10529, symbol='TSLA', side='sell', type='market', price=658.58, timeStamp=1608922717}
 Order{id=10530, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608922718}
 Order{id=10531, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608922719}
 Order{id=10532, symbol='AAPL', side='buy', type='market', price=130.39, timeStamp=1608922719}
+Order{id=10533, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608922720}
 Order{id=10536, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608922722}
 Order{id=10540, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608922724}
 Order{id=10541, symbol='GOOG', side='buy', type='limit', price=1733.33, timeStamp=1608922725}
@@ -5869,8 +5861,6 @@ Order{id=10604, symbol='FB', side='sell', type='market', price=null, timeStamp=1
 Order{id=10605, symbol='GOOG', side='sell', type='limit', price=1733, timeStamp=1608922756}
 Order{id=10606, symbol='GOOG', side='sell', type='market', price=1732.82, timeStamp=1608922757}
 Order{id=10608, symbol='FB', side='sell', type='limit', price=265.06, timeStamp=1608922758}
-Order{id=10609, symbol='TSLA', side='sell', type='market', price=658.9, timeStamp=1608922758}
-Order{id=10610, symbol='TSLA', side='sell', type='market', price=659.13, timeStamp=1608922759}
 Order{id=10612, symbol='GOOG', side='sell', type='limit', price=1733.16, timeStamp=1608922759}
 Order{id=10613, symbol='FB', side='buy', type='market', price=null, timeStamp=1608922760}
 Order{id=10614, symbol='FB', side='sell', type='limit', price=266.77, timeStamp=1608922761}
@@ -5977,6 +5967,7 @@ Order{id=10793, symbol='AMZN', side='buy', type='market', price=null, timeStamp=
 Order{id=10797, symbol='GOOG', side='sell', type='limit', price=1732.33, timeStamp=1608922862}
 Order{id=10798, symbol='FB', side='buy', type='market', price=null, timeStamp=1608922863}
 Order{id=10804, symbol='FB', side='sell', type='market', price=null, timeStamp=1608922865}
+Order{id=10805, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608922866}
 Order{id=10809, symbol='FB', side='buy', type='limit', price=265.1, timeStamp=1608922868}
 Order{id=10810, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608922869}
 Order{id=10811, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608922870}
@@ -6026,6 +6017,7 @@ Order{id=10891, symbol='FB', side='sell', type='limit', price=265.51, timeStamp=
 Order{id=10896, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608922916}
 Order{id=10897, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608922917}
 Order{id=10898, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608922918}
+Order{id=10899, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608922919}
 Order{id=10901, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608922919}
 Order{id=10904, symbol='FB', side='sell', type='market', price=null, timeStamp=1608922921}
 Order{id=10905, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608922922}
@@ -6166,9 +6158,7 @@ Order{id=11129, symbol='FB', side='buy', type='market', price=null, timeStamp=16
 Order{id=11130, symbol='GOOG', side='sell', type='limit', price=1733.32, timeStamp=1608923030}
 Order{id=11131, symbol='FB', side='sell', type='market', price=null, timeStamp=1608923031}
 Order{id=11134, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608923033}
-Order{id=11136, symbol='TSLA', side='sell', type='market', price=658.38, timeStamp=1608923034}
 Order{id=11137, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608923034}
-Order{id=11138, symbol='AAPL', side='sell', type='market', price=130.75, timeStamp=1608923035}
 Order{id=11139, symbol='FB', side='buy', type='limit', price=266.38, timeStamp=1608923035}
 Order{id=11140, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608923036}
 Order{id=11142, symbol='GOOG', side='buy', type='limit', price=1732.99, timeStamp=1608923037}
@@ -6177,7 +6167,6 @@ Order{id=11144, symbol='TSLA', side='buy', type='market', price=null, timeStamp=
 Order{id=11146, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608923039}
 Order{id=11148, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608923041}
 Order{id=11149, symbol='FB', side='sell', type='limit', price=266.14, timeStamp=1608923041}
-Order{id=11150, symbol='TSLA', side='sell', type='market', price=659.32, timeStamp=1608923042}
 Order{id=11151, symbol='FB', side='sell', type='market', price=null, timeStamp=1608923042}
 Order{id=11152, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608923043}
 Order{id=11154, symbol='GOOG', side='buy', type='limit', price=1733.39, timeStamp=1608923043}
@@ -6237,6 +6226,8 @@ Order{id=11237, symbol='GOOG', side='sell', type='market', price=null, timeStamp
 Order{id=11238, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608923086}
 Order{id=11240, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608923087}
 Order{id=11241, symbol='FB', side='sell', type='market', price=null, timeStamp=1608923088}
+Order{id=11242, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608923088}
+Order{id=11244, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608923089}
 Order{id=11245, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608923090}
 Order{id=11246, symbol='FB', side='buy', type='limit', price=265.31, timeStamp=1608923091}
 Order{id=11247, symbol='FB', side='sell', type='limit', price=266.43, timeStamp=1608923091}
@@ -6279,7 +6270,6 @@ Order{id=11314, symbol='GOOG', side='sell', type='limit', price=1733.08, timeSta
 Order{id=11316, symbol='GOOG', side='sell', type='limit', price=1732.31, timeStamp=1608923123}
 Order{id=11317, symbol='FB', side='buy', type='limit', price=266.36, timeStamp=1608923123}
 Order{id=11318, symbol='FB', side='buy', type='market', price=null, timeStamp=1608923123}
-Order{id=11320, symbol='AMZN', side='sell', type='market', price=3170.7, timeStamp=1608923124}
 Order{id=11321, symbol='FB', side='sell', type='limit', price=265.09, timeStamp=1608923125}
 Order{id=11322, symbol='FB', side='sell', type='limit', price=266.63, timeStamp=1608923125}
 Order{id=11323, symbol='FB', side='buy', type='limit', price=266.23, timeStamp=1608923126}
@@ -6327,6 +6317,7 @@ Order{id=11398, symbol='TSLA', side='sell', type='market', price=null, timeStamp
 Order{id=11399, symbol='FB', side='buy', type='limit', price=266.17, timeStamp=1608923161}
 Order{id=11400, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608923162}
 Order{id=11402, symbol='AAPL', side='buy', type='limit', price=null, timeStamp=1608923162}
+Order{id=11404, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608923163}
 Order{id=11406, symbol='FB', side='sell', type='market', price=null, timeStamp=1608923165}
 Order{id=11407, symbol='FB', side='sell', type='market', price=null, timeStamp=1608923165}
 Order{id=11408, symbol='FB', side='sell', type='market', price=null, timeStamp=1608923165}
@@ -6367,11 +6358,12 @@ Order{id=11480, symbol='AAPL', side='sell', type='market', price=131.36, timeSta
 Order{id=11481, symbol='GOOG', side='buy', type='limit', price=1733.61, timeStamp=1608923198}
 Order{id=11486, symbol='FB', side='sell', type='market', price=null, timeStamp=1608923201}
 Order{id=11487, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608923201}
-Order{id=11488, symbol='AMZN', side='sell', type='market', price=3170.65, timeStamp=1608923202}
 Order{id=11493, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608923205}
+Order{id=11496, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608923206}
 Order{id=11498, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608923207}
 Order{id=11501, symbol='FB', side='buy', type='market', price=null, timeStamp=1608923209}
 Order{id=11503, symbol='FB', side='buy', type='limit', price=266.4, timeStamp=1608923210}
+Order{id=11505, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608923210}
 Order{id=11506, symbol='FB', side='sell', type='limit', price=265.61, timeStamp=1608923211}
 Order{id=11507, symbol='FB', side='buy', type='limit', price=266.47, timeStamp=1608923211}
 Order{id=11509, symbol='FB', side='sell', type='limit', price=266.72, timeStamp=1608923212}
@@ -6533,7 +6525,6 @@ Order{id=11773, symbol='FB', side='sell', type='limit', price=266.41, timeStamp=
 Order{id=11778, symbol='FB', side='sell', type='limit', price=265.37, timeStamp=1608923345}
 Order{id=11780, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608923345}
 Order{id=11782, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608923346}
-Order{id=11783, symbol='TSLA', side='sell', type='market', price=659.32, timeStamp=1608923347}
 Order{id=11784, symbol='FB', side='sell', type='market', price=null, timeStamp=1608923348}
 Order{id=11786, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608923349}
 Order{id=11787, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608923350}
@@ -6588,6 +6579,7 @@ Order{id=11862, symbol='GOOG', side='sell', type='market', price=null, timeStamp
 Order{id=11863, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608923390}
 Order{id=11869, symbol='GOOG', side='sell', type='limit', price=1732.29, timeStamp=1608923392}
 Order{id=11870, symbol='FB', side='buy', type='limit', price=266.75, timeStamp=1608923393}
+Order{id=11872, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608923393}
 Order{id=11874, symbol='GOOG', side='buy', type='limit', price=1733.27, timeStamp=1608923394}
 Order{id=11875, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608923394}
 Order{id=11876, symbol='GOOG', side='buy', type='limit', price=1733.99, timeStamp=1608923395}
@@ -6791,7 +6783,6 @@ Order{id=12268, symbol='TSLA', side='buy', type='market', price=null, timeStamp=
 Order{id=12269, symbol='FB', side='buy', type='market', price=265.48, timeStamp=1608923592}
 Order{id=12272, symbol='FB', side='buy', type='market', price=null, timeStamp=1608923594}
 Order{id=12274, symbol='FB', side='sell', type='limit', price=266.86, timeStamp=1608923595}
-Order{id=12275, symbol='TSLA', side='sell', type='market', price=659.48, timeStamp=1608923595}
 Order{id=12277, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608923596}
 Order{id=12278, symbol='FB', side='sell', type='market', price=null, timeStamp=1608923597}
 Order{id=12280, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608923598}
@@ -6812,13 +6803,13 @@ Order{id=12305, symbol='FB', side='sell', type='limit', price=266.74, timeStamp=
 Order{id=12306, symbol='FB', side='buy', type='limit', price=266.86, timeStamp=1608923611}
 Order{id=12307, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608923612}
 Order{id=12309, symbol='AMZN', side='sell', type='market', price=3170.63, timeStamp=1608923612}
-Order{id=12310, symbol='AAPL', side='sell', type='market', price=130.9, timeStamp=1608923612}
 Order{id=12311, symbol='GOOG', side='buy', type='market', price=1733.37, timeStamp=1608923613}
 Order{id=12312, symbol='FB', side='buy', type='market', price=null, timeStamp=1608923613}
 Order{id=12314, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608923614}
 Order{id=12317, symbol='FB', side='buy', type='market', price=null, timeStamp=1608923616}
 Order{id=12320, symbol='GOOG', side='buy', type='limit', price=1733.95, timeStamp=1608923618}
 Order{id=12321, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608923619}
+Order{id=12322, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608923619}
 Order{id=12323, symbol='FB', side='sell', type='limit', price=null, timeStamp=1608923620}
 Order{id=12326, symbol='GOOG', side='sell', type='limit', price=1732.63, timeStamp=1608923622}
 Order{id=12327, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608923623}
@@ -6834,6 +6825,7 @@ Order{id=12343, symbol='GOOG', side='sell', type='limit', price=1733.6, timeStam
 Order{id=12344, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608923632}
 Order{id=12345, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608923632}
 Order{id=12346, symbol='FB', side='sell', type='limit', price=266.57, timeStamp=1608923632}
+Order{id=12347, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608923633}
 Order{id=12348, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608923633}
 Order{id=12349, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608923634}
 Order{id=12350, symbol='FB', side='buy', type='limit', price=266.65, timeStamp=1608923635}
@@ -7009,12 +7001,12 @@ Order{id=12646, symbol='GOOG', side='sell', type='limit', price=1733.17, timeSta
 Order{id=12647, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608923781}
 Order{id=12650, symbol='GOOG', side='buy', type='limit', price=1732.43, timeStamp=1608923782}
 Order{id=12651, symbol='FB', side='sell', type='market', price=null, timeStamp=1608923783}
-Order{id=12652, symbol='AAPL', side='sell', type='market', price=131.18, timeStamp=1608923783}
 Order{id=12653, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608923784}
 Order{id=12654, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608923784}
 Order{id=12656, symbol='FB', side='buy', type='market', price=null, timeStamp=1608923785}
 Order{id=12657, symbol='FB', side='buy', type='market', price=null, timeStamp=1608923785}
 Order{id=12659, symbol='FB', side='sell', type='limit', price=266.22, timeStamp=1608923786}
+Order{id=12660, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608923787}
 Order{id=12664, symbol='TSLA', side='sell', type='limit', price=null, timeStamp=1608923788}
 Order{id=12666, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608923790}
 Order{id=12667, symbol='GOOG', side='buy', type='limit', price=1732.96, timeStamp=1608923790}
@@ -7300,7 +7292,6 @@ Order{id=13176, symbol='FB', side='buy', type='market', price=null, timeStamp=16
 Order{id=13178, symbol='GOOG', side='buy', type='limit', price=1732.89, timeStamp=1608924048}
 Order{id=13179, symbol='GOOG', side='buy', type='limit', price=1733.16, timeStamp=1608924048}
 Order{id=13180, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608924048}
-Order{id=13183, symbol='AMZN', side='sell', type='market', price=3171.48, timeStamp=1608924049}
 Order{id=13184, symbol='GOOG', side='buy', type='limit', price=1732.05, timeStamp=1608924049}
 Order{id=13185, symbol='AMZN', side='buy', type='limit', price=null, timeStamp=1608924050}
 Order{id=13186, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608924051}
@@ -7335,7 +7326,6 @@ Order{id=13235, symbol='TSLA', side='sell', type='market', price=null, timeStamp
 Order{id=13240, symbol='FB', side='sell', type='limit', price=265.74, timeStamp=1608924078}
 Order{id=13242, symbol='FB', side='sell', type='market', price=null, timeStamp=1608924078}
 Order{id=13245, symbol='GOOG', side='buy', type='market', price=1733.46, timeStamp=1608924080}
-Order{id=13246, symbol='AMZN', side='sell', type='market', price=3171.12, timeStamp=1608924080}
 Order{id=13247, symbol='GOOG', side='sell', type='limit', price=1733.74, timeStamp=1608924081}
 Order{id=13248, symbol='GOOG', side='buy', type='limit', price=1733.97, timeStamp=1608924082}
 Order{id=13252, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608924084}
@@ -7455,12 +7445,12 @@ Order{id=13471, symbol='GOOG', side='sell', type='limit', price=1733.77, timeSta
 Order{id=13472, symbol='AAPL', side='buy', type='market', price=131.33, timeStamp=1608924196}
 Order{id=13474, symbol='FB', side='buy', type='limit', price=266.39, timeStamp=1608924198}
 Order{id=13475, symbol='FB', side='sell', type='limit', price=266.79, timeStamp=1608924198}
-Order{id=13476, symbol='AMZN', side='sell', type='market', price=3171.49, timeStamp=1608924198}
 Order{id=13477, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608924199}
 Order{id=13478, symbol='FB', side='sell', type='market', price=null, timeStamp=1608924199}
 Order{id=13479, symbol='GOOG', side='buy', type='limit', price=1733.25, timeStamp=1608924199}
 Order{id=13480, symbol='GOOG', side='sell', type='limit', price=1732.47, timeStamp=1608924200}
 Order{id=13482, symbol='GOOG', side='buy', type='limit', price=1732.01, timeStamp=1608924201}
+Order{id=13485, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608924202}
 Order{id=13487, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608924203}
 Order{id=13489, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608924205}
 Order{id=13493, symbol='FB', side='sell', type='limit', price=265.05, timeStamp=1608924206}
@@ -7479,6 +7469,8 @@ Order{id=13511, symbol='TSLA', side='sell', type='market', price=null, timeStamp
 Order{id=13512, symbol='FB', side='sell', type='limit', price=266.24, timeStamp=1608924218}
 Order{id=13513, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608924218}
 Order{id=13514, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608924219}
+Order{id=13516, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608924219}
+Order{id=13517, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608924220}
 Order{id=13518, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608924220}
 Order{id=13521, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608924222}
 Order{id=13522, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608924222}
@@ -7600,7 +7592,6 @@ Order{id=13707, symbol='TSLA', side='buy', type='market', price=null, timeStamp=
 Order{id=13708, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608924311}
 Order{id=13709, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608924312}
 Order{id=13711, symbol='FB', side='buy', type='limit', price=266.35, timeStamp=1608924314}
-Order{id=13716, symbol='AAPL', side='sell', type='market', price=131.65, timeStamp=1608924316}
 Order{id=13717, symbol='FB', side='sell', type='market', price=null, timeStamp=1608924317}
 Order{id=13718, symbol='FB', side='sell', type='market', price=null, timeStamp=1608924318}
 Order{id=13722, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608924320}
@@ -7636,6 +7627,7 @@ Order{id=13776, symbol='FB', side='buy', type='limit', price=265.53, timeStamp=1
 Order{id=13781, symbol='FB', side='sell', type='market', price=null, timeStamp=1608924347}
 Order{id=13784, symbol='FB', side='sell', type='market', price=null, timeStamp=1608924348}
 Order{id=13785, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608924348}
+Order{id=13786, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608924348}
 Order{id=13788, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608924350}
 Order{id=13790, symbol='FB', side='sell', type='limit', price=266.56, timeStamp=1608924351}
 Order{id=13791, symbol='GOOG', side='buy', type='limit', price=1732.65, timeStamp=1608924352}
@@ -7929,7 +7921,6 @@ Order{id=14248, symbol='GOOG', side='buy', type='limit', price=1733.08, timeStam
 Order{id=14250, symbol='GOOG', side='sell', type='limit', price=1733.64, timeStamp=1608924586}
 Order{id=14253, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608924588}
 Order{id=14257, symbol='FB', side='buy', type='limit', price=266.97, timeStamp=1608924590}
-Order{id=14259, symbol='AMZN', side='sell', type='market', price=3171.26, timeStamp=1608924590}
 Order{id=14263, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608924592}
 Order{id=14264, symbol='AMZN', side='sell', type='limit', price=null, timeStamp=1608924593}
 Order{id=14265, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608924593}
@@ -7940,6 +7931,7 @@ Order{id=14270, symbol='AAPL', side='buy', type='market', price=null, timeStamp=
 Order{id=14271, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608924597}
 Order{id=14272, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608924597}
 Order{id=14274, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608924598}
+Order{id=14275, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608924598}
 Order{id=14277, symbol='FB', side='buy', type='limit', price=265.88, timeStamp=1608924600}
 Order{id=14281, symbol='GOOG', side='buy', type='limit', price=1732.85, timeStamp=1608924601}
 Order{id=14283, symbol='FB', side='sell', type='limit', price=266.24, timeStamp=1608924602}
@@ -8203,7 +8195,6 @@ Order{id=14734, symbol='AAPL', side='sell', type='market', price=null, timeStamp
 Order{id=14735, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608924828}
 Order{id=14738, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608924830}
 Order{id=14742, symbol='GOOG', side='buy', type='limit', price=1732.88, timeStamp=1608924832}
-Order{id=14743, symbol='TSLA', side='sell', type='market', price=659, timeStamp=1608924832}
 Order{id=14745, symbol='FB', side='buy', type='limit', price=265.64, timeStamp=1608924833}
 Order{id=14747, symbol='GOOG', side='sell', type='limit', price=1732.5, timeStamp=1608924835}
 Order{id=14749, symbol='FB', side='sell', type='limit', price=266.04, timeStamp=1608924835}
@@ -8239,7 +8230,6 @@ Order{id=14805, symbol='FB', side='buy', type='limit', price=265.48, timeStamp=1
 Order{id=14806, symbol='FB', side='sell', type='limit', price=null, timeStamp=1608924864}
 Order{id=14808, symbol='FB', side='buy', type='market', price=null, timeStamp=1608924865}
 Order{id=14810, symbol='GOOG', side='sell', type='limit', price=1732.52, timeStamp=1608924865}
-Order{id=14811, symbol='TSLA', side='sell', type='market', price=658.34, timeStamp=1608924866}
 Order{id=14815, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608924867}
 Order{id=14818, symbol='FB', side='sell', type='market', price=null, timeStamp=1608924868}
 Order{id=14819, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608924868}
@@ -8271,7 +8261,6 @@ Order{id=14865, symbol='FB', side='sell', type='limit', price=266.09, timeStamp=
 Order{id=14869, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608924894}
 Order{id=14871, symbol='AAPL', side='sell', type='limit', price=null, timeStamp=1608924895}
 Order{id=14872, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608924895}
-Order{id=14875, symbol='AMZN', side='sell', type='market', price=3171.76, timeStamp=1608924897}
 Order{id=14876, symbol='FB', side='sell', type='market', price=null, timeStamp=1608924897}
 Order{id=14880, symbol='GOOG', side='buy', type='limit', price=1733.84, timeStamp=1608924899}
 Order{id=14881, symbol='FB', side='sell', type='market', price=null, timeStamp=1608924900}
@@ -8282,6 +8271,7 @@ Order{id=14887, symbol='AAPL', side='buy', type='market', price=null, timeStamp=
 Order{id=14888, symbol='FB', side='buy', type='market', price=null, timeStamp=1608924902}
 Order{id=14893, symbol='GOOG', side='buy', type='limit', price=1732.98, timeStamp=1608924905}
 Order{id=14894, symbol='GOOG', side='buy', type='limit', price=1732.95, timeStamp=1608924905}
+Order{id=14896, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608924906}
 Order{id=14898, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608924907}
 Order{id=14899, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608924907}
 Order{id=14901, symbol='FB', side='sell', type='market', price=null, timeStamp=1608924909}
@@ -8375,6 +8365,7 @@ Order{id=15063, symbol='FB', side='sell', type='limit', price=266.58, timeStamp=
 Order{id=15066, symbol='GOOG', side='buy', type='limit', price=1733.22, timeStamp=1608924996}
 Order{id=15067, symbol='FB', side='sell', type='market', price=null, timeStamp=1608924997}
 Order{id=15068, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608924998}
+Order{id=15069, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608924998}
 Order{id=15070, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608924998}
 Order{id=15071, symbol='GOOG', side='buy', type='limit', price=1733.33, timeStamp=1608924999}
 Order{id=15072, symbol='FB', side='buy', type='market', price=null, timeStamp=1608924999}
@@ -8386,6 +8377,7 @@ Order{id=15084, symbol='GOOG', side='sell', type='limit', price=1732.6, timeStam
 Order{id=15087, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608925005}
 Order{id=15088, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608925005}
 Order{id=15089, symbol='GOOG', side='buy', type='limit', price=1732.42, timeStamp=1608925006}
+Order{id=15090, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608925006}
 Order{id=15092, symbol='FB', side='sell', type='market', price=null, timeStamp=1608925007}
 Order{id=15095, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608925009}
 Order{id=15096, symbol='FB', side='sell', type='market', price=null, timeStamp=1608925009}
@@ -8412,7 +8404,6 @@ Order{id=15126, symbol='AMZN', side='buy', type='market', price=null, timeStamp=
 Order{id=15127, symbol='FB', side='buy', type='market', price=null, timeStamp=1608925025}
 Order{id=15128, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608925026}
 Order{id=15129, symbol='FB', side='buy', type='limit', price=266.73, timeStamp=1608925026}
-Order{id=15130, symbol='TSLA', side='sell', type='market', price=659.76, timeStamp=1608925026}
 Order{id=15131, symbol='GOOG', side='buy', type='limit', price=1732.99, timeStamp=1608925027}
 Order{id=15132, symbol='FB', side='sell', type='limit', price=266.83, timeStamp=1608925027}
 Order{id=15134, symbol='FB', side='buy', type='limit', price=265.81, timeStamp=1608925028}
@@ -8445,6 +8436,7 @@ Order{id=15177, symbol='AAPL', side='sell', type='market', price=null, timeStamp
 Order{id=15178, symbol='FB', side='buy', type='limit', price=266.73, timeStamp=1608925051}
 Order{id=15179, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608925052}
 Order{id=15185, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608925055}
+Order{id=15186, symbol='TSLA', side='sell', type='market', price=658.14, timeStamp=1608925055}
 Order{id=15187, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608925056}
 Order{id=15188, symbol='FB', side='buy', type='market', price=null, timeStamp=1608925056}
 Order{id=15193, symbol='GOOG', side='sell', type='limit', price=1733.43, timeStamp=1608925060}
@@ -8578,7 +8570,6 @@ Order{id=15425, symbol='GOOG', side='buy', type='limit', price=1732.51, timeStam
 Order{id=15426, symbol='GOOG', side='sell', type='limit', price=1733.19, timeStamp=1608925180}
 Order{id=15427, symbol='AAPL', side='buy', type='limit', price=null, timeStamp=1608925180}
 Order{id=15428, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608925181}
-Order{id=15429, symbol='TSLA', side='sell', type='market', price=659.84, timeStamp=1608925182}
 Order{id=15430, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608925182}
 Order{id=15432, symbol='GOOG', side='buy', type='limit', price=1733.9, timeStamp=1608925183}
 Order{id=15434, symbol='FB', side='sell', type='market', price=null, timeStamp=1608925183}
@@ -8586,6 +8577,7 @@ Order{id=15435, symbol='AAPL', side='sell', type='market', price=null, timeStamp
 Order{id=15437, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608925186}
 Order{id=15441, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608925187}
 Order{id=15442, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608925187}
+Order{id=15443, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608925188}
 Order{id=15445, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608925189}
 Order{id=15446, symbol='FB', side='buy', type='limit', price=265.33, timeStamp=1608925190}
 Order{id=15447, symbol='AMZN', side='sell', type='limit', price=null, timeStamp=1608925191}
@@ -9283,7 +9275,6 @@ Order{id=16753, symbol='TSLA', side='buy', type='limit', price=null, timeStamp=1
 Order{id=16754, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608925863}
 Order{id=16756, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608925864}
 Order{id=16758, symbol='GOOG', side='buy', type='limit', price=1733.48, timeStamp=1608925865}
-Order{id=16759, symbol='TSLA', side='sell', type='market', price=659.84, timeStamp=1608925865}
 Order{id=16762, symbol='GOOG', side='buy', type='limit', price=1733.63, timeStamp=1608925866}
 Order{id=16763, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608925867}
 Order{id=16765, symbol='FB', side='sell', type='market', price=null, timeStamp=1608925868}
@@ -9317,10 +9308,10 @@ Order{id=16812, symbol='AAPL', side='buy', type='market', price=null, timeStamp=
 Order{id=16814, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608925893}
 Order{id=16815, symbol='GOOG', side='sell', type='limit', price=1733.58, timeStamp=1608925894}
 Order{id=16816, symbol='FB', side='sell', type='market', price=null, timeStamp=1608925895}
-Order{id=16819, symbol='AAPL', side='sell', type='market', price=131.93, timeStamp=1608925896}
 Order{id=16820, symbol='GOOG', side='buy', type='market', price=1733.54, timeStamp=1608925897}
 Order{id=16821, symbol='GOOG', side='buy', type='limit', price=null, timeStamp=1608925898}
 Order{id=16822, symbol='FB', side='sell', type='limit', price=265.38, timeStamp=1608925898}
+Order{id=16823, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608925898}
 Order{id=16824, symbol='FB', side='buy', type='market', price=null, timeStamp=1608925899}
 Order{id=16826, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608925900}
 Order{id=16828, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608925901}
@@ -9408,6 +9399,7 @@ Order{id=16982, symbol='FB', side='buy', type='market', price=null, timeStamp=16
 Order{id=16984, symbol='GOOG', side='buy', type='limit', price=1732.73, timeStamp=1608925981}
 Order{id=16986, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608925983}
 Order{id=16989, symbol='FB', side='buy', type='market', price=null, timeStamp=1608925984}
+Order{id=16991, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608925985}
 Order{id=16992, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608925986}
 Order{id=16993, symbol='GOOG', side='buy', type='limit', price=1733.16, timeStamp=1608925986}
 Order{id=16994, symbol='GOOG', side='buy', type='limit', price=1733.92, timeStamp=1608925987}
@@ -9546,7 +9538,6 @@ Order{id=17239, symbol='FB', side='sell', type='market', price=265.39, timeStamp
 Order{id=17241, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608926120}
 Order{id=17243, symbol='FB', side='buy', type='limit', price=265.61, timeStamp=1608926120}
 Order{id=17246, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608926121}
-Order{id=17249, symbol='AAPL', side='sell', type='market', price=130.72, timeStamp=1608926123}
 Order{id=17250, symbol='GOOG', side='buy', type='limit', price=1733.92, timeStamp=1608926124}
 Order{id=17252, symbol='FB', side='buy', type='limit', price=266.41, timeStamp=1608926125}
 Order{id=17253, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608926125}
@@ -9594,11 +9585,11 @@ Order{id=17336, symbol='FB', side='sell', type='limit', price=265.07, timeStamp=
 Order{id=17340, symbol='FB', side='buy', type='market', price=null, timeStamp=1608926171}
 Order{id=17341, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608926171}
 Order{id=17344, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608926173}
-Order{id=17345, symbol='TSLA', side='sell', type='market', price=659.38, timeStamp=1608926174}
 Order{id=17347, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608926175}
 Order{id=17348, symbol='FB', side='buy', type='limit', price=266.05, timeStamp=1608926175}
 Order{id=17349, symbol='FB', side='buy', type='market', price=null, timeStamp=1608926175}
 Order{id=17350, symbol='FB', side='buy', type='limit', price=266.19, timeStamp=1608926176}
+Order{id=17353, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608926178}
 Order{id=17354, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608926179}
 Order{id=17355, symbol='FB', side='sell', type='limit', price=266.9, timeStamp=1608926179}
 Order{id=17356, symbol='FB', side='sell', type='market', price=null, timeStamp=1608926180}
@@ -9614,6 +9605,7 @@ Order{id=17368, symbol='AMZN', side='buy', type='market', price=null, timeStamp=
 Order{id=17369, symbol='GOOG', side='buy', type='limit', price=null, timeStamp=1608926187}
 Order{id=17370, symbol='FB', side='buy', type='limit', price=265.89, timeStamp=1608926188}
 Order{id=17371, symbol='FB', side='sell', type='market', price=null, timeStamp=1608926188}
+Order{id=17372, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608926189}
 Order{id=17373, symbol='FB', side='buy', type='limit', price=266.27, timeStamp=1608926189}
 Order{id=17374, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608926190}
 Order{id=17375, symbol='FB', side='buy', type='market', price=null, timeStamp=1608926190}
@@ -9650,7 +9642,6 @@ Order{id=17423, symbol='FB', side='sell', type='limit', price=265.22, timeStamp=
 Order{id=17424, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608926218}
 Order{id=17425, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608926219}
 Order{id=17427, symbol='GOOG', side='sell', type='limit', price=1732.19, timeStamp=1608926221}
-Order{id=17428, symbol='AAPL', side='sell', type='market', price=131.73, timeStamp=1608926221}
 Order{id=17429, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608926221}
 Order{id=17431, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608926223}
 Order{id=17432, symbol='FB', side='sell', type='market', price=null, timeStamp=1608926224}
@@ -9696,6 +9687,7 @@ Order{id=17502, symbol='GOOG', side='buy', type='market', price=null, timeStamp=
 Order{id=17504, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608926261}
 Order{id=17509, symbol='AAPL', side='sell', type='market', price=130.65, timeStamp=1608926264}
 Order{id=17510, symbol='FB', side='sell', type='limit', price=266.07, timeStamp=1608926264}
+Order{id=17513, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608926265}
 Order{id=17514, symbol='FB', side='buy', type='market', price=null, timeStamp=1608926265}
 Order{id=17517, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608926266}
 Order{id=17518, symbol='FB', side='sell', type='market', price=null, timeStamp=1608926266}
@@ -9753,7 +9745,6 @@ Order{id=17603, symbol='FB', side='buy', type='market', price=null, timeStamp=16
 Order{id=17604, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608926314}
 Order{id=17605, symbol='GOOG', side='buy', type='limit', price=1733.51, timeStamp=1608926314}
 Order{id=17606, symbol='FB', side='sell', type='limit', price=265.75, timeStamp=1608926315}
-Order{id=17607, symbol='TSLA', side='sell', type='market', price=658.67, timeStamp=1608926316}
 Order{id=17608, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608926316}
 Order{id=17610, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608926317}
 Order{id=17616, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608926321}
@@ -9765,6 +9756,7 @@ Order{id=17624, symbol='AAPL', side='sell', type='market', price=null, timeStamp
 Order{id=17628, symbol='FB', side='sell', type='market', price=null, timeStamp=1608926325}
 Order{id=17629, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608926325}
 Order{id=17630, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608926326}
+Order{id=17632, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608926327}
 Order{id=17633, symbol='FB', side='buy', type='limit', price=265.68, timeStamp=1608926328}
 Order{id=17636, symbol='FB', side='sell', type='limit', price=266.76, timeStamp=1608926329}
 Order{id=17639, symbol='FB', side='buy', type='market', price=null, timeStamp=1608926331}
@@ -10135,7 +10127,6 @@ Order{id=18361, symbol='FB', side='sell', type='market', price=null, timeStamp=1
 Order{id=18362, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608926695}
 Order{id=18368, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608926698}
 Order{id=18370, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608926698}
-Order{id=18371, symbol='AAPL', side='sell', type='market', price=131.19, timeStamp=1608926698}
 Order{id=18372, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608926699}
 Order{id=18373, symbol='GOOG', side='buy', type='limit', price=1733.88, timeStamp=1608926700}
 Order{id=18374, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608926700}
@@ -10203,10 +10194,10 @@ Order{id=18486, symbol='AMZN', side='buy', type='market', price=null, timeStamp=
 Order{id=18488, symbol='FB', side='buy', type='limit', price=null, timeStamp=1608926757}
 Order{id=18490, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608926758}
 Order{id=18491, symbol='AMZN', side='sell', type='limit', price=null, timeStamp=1608926758}
-Order{id=18493, symbol='TSLA', side='sell', type='market', price=659.52, timeStamp=1608926759}
 Order{id=18494, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608926759}
 Order{id=18496, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608926760}
 Order{id=18497, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608926760}
+Order{id=18498, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608926760}
 Order{id=18499, symbol='GOOG', side='sell', type='limit', price=1732.54, timeStamp=1608926760}
 Order{id=18500, symbol='FB', side='sell', type='market', price=null, timeStamp=1608926761}
 Order{id=18501, symbol='GOOG', side='buy', type='limit', price=1732.55, timeStamp=1608926761}
@@ -10244,6 +10235,7 @@ Order{id=18556, symbol='FB', side='buy', type='limit', price=266.3, timeStamp=16
 Order{id=18559, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608926794}
 Order{id=18560, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608926794}
 Order{id=18561, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608926795}
+Order{id=18562, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608926795}
 Order{id=18563, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608926796}
 Order{id=18570, symbol='FB', side='buy', type='market', price=null, timeStamp=1608926800}
 Order{id=18571, symbol='GOOG', side='sell', type='limit', price=1732.81, timeStamp=1608926801}
@@ -10272,7 +10264,6 @@ Order{id=18608, symbol='FB', side='buy', type='market', price=null, timeStamp=16
 Order{id=18609, symbol='GOOG', side='buy', type='limit', price=1732.92, timeStamp=1608926819}
 Order{id=18612, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608926821}
 Order{id=18613, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608926821}
-Order{id=18616, symbol='AAPL', side='sell', type='market', price=130.88, timeStamp=1608926824}
 Order{id=18617, symbol='GOOG', side='sell', type='limit', price=1732.06, timeStamp=1608926824}
 Order{id=18619, symbol='FB', side='buy', type='market', price=null, timeStamp=1608926824}
 Order{id=18620, symbol='AAPL', side='buy', type='market', price=131.39, timeStamp=1608926825}
@@ -10289,8 +10280,8 @@ Order{id=18636, symbol='GOOG', side='sell', type='market', price=null, timeStamp
 Order{id=18637, symbol='FB', side='sell', type='market', price=null, timeStamp=1608926833}
 Order{id=18638, symbol='GOOG', side='buy', type='limit', price=1732.03, timeStamp=1608926834}
 Order{id=18639, symbol='FB', side='sell', type='limit', price=null, timeStamp=1608926834}
-Order{id=18640, symbol='TSLA', side='sell', type='market', price=659.44, timeStamp=1608926835}
 Order{id=18642, symbol='FB', side='buy', type='market', price=null, timeStamp=1608926836}
+Order{id=18643, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608926836}
 Order{id=18645, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608926837}
 Order{id=18647, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608926839}
 Order{id=18648, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608926840}
@@ -10392,7 +10383,6 @@ Order{id=18824, symbol='TSLA', side='sell', type='market', price=null, timeStamp
 Order{id=18827, symbol='FB', side='buy', type='limit', price=266.52, timeStamp=1608926930}
 Order{id=18828, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608926931}
 Order{id=18829, symbol='FB', side='buy', type='limit', price=265.75, timeStamp=1608926931}
-Order{id=18830, symbol='AAPL', side='sell', type='market', price=131.67, timeStamp=1608926931}
 Order{id=18832, symbol='FB', side='sell', type='market', price=null, timeStamp=1608926932}
 Order{id=18833, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608926933}
 Order{id=18835, symbol='AMZN', side='sell', type='market', price=3170.84, timeStamp=1608926935}
@@ -10464,10 +10454,12 @@ Order{id=18973, symbol='FB', side='sell', type='market', price=null, timeStamp=1
 Order{id=18974, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608927003}
 Order{id=18975, symbol='FB', side='sell', type='market', price=null, timeStamp=1608927004}
 Order{id=18976, symbol='FB', side='buy', type='limit', price=265.87, timeStamp=1608927004}
+Order{id=18977, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608927004}
 Order{id=18978, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608927005}
 Order{id=18979, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608927006}
 Order{id=18982, symbol='FB', side='sell', type='limit', price=266.15, timeStamp=1608927007}
 Order{id=18983, symbol='GOOG', side='sell', type='limit', price=1733.83, timeStamp=1608927007}
+Order{id=18985, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608927009}
 Order{id=18989, symbol='GOOG', side='sell', type='limit', price=1733.17, timeStamp=1608927011}
 Order{id=18990, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608927011}
 Order{id=18995, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608927013}
@@ -10483,7 +10475,6 @@ Order{id=19012, symbol='FB', side='buy', type='limit', price=265.13, timeStamp=1
 Order{id=19022, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608927026}
 Order{id=19026, symbol='FB', side='buy', type='market', price=null, timeStamp=1608927028}
 Order{id=19027, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608927029}
-Order{id=19028, symbol='AMZN', side='sell', type='market', price=3171.86, timeStamp=1608927029}
 Order{id=19029, symbol='FB', side='sell', type='limit', price=266.12, timeStamp=1608927029}
 Order{id=19031, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608927030}
 Order{id=19032, symbol='GOOG', side='buy', type='limit', price=1732.69, timeStamp=1608927031}
@@ -10530,7 +10521,6 @@ Order{id=19096, symbol='GOOG', side='sell', type='market', price=null, timeStamp
 Order{id=19097, symbol='GOOG', side='sell', type='limit', price=1732.34, timeStamp=1608927065}
 Order{id=19098, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608927065}
 Order{id=19099, symbol='GOOG', side='buy', type='limit', price=1732.56, timeStamp=1608927066}
-Order{id=19104, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608927068}
 Order{id=19105, symbol='FB', side='buy', type='limit', price=265.28, timeStamp=1608927068}
 Order{id=19111, symbol='GOOG', side='buy', type='limit', price=1732.78, timeStamp=1608927072}
 Order{id=19112, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608927073}
@@ -10572,7 +10562,7 @@ Order{id=19167, symbol='FB', side='buy', type='market', price=null, timeStamp=16
 Order{id=19168, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608927101}
 Order{id=19171, symbol='FB', side='buy', type='market', price=null, timeStamp=1608927102}
 Order{id=19173, symbol='FB', side='buy', type='limit', price=265.21, timeStamp=1608927104}
-Order{id=19175, symbol='AMZN', side='sell', type='market', price=3171.5, timeStamp=1608927105}
+Order{id=19176, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608927105}
 Order{id=19177, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608927106}
 Order{id=19178, symbol='FB', side='buy', type='limit', price=266.61, timeStamp=1608927106}
 Order{id=19186, symbol='GOOG', side='sell', type='limit', price=1732.73, timeStamp=1608927112}
@@ -10890,7 +10880,6 @@ Order{id=19780, symbol='GOOG', side='buy', type='limit', price=1732.46, timeStam
 Order{id=19781, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608927403}
 Order{id=19785, symbol='FB', side='sell', type='limit', price=265.15, timeStamp=1608927405}
 Order{id=19787, symbol='GOOG', side='buy', type='limit', price=1732.65, timeStamp=1608927406}
-Order{id=19790, symbol='TSLA', side='sell', type='market', price=659.93, timeStamp=1608927407}
 Order{id=19792, symbol='FB', side='sell', type='market', price=266.04, timeStamp=1608927408}
 Order{id=19795, symbol='FB', side='sell', type='limit', price=265.57, timeStamp=1608927410}
 Order{id=19796, symbol='FB', side='sell', type='market', price=null, timeStamp=1608927410}
@@ -10912,13 +10901,13 @@ Order{id=19819, symbol='FB', side='sell', type='market', price=null, timeStamp=1
 Order{id=19822, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608927425}
 Order{id=19823, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608927426}
 Order{id=19825, symbol='FB', side='buy', type='market', price=null, timeStamp=1608927427}
-Order{id=19826, symbol='AAPL', side='sell', type='market', price=131.13, timeStamp=1608927427}
 Order{id=19827, symbol='FB', side='buy', type='limit', price=266.82, timeStamp=1608927428}
 Order{id=19829, symbol='FB', side='sell', type='market', price=null, timeStamp=1608927428}
 Order{id=19830, symbol='FB', side='buy', type='market', price=null, timeStamp=1608927428}
 Order{id=19831, symbol='GOOG', side='sell', type='limit', price=1732.94, timeStamp=1608927429}
 Order{id=19833, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608927430}
 Order{id=19837, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608927432}
+Order{id=19838, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608927433}
 Order{id=19841, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608927434}
 Order{id=19843, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608927435}
 Order{id=19845, symbol='FB', side='sell', type='market', price=null, timeStamp=1608927436}
@@ -10940,6 +10929,7 @@ Order{id=19871, symbol='GOOG', side='buy', type='market', price=null, timeStamp=
 Order{id=19872, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608927450}
 Order{id=19873, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608927451}
 Order{id=19876, symbol='FB', side='buy', type='limit', price=265.34, timeStamp=1608927453}
+Order{id=19877, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608927453}
 Order{id=19881, symbol='FB', side='sell', type='limit', price=265.95, timeStamp=1608927455}
 Order{id=19882, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608927456}
 Order{id=19883, symbol='GOOG', side='sell', type='limit', price=1733.19, timeStamp=1608927457}
@@ -11111,9 +11101,9 @@ Order{id=20224, symbol='FB', side='sell', type='limit', price=265.99, timeStamp=
 Order{id=20226, symbol='FB', side='buy', type='market', price=null, timeStamp=1608927632}
 Order{id=20227, symbol='GOOG', side='buy', type='limit', price=1732.04, timeStamp=1608927633}
 Order{id=20228, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608927633}
-Order{id=20229, symbol='AAPL', side='sell', type='market', price=131.84, timeStamp=1608927633}
 Order{id=20230, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608927633}
 Order{id=20231, symbol='FB', side='sell', type='limit', price=265.5, timeStamp=1608927634}
+Order{id=20233, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608927635}
 Order{id=20234, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608927635}
 Order{id=20235, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608927635}
 Order{id=20236, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608927636}
@@ -11261,7 +11251,6 @@ Order{id=20496, symbol='FB', side='sell', type='market', price=null, timeStamp=1
 Order{id=20497, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608927768}
 Order{id=20500, symbol='GOOG', side='sell', type='limit', price=1732.95, timeStamp=1608927769}
 Order{id=20501, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608927770}
-Order{id=20503, symbol='AAPL', side='sell', type='market', price=130.36, timeStamp=1608927771}
 Order{id=20504, symbol='FB', side='buy', type='market', price=null, timeStamp=1608927772}
 Order{id=20506, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608927773}
 Order{id=20507, symbol='GOOG', side='sell', type='market', price=1733.67, timeStamp=1608927773}
@@ -11297,7 +11286,6 @@ Order{id=20567, symbol='FB', side='buy', type='limit', price=266.83, timeStamp=1
 Order{id=20568, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608927805}
 Order{id=20569, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608927805}
 Order{id=20570, symbol='FB', side='sell', type='market', price=null, timeStamp=1608927805}
-Order{id=20575, symbol='AMZN', side='sell', type='market', price=3171.12, timeStamp=1608927809}
 Order{id=20578, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608927809}
 Order{id=20579, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608927810}
 Order{id=20581, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608927811}
@@ -11314,6 +11302,7 @@ Order{id=20609, symbol='FB', side='buy', type='limit', price=266.5, timeStamp=16
 Order{id=20612, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608927828}
 Order{id=20613, symbol='FB', side='sell', type='market', price=null, timeStamp=1608927829}
 Order{id=20614, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608927830}
+Order{id=20615, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608927830}
 Order{id=20616, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608927830}
 Order{id=20617, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608927830}
 Order{id=20619, symbol='FB', side='buy', type='limit', price=265.07, timeStamp=1608927831}
@@ -11369,6 +11358,7 @@ Order{id=20706, symbol='FB', side='buy', type='market', price=null, timeStamp=16
 Order{id=20707, symbol='FB', side='sell', type='limit', price=265.02, timeStamp=1608927877}
 Order{id=20710, symbol='FB', side='buy', type='market', price=null, timeStamp=1608927877}
 Order{id=20712, symbol='GOOG', side='buy', type='limit', price=1732.37, timeStamp=1608927878}
+Order{id=20713, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608927879}
 Order{id=20714, symbol='FB', side='sell', type='market', price=null, timeStamp=1608927879}
 Order{id=20718, symbol='GOOG', side='sell', type='limit', price=null, timeStamp=1608927881}
 Order{id=20719, symbol='FB', side='sell', type='limit', price=266.06, timeStamp=1608927881}
@@ -11741,7 +11731,6 @@ Order{id=21413, symbol='AMZN', side='buy', type='market', price=null, timeStamp=
 Order{id=21416, symbol='GOOG', side='buy', type='limit', price=1732.52, timeStamp=1608928228}
 Order{id=21419, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608928230}
 Order{id=21420, symbol='GOOG', side='buy', type='limit', price=1733.48, timeStamp=1608928230}
-Order{id=21422, symbol='TSLA', side='sell', type='market', price=659.72, timeStamp=1608928231}
 Order{id=21423, symbol='FB', side='sell', type='market', price=null, timeStamp=1608928231}
 Order{id=21424, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608928231}
 Order{id=21425, symbol='FB', side='sell', type='limit', price=265.83, timeStamp=1608928232}
@@ -11793,7 +11782,6 @@ Order{id=21515, symbol='GOOG', side='buy', type='limit', price=1732.72, timeStam
 Order{id=21517, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608928283}
 Order{id=21518, symbol='GOOG', side='buy', type='limit', price=1733.51, timeStamp=1608928284}
 Order{id=21519, symbol='GOOG', side='buy', type='limit', price=1732.58, timeStamp=1608928285}
-Order{id=21521, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608928286}
 Order{id=21523, symbol='AMZN', side='buy', type='limit', price=null, timeStamp=1608928287}
 Order{id=21524, symbol='FB', side='sell', type='market', price=null, timeStamp=1608928288}
 Order{id=21531, symbol='GOOG', side='sell', type='limit', price=1733.54, timeStamp=1608928292}
@@ -11914,7 +11902,6 @@ Order{id=21706, symbol='TSLA', side='buy', type='market', price=null, timeStamp=
 Order{id=21707, symbol='FB', side='sell', type='market', price=null, timeStamp=1608928381}
 Order{id=21709, symbol='FB', side='buy', type='market', price=null, timeStamp=1608928383}
 Order{id=21712, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608928384}
-Order{id=21713, symbol='AAPL', side='sell', type='market', price=131.88, timeStamp=1608928384}
 Order{id=21715, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608928385}
 Order{id=21716, symbol='FB', side='sell', type='limit', price=null, timeStamp=1608928386}
 Order{id=21717, symbol='FB', side='sell', type='market', price=null, timeStamp=1608928386}
@@ -12051,6 +12038,7 @@ Order{id=21951, symbol='FB', side='buy', type='market', price=null, timeStamp=16
 Order{id=21953, symbol='GOOG', side='sell', type='market', price=1732.69, timeStamp=1608928501}
 Order{id=21954, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608928501}
 Order{id=21955, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608928502}
+Order{id=21956, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608928502}
 Order{id=21965, symbol='FB', side='sell', type='limit', price=266.56, timeStamp=1608928508}
 Order{id=21966, symbol='FB', side='buy', type='limit', price=266.49, timeStamp=1608928508}
 Order{id=21968, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608928509}
@@ -12115,7 +12103,6 @@ Order{id=22057, symbol='FB', side='sell', type='market', price=null, timeStamp=1
 Order{id=22058, symbol='FB', side='sell', type='limit', price=265.55, timeStamp=1608928555}
 Order{id=22059, symbol='GOOG', side='sell', type='limit', price=1732.74, timeStamp=1608928556}
 Order{id=22060, symbol='FB', side='buy', type='market', price=null, timeStamp=1608928557}
-Order{id=22061, symbol='AAPL', side='sell', type='market', price=130.97, timeStamp=1608928557}
 Order{id=22062, symbol='FB', side='buy', type='limit', price=266.04, timeStamp=1608928557}
 Order{id=22063, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608928558}
 Order{id=22064, symbol='GOOG', side='sell', type='limit', price=1732.28, timeStamp=1608928558}
@@ -12144,6 +12131,7 @@ Order{id=22110, symbol='GOOG', side='sell', type='limit', price=1732.55, timeSta
 Order{id=22111, symbol='FB', side='buy', type='limit', price=265.26, timeStamp=1608928582}
 Order{id=22114, symbol='GOOG', side='buy', type='limit', price=1733.19, timeStamp=1608928583}
 Order{id=22115, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608928583}
+Order{id=22116, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608928584}
 Order{id=22120, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608928585}
 Order{id=22121, symbol='FB', side='sell', type='limit', price=266.19, timeStamp=1608928585}
 Order{id=22123, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608928586}
@@ -12444,7 +12432,6 @@ Order{id=22630, symbol='GOOG', side='sell', type='limit', price=1733.08, timeSta
 Order{id=22631, symbol='GOOG', side='buy', type='limit', price=1732.86, timeStamp=1608928853}
 Order{id=22632, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608928854}
 Order{id=22634, symbol='GOOG', side='sell', type='limit', price=1732.49, timeStamp=1608928854}
-Order{id=22635, symbol='AAPL', side='sell', type='market', price=130.38, timeStamp=1608928855}
 Order{id=22636, symbol='FB', side='sell', type='limit', price=265.46, timeStamp=1608928855}
 Order{id=22638, symbol='FB', side='sell', type='market', price=null, timeStamp=1608928856}
 Order{id=22640, symbol='FB', side='sell', type='market', price=null, timeStamp=1608928858}
@@ -12596,7 +12583,6 @@ Order{id=22894, symbol='FB', side='buy', type='limit', price=266.02, timeStamp=1
 Order{id=22895, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608928992}
 Order{id=22896, symbol='FB', side='buy', type='limit', price=266.49, timeStamp=1608928993}
 Order{id=22898, symbol='FB', side='buy', type='market', price=null, timeStamp=1608928994}
-Order{id=22899, symbol='AAPL', side='sell', type='market', price=130.62, timeStamp=1608928995}
 Order{id=22900, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608928996}
 Order{id=22902, symbol='FB', side='sell', type='limit', price=266.95, timeStamp=1608928997}
 Order{id=22904, symbol='AAPL', side='buy', type='limit', price=null, timeStamp=1608928999}
@@ -12720,6 +12706,7 @@ Order{id=23114, symbol='GOOG', side='buy', type='market', price=null, timeStamp=
 Order{id=23116, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608929098}
 Order{id=23117, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608929098}
 Order{id=23119, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608929099}
+Order{id=23122, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608929102}
 Order{id=23123, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608929102}
 Order{id=23124, symbol='FB', side='buy', type='limit', price=265.18, timeStamp=1608929103}
 Order{id=23125, symbol='FB', side='buy', type='limit', price=266.98, timeStamp=1608929103}
@@ -12762,14 +12749,15 @@ Order{id=23201, symbol='TSLA', side='sell', type='limit', price=null, timeStamp=
 Order{id=23202, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608929144}
 Order{id=23204, symbol='FB', side='buy', type='market', price=null, timeStamp=1608929145}
 Order{id=23205, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608929145}
+Order{id=23206, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608929146}
 Order{id=23207, symbol='FB', side='sell', type='market', price=null, timeStamp=1608929146}
 Order{id=23210, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608929148}
 Order{id=23211, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608929149}
-Order{id=23213, symbol='AMZN', side='sell', type='market', price=3171.62, timeStamp=1608929150}
 Order{id=23216, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608929151}
 Order{id=23217, symbol='FB', side='sell', type='market', price=265.54, timeStamp=1608929152}
 Order{id=23221, symbol='GOOG', side='buy', type='limit', price=1732.57, timeStamp=1608929153}
 Order{id=23222, symbol='FB', side='buy', type='market', price=null, timeStamp=1608929154}
+Order{id=23223, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608929154}
 Order{id=23224, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608929154}
 Order{id=23225, symbol='FB', side='sell', type='market', price=null, timeStamp=1608929155}
 Order{id=23226, symbol='FB', side='sell', type='market', price=null, timeStamp=1608929156}
@@ -12944,7 +12932,6 @@ Order{id=23530, symbol='GOOG', side='buy', type='market', price=null, timeStamp=
 Order{id=23532, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608929311}
 Order{id=23535, symbol='FB', side='buy', type='market', price=null, timeStamp=1608929312}
 Order{id=23536, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608929312}
-Order{id=23540, symbol='AAPL', side='sell', type='market', price=131.17, timeStamp=1608929314}
 Order{id=23541, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608929315}
 Order{id=23544, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608929316}
 Order{id=23545, symbol='FB', side='sell', type='market', price=null, timeStamp=1608929317}
@@ -13246,7 +13233,6 @@ Order{id=24104, symbol='FB', side='sell', type='market', price=null, timeStamp=1
 Order{id=24107, symbol='GOOG', side='buy', type='limit', price=1732.87, timeStamp=1608929595}
 Order{id=24108, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608929595}
 Order{id=24109, symbol='GOOG', side='sell', type='market', price=1732.86, timeStamp=1608929596}
-Order{id=24110, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608929597}
 Order{id=24112, symbol='GOOG', side='buy', type='limit', price=1732.77, timeStamp=1608929598}
 Order{id=24113, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608929598}
 Order{id=24114, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608929599}
@@ -13274,7 +13260,6 @@ Order{id=24149, symbol='TSLA', side='sell', type='limit', price=null, timeStamp=
 Order{id=24159, symbol='FB', side='buy', type='limit', price=265.52, timeStamp=1608929625}
 Order{id=24163, symbol='GOOG', side='sell', type='limit', price=1733.69, timeStamp=1608929627}
 Order{id=24164, symbol='GOOG', side='sell', type='limit', price=1732.62, timeStamp=1608929627}
-Order{id=24165, symbol='AMZN', side='sell', type='market', price=3171.24, timeStamp=1608929627}
 Order{id=24171, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608929631}
 Order{id=24175, symbol='GOOG', side='sell', type='limit', price=1733.99, timeStamp=1608929633}
 Order{id=24177, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608929634}
@@ -13287,7 +13272,6 @@ Order{id=24186, symbol='GOOG', side='sell', type='limit', price=1733.17, timeSta
 Order{id=24187, symbol='GOOG', side='sell', type='limit', price=1732.69, timeStamp=1608929638}
 Order{id=24190, symbol='FB', side='buy', type='market', price=null, timeStamp=1608929640}
 Order{id=24191, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608929641}
-Order{id=24192, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608929641}
 Order{id=24194, symbol='FB', side='sell', type='market', price=null, timeStamp=1608929642}
 Order{id=24195, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608929643}
 Order{id=24196, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608929644}
@@ -13504,7 +13488,6 @@ Order{id=24592, symbol='GOOG', side='sell', type='market', price=null, timeStamp
 Order{id=24593, symbol='GOOG', side='buy', type='limit', price=1732.33, timeStamp=1608929840}
 Order{id=24595, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608929841}
 Order{id=24596, symbol='FB', side='buy', type='limit', price=265.71, timeStamp=1608929842}
-Order{id=24597, symbol='TSLA', side='sell', type='market', price=658.87, timeStamp=1608929843}
 Order{id=24598, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608929843}
 Order{id=24599, symbol='GOOG', side='buy', type='limit', price=1733.4, timeStamp=1608929844}
 Order{id=24601, symbol='FB', side='buy', type='limit', price=265.57, timeStamp=1608929844}
@@ -13534,13 +13517,13 @@ Order{id=24638, symbol='FB', side='sell', type='limit', price=266.8, timeStamp=1
 Order{id=24639, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608929863}
 Order{id=24641, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608929864}
 Order{id=24642, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608929865}
-Order{id=24643, symbol='AAPL', side='sell', type='market', price=131.19, timeStamp=1608929865}
 Order{id=24648, symbol='FB', side='sell', type='limit', price=265.33, timeStamp=1608929868}
 Order{id=24651, symbol='FB', side='sell', type='market', price=null, timeStamp=1608929869}
 Order{id=24655, symbol='GOOG', side='buy', type='limit', price=1732.23, timeStamp=1608929871}
 Order{id=24656, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608929872}
 Order{id=24657, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608929872}
 Order{id=24660, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608929874}
+Order{id=24662, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608929876}
 Order{id=24663, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608929876}
 Order{id=24666, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608929878}
 Order{id=24668, symbol='FB', side='sell', type='limit', price=265.4, timeStamp=1608929878}
@@ -13575,6 +13558,7 @@ Order{id=24730, symbol='GOOG', side='sell', type='limit', price=1733.5, timeStam
 Order{id=24731, symbol='AAPL', side='buy', type='limit', price=null, timeStamp=1608929911}
 Order{id=24733, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608929913}
 Order{id=24735, symbol='FB', side='sell', type='limit', price=265.05, timeStamp=1608929913}
+Order{id=24736, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608929914}
 Order{id=24737, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608929915}
 Order{id=24738, symbol='FB', side='buy', type='market', price=null, timeStamp=1608929915}
 Order{id=24739, symbol='GOOG', side='sell', type='limit', price=1732.46, timeStamp=1608929916}
@@ -13677,7 +13661,6 @@ Order{id=24919, symbol='GOOG', side='buy', type='market', price=null, timeStamp=
 Order{id=24921, symbol='FB', side='sell', type='limit', price=265.22, timeStamp=1608930009}
 Order{id=24926, symbol='FB', side='sell', type='market', price=null, timeStamp=1608930013}
 Order{id=24928, symbol='TSLA', side='sell', type='market', price=658.6, timeStamp=1608930013}
-Order{id=24929, symbol='AMZN', side='sell', type='market', price=3171.29, timeStamp=1608930014}
 Order{id=24930, symbol='FB', side='sell', type='market', price=null, timeStamp=1608930014}
 Order{id=24931, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608930015}
 Order{id=24933, symbol='FB', side='sell', type='limit', price=266.08, timeStamp=1608930016}
@@ -13705,6 +13688,7 @@ Order{id=24965, symbol='FB', side='sell', type='limit', price=266.09, timeStamp=
 Order{id=24967, symbol='FB', side='buy', type='limit', price=265.53, timeStamp=1608930034}
 Order{id=24968, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608930035}
 Order{id=24970, symbol='FB', side='buy', type='market', price=null, timeStamp=1608930036}
+Order{id=24971, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608930037}
 Order{id=24974, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608930038}
 Order{id=24975, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608930038}
 Order{id=24977, symbol='FB', side='buy', type='limit', price=266.87, timeStamp=1608930039}
@@ -14130,7 +14114,6 @@ Order{id=25663, symbol='FB', side='buy', type='market', price=null, timeStamp=16
 Order{id=25665, symbol='GOOG', side='buy', type='limit', price=1732.47, timeStamp=1608930397}
 Order{id=25667, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608930398}
 Order{id=25670, symbol='FB', side='buy', type='market', price=null, timeStamp=1608930400}
-Order{id=25673, symbol='AAPL', side='sell', type='market', price=131.71, timeStamp=1608930401}
 Order{id=25674, symbol='FB', side='sell', type='limit', price=266.72, timeStamp=1608930401}
 Order{id=25675, symbol='GOOG', side='sell', type='limit', price=1733.52, timeStamp=1608930402}
 Order{id=25676, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608930402}
@@ -14214,6 +14197,7 @@ Order{id=25821, symbol='TSLA', side='buy', type='market', price=658.78, timeStam
 Order{id=25823, symbol='FB', side='sell', type='market', price=null, timeStamp=1608930481}
 Order{id=25824, symbol='FB', side='sell', type='market', price=null, timeStamp=1608930481}
 Order{id=25825, symbol='FB', side='sell', type='limit', price=266.4, timeStamp=1608930482}
+Order{id=25826, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608930482}
 Order{id=25827, symbol='FB', side='sell', type='market', price=null, timeStamp=1608930483}
 Order{id=25829, symbol='AMZN', side='sell', type='limit', price=null, timeStamp=1608930484}
 Order{id=25832, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608930485}
@@ -15771,7 +15755,6 @@ Order{id=28625, symbol='GOOG', side='sell', type='limit', price=1733, timeStamp=
 Order{id=28627, symbol='FB', side='sell', type='market', price=null, timeStamp=1608931879}
 Order{id=28631, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608931881}
 Order{id=28633, symbol='FB', side='buy', type='limit', price=null, timeStamp=1608931882}
-Order{id=28635, symbol='AMZN', side='sell', type='market', price=3171.85, timeStamp=1608931884}
 Order{id=28636, symbol='FB', side='sell', type='limit', price=266.18, timeStamp=1608931884}
 Order{id=28637, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608931885}
 Order{id=28639, symbol='GOOG', side='sell', type='limit', price=1733.09, timeStamp=1608931886}
@@ -15897,7 +15880,6 @@ Order{id=28842, symbol='GOOG', side='sell', type='limit', price=1732.85, timeSta
 Order{id=28845, symbol='GOOG', side='sell', type='limit', price=1732.7, timeStamp=1608931987}
 Order{id=28846, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608931987}
 Order{id=28847, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608931988}
-Order{id=28849, symbol='AMZN', side='sell', type='market', price=3171.92, timeStamp=1608931989}
 Order{id=28850, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608931990}
 Order{id=28852, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608931990}
 Order{id=28854, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608931992}
@@ -15973,6 +15955,7 @@ Order{id=28971, symbol='FB', side='sell', type='limit', price=266.35, timeStamp=
 Order{id=28974, symbol='GOOG', side='sell', type='limit', price=1732.49, timeStamp=1608932049}
 Order{id=28975, symbol='GOOG', side='buy', type='limit', price=1732.51, timeStamp=1608932049}
 Order{id=28977, symbol='GOOG', side='sell', type='limit', price=1733.22, timeStamp=1608932051}
+Order{id=28978, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608932051}
 Order{id=28979, symbol='FB', side='sell', type='limit', price=266.3, timeStamp=1608932052}
 Order{id=28980, symbol='GOOG', side='sell', type='limit', price=1733, timeStamp=1608932053}
 Order{id=28981, symbol='FB', side='buy', type='limit', price=null, timeStamp=1608932053}
@@ -15984,12 +15967,12 @@ Order{id=28995, symbol='GOOG', side='buy', type='limit', price=1732.78, timeStam
 Order{id=28998, symbol='FB', side='buy', type='market', price=null, timeStamp=1608932062}
 Order{id=29001, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608932065}
 Order{id=29004, symbol='FB', side='buy', type='limit', price=266.55, timeStamp=1608932067}
+Order{id=29005, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608932067}
 Order{id=29006, symbol='FB', side='sell', type='limit', price=265.57, timeStamp=1608932068}
 Order{id=29007, symbol='GOOG', side='buy', type='limit', price=1733.27, timeStamp=1608932068}
 Order{id=29011, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608932070}
 Order{id=29012, symbol='FB', side='buy', type='market', price=null, timeStamp=1608932071}
 Order{id=29014, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608932073}
-Order{id=29015, symbol='AAPL', side='sell', type='market', price=130.94, timeStamp=1608932074}
 Order{id=29016, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608932074}
 Order{id=29018, symbol='FB', side='buy', type='market', price=null, timeStamp=1608932074}
 Order{id=29019, symbol='GOOG', side='buy', type='limit', price=null, timeStamp=1608932075}
@@ -16147,6 +16130,7 @@ Order{id=29325, symbol='GOOG', side='sell', type='limit', price=1733.16, timeSta
 Order{id=29330, symbol='FB', side='sell', type='market', price=null, timeStamp=1608932234}
 Order{id=29332, symbol='FB', side='sell', type='market', price=265.1, timeStamp=1608932235}
 Order{id=29333, symbol='FB', side='sell', type='market', price=null, timeStamp=1608932236}
+Order{id=29334, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608932236}
 Order{id=29338, symbol='GOOG', side='sell', type='limit', price=1732.26, timeStamp=1608932237}
 Order{id=29340, symbol='FB', side='sell', type='market', price=null, timeStamp=1608932238}
 Order{id=29342, symbol='FB', side='sell', type='limit', price=265.39, timeStamp=1608932239}
@@ -16507,7 +16491,6 @@ Order{id=30001, symbol='GOOG', side='sell', type='market', price=null, timeStamp
 Order{id=30002, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608932570}
 Order{id=30003, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608932570}
 Order{id=30004, symbol='GOOG', side='sell', type='limit', price=1733.15, timeStamp=1608932570}
-Order{id=30006, symbol='AAPL', side='sell', type='market', price=131.6, timeStamp=1608932571}
 Order{id=30007, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608932572}
 Order{id=30010, symbol='FB', side='buy', type='market', price=null, timeStamp=1608932573}
 Order{id=30011, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608932574}
@@ -16558,6 +16541,7 @@ Order{id=30098, symbol='GOOG', side='buy', type='limit', price=1732.64, timeStam
 Order{id=30100, symbol='FB', side='sell', type='market', price=null, timeStamp=1608932618}
 Order{id=30102, symbol='FB', side='sell', type='market', price=null, timeStamp=1608932619}
 Order{id=30105, symbol='GOOG', side='sell', type='limit', price=1732.24, timeStamp=1608932620}
+Order{id=30106, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608932621}
 Order{id=30107, symbol='GOOG', side='buy', type='limit', price=1732.04, timeStamp=1608932622}
 Order{id=30111, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608932624}
 Order{id=30112, symbol='FB', side='sell', type='limit', price=265.95, timeStamp=1608932625}
@@ -16796,7 +16780,6 @@ Order{id=30491, symbol='FB', side='sell', type='limit', price=266.28, timeStamp=
 Order{id=30492, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608932819}
 Order{id=30495, symbol='FB', side='sell', type='market', price=null, timeStamp=1608932820}
 Order{id=30497, symbol='GOOG', side='buy', type='limit', price=1733.79, timeStamp=1608932821}
-Order{id=30499, symbol='TSLA', side='sell', type='market', price=659.72, timeStamp=1608932822}
 Order{id=30500, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608932823}
 Order{id=30501, symbol='FB', side='buy', type='market', price=null, timeStamp=1608932823}
 Order{id=30505, symbol='FB', side='buy', type='limit', price=265.74, timeStamp=1608932825}
@@ -16805,9 +16788,9 @@ Order{id=30512, symbol='GOOG', side='sell', type='limit', price=null, timeStamp=
 Order{id=30515, symbol='GOOG', side='buy', type='limit', price=1733.73, timeStamp=1608932830}
 Order{id=30517, symbol='FB', side='buy', type='limit', price=266.19, timeStamp=1608932831}
 Order{id=30520, symbol='GOOG', side='sell', type='limit', price=1733.52, timeStamp=1608932832}
-Order{id=30521, symbol='AMZN', side='sell', type='market', price=3171.39, timeStamp=1608932832}
 Order{id=30522, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608932833}
 Order{id=30527, symbol='FB', side='sell', type='market', price=null, timeStamp=1608932836}
+Order{id=30528, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608932836}
 Order{id=30530, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608932837}
 Order{id=30531, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608932838}
 Order{id=30534, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608932840}
@@ -16832,7 +16815,6 @@ Order{id=30558, symbol='FB', side='sell', type='market', price=null, timeStamp=1
 Order{id=30559, symbol='FB', side='sell', type='limit', price=266.89, timeStamp=1608932852}
 Order{id=30562, symbol='FB', side='buy', type='limit', price=266.49, timeStamp=1608932853}
 Order{id=30563, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608932853}
-Order{id=30566, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608932854}
 Order{id=30567, symbol='FB', side='buy', type='market', price=null, timeStamp=1608932855}
 Order{id=30570, symbol='GOOG', side='buy', type='limit', price=1733.58, timeStamp=1608932857}
 Order{id=30571, symbol='GOOG', side='sell', type='limit', price=1733.51, timeStamp=1608932857}
@@ -16922,7 +16904,6 @@ Order{id=30715, symbol='GOOG', side='sell', type='limit', price=1732.42, timeSta
 Order{id=30716, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608932928}
 Order{id=30717, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608932928}
 Order{id=30721, symbol='GOOG', side='sell', type='limit', price=1732.56, timeStamp=1608932930}
-Order{id=30724, symbol='AAPL', side='sell', type='market', price=131.75, timeStamp=1608932932}
 Order{id=30728, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608932934}
 Order{id=30729, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608932935}
 Order{id=30731, symbol='FB', side='buy', type='limit', price=265.88, timeStamp=1608932936}
@@ -16946,7 +16927,6 @@ Order{id=30761, symbol='FB', side='sell', type='market', price=null, timeStamp=1
 Order{id=30762, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608932952}
 Order{id=30763, symbol='FB', side='buy', type='limit', price=266.58, timeStamp=1608932952}
 Order{id=30765, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608932953}
-Order{id=30767, symbol='AAPL', side='sell', type='market', price=131.65, timeStamp=1608932954}
 Order{id=30768, symbol='FB', side='buy', type='market', price=null, timeStamp=1608932955}
 Order{id=30771, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608932955}
 Order{id=30772, symbol='GOOG', side='sell', type='limit', price=1732.31, timeStamp=1608932956}
@@ -17019,11 +16999,13 @@ Order{id=30883, symbol='FB', side='buy', type='limit', price=265.71, timeStamp=1
 Order{id=30884, symbol='GOOG', side='sell', type='limit', price=1733.43, timeStamp=1608933010}
 Order{id=30888, symbol='FB', side='sell', type='limit', price=266.79, timeStamp=1608933012}
 Order{id=30891, symbol='FB', side='buy', type='market', price=null, timeStamp=1608933014}
+Order{id=30892, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608933015}
 Order{id=30893, symbol='GOOG', side='sell', type='limit', price=1733.63, timeStamp=1608933016}
 Order{id=30894, symbol='FB', side='buy', type='market', price=null, timeStamp=1608933017}
 Order{id=30897, symbol='FB', side='buy', type='limit', price=266.28, timeStamp=1608933018}
 Order{id=30898, symbol='FB', side='buy', type='limit', price=266.04, timeStamp=1608933019}
 Order{id=30899, symbol='GOOG', side='sell', type='limit', price=1732.72, timeStamp=1608933019}
+Order{id=30901, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608933020}
 Order{id=30902, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608933021}
 Order{id=30903, symbol='FB', side='sell', type='market', price=null, timeStamp=1608933021}
 Order{id=30907, symbol='GOOG', side='buy', type='limit', price=1732.55, timeStamp=1608933023}
@@ -17107,7 +17089,7 @@ Order{id=31038, symbol='GOOG', side='buy', type='market', price=null, timeStamp=
 Order{id=31040, symbol='FB', side='buy', type='market', price=null, timeStamp=1608933091}
 Order{id=31041, symbol='FB', side='sell', type='limit', price=266.45, timeStamp=1608933092}
 Order{id=31042, symbol='FB', side='sell', type='market', price=null, timeStamp=1608933092}
-Order{id=31045, symbol='TSLA', side='sell', type='market', price=659.18, timeStamp=1608933094}
+Order{id=31046, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608933094}
 Order{id=31047, symbol='FB', side='sell', type='market', price=null, timeStamp=1608933094}
 Order{id=31048, symbol='GOOG', side='buy', type='limit', price=1733.01, timeStamp=1608933095}
 Order{id=31049, symbol='FB', side='sell', type='market', price=null, timeStamp=1608933095}
@@ -17187,7 +17169,6 @@ Order{id=31179, symbol='FB', side='sell', type='market', price=null, timeStamp=1
 Order{id=31180, symbol='FB', side='buy', type='limit', price=265.89, timeStamp=1608933158}
 Order{id=31182, symbol='FB', side='buy', type='market', price=null, timeStamp=1608933159}
 Order{id=31185, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608933160}
-Order{id=31186, symbol='AMZN', side='sell', type='market', price=3171.08, timeStamp=1608933161}
 Order{id=31187, symbol='FB', side='buy', type='market', price=null, timeStamp=1608933161}
 Order{id=31188, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608933162}
 Order{id=31190, symbol='GOOG', side='buy', type='limit', price=1733.14, timeStamp=1608933163}
@@ -17217,6 +17198,7 @@ Order{id=31242, symbol='FB', side='buy', type='market', price=null, timeStamp=16
 Order{id=31243, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608933193}
 Order{id=31244, symbol='FB', side='sell', type='limit', price=265.2, timeStamp=1608933193}
 Order{id=31245, symbol='FB', side='buy', type='market', price=null, timeStamp=1608933193}
+Order{id=31247, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608933194}
 Order{id=31248, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608933195}
 Order{id=31250, symbol='FB', side='sell', type='market', price=null, timeStamp=1608933196}
 Order{id=31251, symbol='FB', side='buy', type='limit', price=266.61, timeStamp=1608933196}
@@ -17239,12 +17221,10 @@ Order{id=31288, symbol='GOOG', side='buy', type='limit', price=1732.1, timeStamp
 Order{id=31290, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608933214}
 Order{id=31291, symbol='GOOG', side='buy', type='limit', price=null, timeStamp=1608933214}
 Order{id=31292, symbol='FB', side='buy', type='limit', price=266.71, timeStamp=1608933214}
-Order{id=31297, symbol='AAPL', side='sell', type='market', price=130.31, timeStamp=1608933217}
 Order{id=31298, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608933218}
 Order{id=31301, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608933219}
 Order{id=31302, symbol='GOOG', side='buy', type='limit', price=1732.9, timeStamp=1608933219}
 Order{id=31307, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608933222}
-Order{id=31308, symbol='AMZN', side='sell', type='market', price=3170.78, timeStamp=1608933223}
 Order{id=31309, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608933223}
 Order{id=31311, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608933224}
 Order{id=31312, symbol='FB', side='sell', type='limit', price=265.5, timeStamp=1608933225}
@@ -17263,6 +17243,7 @@ Order{id=31339, symbol='FB', side='buy', type='market', price=null, timeStamp=16
 Order{id=31340, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608933239}
 Order{id=31341, symbol='GOOG', side='buy', type='limit', price=1733.16, timeStamp=1608933239}
 Order{id=31342, symbol='AAPL', side='sell', type='limit', price=null, timeStamp=1608933240}
+Order{id=31343, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608933240}
 Order{id=31344, symbol='GOOG', side='buy', type='limit', price=1732.69, timeStamp=1608933241}
 Order{id=31345, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608933241}
 Order{id=31348, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608933242}
@@ -17278,6 +17259,7 @@ Order{id=31363, symbol='FB', side='sell', type='limit', price=265.84, timeStamp=
 Order{id=31366, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608933253}
 Order{id=31370, symbol='GOOG', side='sell', type='limit', price=1732.97, timeStamp=1608933255}
 Order{id=31373, symbol='FB', side='buy', type='market', price=null, timeStamp=1608933256}
+Order{id=31374, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608933257}
 Order{id=31376, symbol='FB', side='buy', type='market', price=null, timeStamp=1608933258}
 Order{id=31377, symbol='FB', side='sell', type='market', price=null, timeStamp=1608933259}
 Order{id=31381, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608933260}
@@ -17315,7 +17297,6 @@ Order{id=31435, symbol='FB', side='buy', type='market', price=null, timeStamp=16
 Order{id=31436, symbol='FB', side='buy', type='limit', price=266.1, timeStamp=1608933287}
 Order{id=31438, symbol='FB', side='buy', type='limit', price=265.84, timeStamp=1608933287}
 Order{id=31441, symbol='FB', side='sell', type='limit', price=266.01, timeStamp=1608933289}
-Order{id=31443, symbol='AAPL', side='sell', type='market', price=130.63, timeStamp=1608933290}
 Order{id=31447, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608933291}
 Order{id=31448, symbol='FB', side='sell', type='limit', price=266.29, timeStamp=1608933292}
 Order{id=31450, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608933292}
@@ -17341,6 +17322,7 @@ Order{id=31486, symbol='FB', side='sell', type='limit', price=265.31, timeStamp=
 Order{id=31487, symbol='GOOG', side='sell', type='limit', price=1733.63, timeStamp=1608933310}
 Order{id=31488, symbol='FB', side='sell', type='limit', price=266.75, timeStamp=1608933311}
 Order{id=31489, symbol='GOOG', side='sell', type='limit', price=1732.94, timeStamp=1608933311}
+Order{id=31490, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608933312}
 Order{id=31492, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608933312}
 Order{id=31495, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608933314}
 Order{id=31496, symbol='FB', side='sell', type='limit', price=265.51, timeStamp=1608933315}
@@ -17846,7 +17828,6 @@ Order{id=32389, symbol='FB', side='sell', type='market', price=null, timeStamp=1
 Order{id=32390, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608933778}
 Order{id=32392, symbol='FB', side='sell', type='market', price=null, timeStamp=1608933779}
 Order{id=32393, symbol='FB', side='buy', type='limit', price=265.34, timeStamp=1608933780}
-Order{id=32395, symbol='AAPL', side='sell', type='market', price=130.92, timeStamp=1608933781}
 Order{id=32396, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608933781}
 Order{id=32398, symbol='FB', side='buy', type='limit', price=265.57, timeStamp=1608933781}
 Order{id=32400, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608933783}
@@ -17972,6 +17953,7 @@ Order{id=32623, symbol='FB', side='sell', type='limit', price=265.17, timeStamp=
 Order{id=32625, symbol='AMZN', side='buy', type='limit', price=null, timeStamp=1608933895}
 Order{id=32626, symbol='GOOG', side='buy', type='limit', price=1733.43, timeStamp=1608933895}
 Order{id=32628, symbol='FB', side='buy', type='limit', price=266.22, timeStamp=1608933896}
+Order{id=32629, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608933896}
 Order{id=32630, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608933897}
 Order{id=32633, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608933898}
 Order{id=32635, symbol='AMZN', side='buy', type='limit', price=null, timeStamp=1608933899}
@@ -18040,8 +18022,8 @@ Order{id=32763, symbol='FB', side='buy', type='market', price=null, timeStamp=16
 Order{id=32764, symbol='FB', side='buy', type='limit', price=266.25, timeStamp=1608933965}
 Order{id=32769, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608933968}
 Order{id=32770, symbol='FB', side='sell', type='limit', price=266.37, timeStamp=1608933969}
-Order{id=32771, symbol='AAPL', side='sell', type='market', price=131.19, timeStamp=1608933970}
 Order{id=32772, symbol='FB', side='sell', type='market', price=null, timeStamp=1608933971}
+Order{id=32773, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608933971}
 Order{id=32778, symbol='FB', side='sell', type='market', price=null, timeStamp=1608933973}
 Order{id=32779, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608933973}
 Order{id=32780, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608933973}
@@ -18296,7 +18278,6 @@ Order{id=33218, symbol='FB', side='buy', type='limit', price=266.65, timeStamp=1
 Order{id=33220, symbol='FB', side='sell', type='market', price=null, timeStamp=1608934202}
 Order{id=33224, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608934204}
 Order{id=33225, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608934205}
-Order{id=33226, symbol='TSLA', side='sell', type='market', price=659.99, timeStamp=1608934206}
 Order{id=33227, symbol='FB', side='buy', type='limit', price=265.14, timeStamp=1608934207}
 Order{id=33228, symbol='GOOG', side='sell', type='limit', price=1733.05, timeStamp=1608934208}
 Order{id=33229, symbol='GOOG', side='buy', type='limit', price=1733.36, timeStamp=1608934209}
@@ -18318,6 +18299,7 @@ Order{id=33259, symbol='FB', side='sell', type='market', price=null, timeStamp=1
 Order{id=33260, symbol='FB', side='sell', type='limit', price=265.93, timeStamp=1608934224}
 Order{id=33261, symbol='FB', side='sell', type='market', price=null, timeStamp=1608934225}
 Order{id=33263, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608934225}
+Order{id=33264, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608934226}
 Order{id=33266, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608934227}
 Order{id=33267, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608934227}
 Order{id=33269, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608934228}
@@ -18612,7 +18594,6 @@ Order{id=33834, symbol='FB', side='buy', type='limit', price=266.01, timeStamp=1
 Order{id=33838, symbol='FB', side='buy', type='limit', price=266.17, timeStamp=1608934513}
 Order{id=33839, symbol='FB', side='sell', type='market', price=null, timeStamp=1608934514}
 Order{id=33841, symbol='FB', side='sell', type='limit', price=266.55, timeStamp=1608934515}
-Order{id=33842, symbol='AMZN', side='sell', type='market', price=3171.15, timeStamp=1608934516}
 Order{id=33843, symbol='GOOG', side='buy', type='limit', price=1732.64, timeStamp=1608934516}
 Order{id=33846, symbol='FB', side='sell', type='limit', price=266.1, timeStamp=1608934518}
 Order{id=33847, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608934519}
@@ -18624,8 +18605,6 @@ Order{id=33852, symbol='TSLA', side='sell', type='market', price=null, timeStamp
 Order{id=33853, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608934522}
 Order{id=33855, symbol='FB', side='buy', type='limit', price=266.65, timeStamp=1608934523}
 Order{id=33859, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608934525}
-Order{id=33861, symbol='AAPL', side='sell', type='market', price=130.56, timeStamp=1608934526}
-Order{id=33863, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608934527}
 Order{id=33864, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608934528}
 Order{id=33866, symbol='FB', side='sell', type='limit', price=266.67, timeStamp=1608934529}
 Order{id=33867, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608934530}
@@ -18634,6 +18613,7 @@ Order{id=33870, symbol='AMZN', side='buy', type='market', price=null, timeStamp=
 Order{id=33871, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608934531}
 Order{id=33872, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608934532}
 Order{id=33873, symbol='AMZN', side='buy', type='market', price=3171.77, timeStamp=1608934533}
+Order{id=33874, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608934533}
 Order{id=33875, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608934534}
 Order{id=33876, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608934534}
 Order{id=33879, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608934536}
@@ -18955,8 +18935,8 @@ Order{id=34498, symbol='FB', side='sell', type='limit', price=265.74, timeStamp=
 Order{id=34501, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608934849}
 Order{id=34502, symbol='GOOG', side='buy', type='limit', price=1733.8, timeStamp=1608934850}
 Order{id=34503, symbol='GOOG', side='sell', type='market', price=1732.81, timeStamp=1608934851}
-Order{id=34507, symbol='AMZN', side='sell', type='market', price=3171.76, timeStamp=1608934853}
 Order{id=34509, symbol='FB', side='sell', type='market', price=null, timeStamp=1608934854}
+Order{id=34511, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608934854}
 Order{id=34512, symbol='FB', side='buy', type='limit', price=265.62, timeStamp=1608934854}
 Order{id=34513, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608934855}
 Order{id=34516, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608934855}
@@ -19070,7 +19050,6 @@ Order{id=34698, symbol='TSLA', side='sell', type='market', price=null, timeStamp
 Order{id=34699, symbol='GOOG', side='sell', type='limit', price=1732.66, timeStamp=1608934940}
 Order{id=34702, symbol='GOOG', side='sell', type='limit', price=1732.11, timeStamp=1608934942}
 Order{id=34705, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608934943}
-Order{id=34706, symbol='TSLA', side='sell', type='market', price=659.97, timeStamp=1608934944}
 Order{id=34709, symbol='GOOG', side='sell', type='limit', price=1733.66, timeStamp=1608934946}
 Order{id=34710, symbol='FB', side='sell', type='limit', price=265.23, timeStamp=1608934946}
 Order{id=34711, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608934947}
@@ -19109,7 +19088,6 @@ Order{id=34773, symbol='GOOG', side='sell', type='limit', price=1733.63, timeSta
 Order{id=34777, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608934979}
 Order{id=34778, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608934979}
 Order{id=34780, symbol='FB', side='sell', type='limit', price=266.42, timeStamp=1608934980}
-Order{id=34781, symbol='AAPL', side='sell', type='market', price=130.75, timeStamp=1608934980}
 Order{id=34782, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608934981}
 Order{id=34785, symbol='AAPL', side='sell', type='limit', price=null, timeStamp=1608934982}
 Order{id=34788, symbol='GOOG', side='buy', type='limit', price=1733.07, timeStamp=1608934985}
@@ -19126,6 +19104,7 @@ Order{id=34813, symbol='AMZN', side='buy', type='market', price=null, timeStamp=
 Order{id=34814, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608935000}
 Order{id=34820, symbol='FB', side='buy', type='limit', price=266.65, timeStamp=1608935002}
 Order{id=34823, symbol='FB', side='sell', type='market', price=null, timeStamp=1608935003}
+Order{id=34824, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608935004}
 Order{id=34825, symbol='FB', side='buy', type='market', price=null, timeStamp=1608935005}
 Order{id=34826, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608935005}
 Order{id=34829, symbol='AAPL', side='buy', type='market', price=131.68, timeStamp=1608935006}
@@ -19206,6 +19185,7 @@ Order{id=34963, symbol='GOOG', side='buy', type='market', price=null, timeStamp=
 Order{id=34964, symbol='FB', side='buy', type='limit', price=265.76, timeStamp=1608935069}
 Order{id=34967, symbol='FB', side='sell', type='market', price=null, timeStamp=1608935071}
 Order{id=34968, symbol='FB', side='sell', type='limit', price=265.98, timeStamp=1608935072}
+Order{id=34973, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608935074}
 Order{id=34975, symbol='FB', side='sell', type='market', price=null, timeStamp=1608935075}
 Order{id=34977, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608935076}
 Order{id=34978, symbol='GOOG', side='sell', type='limit', price=1732.11, timeStamp=1608935077}
@@ -19215,7 +19195,7 @@ Order{id=34981, symbol='FB', side='buy', type='market', price=null, timeStamp=16
 Order{id=34982, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608935079}
 Order{id=34987, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608935082}
 Order{id=34989, symbol='FB', side='sell', type='market', price=null, timeStamp=1608935083}
-Order{id=34990, symbol='AAPL', side='sell', type='market', price=131.78, timeStamp=1608935083}
+Order{id=34992, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608935084}
 Order{id=34994, symbol='FB', side='sell', type='limit', price=266.46, timeStamp=1608935085}
 Order{id=34996, symbol='FB', side='sell', type='market', price=null, timeStamp=1608935086}
 Order{id=34998, symbol='GOOG', side='buy', type='limit', price=1732.86, timeStamp=1608935087}
@@ -19394,7 +19374,6 @@ Order{id=35383, symbol='GOOG', side='sell', type='market', price=null, timeStamp
 Order{id=35384, symbol='FB', side='buy', type='market', price=null, timeStamp=1608935282}
 Order{id=35385, symbol='GOOG', side='buy', type='limit', price=1733.3, timeStamp=1608935283}
 Order{id=35386, symbol='FB', side='sell', type='market', price=null, timeStamp=1608935283}
-Order{id=35387, symbol='TSLA', side='sell', type='market', price=659.55, timeStamp=1608935283}
 Order{id=35389, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608935284}
 Order{id=35390, symbol='FB', side='sell', type='market', price=null, timeStamp=1608935285}
 Order{id=35392, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608935286}
@@ -19468,7 +19447,6 @@ Order{id=35517, symbol='GOOG', side='buy', type='limit', price=1733.07, timeStam
 Order{id=35518, symbol='AAPL', side='buy', type='limit', price=null, timeStamp=1608935346}
 Order{id=35519, symbol='FB', side='sell', type='market', price=null, timeStamp=1608935347}
 Order{id=35520, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608935348}
-Order{id=35522, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608935349}
 Order{id=35524, symbol='GOOG', side='buy', type='limit', price=1732.2, timeStamp=1608935350}
 Order{id=35525, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608935351}
 Order{id=35528, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608935353}
@@ -19486,9 +19464,9 @@ Order{id=35546, symbol='FB', side='sell', type='market', price=null, timeStamp=1
 Order{id=35547, symbol='FB', side='sell', type='limit', price=265.12, timeStamp=1608935362}
 Order{id=35551, symbol='FB', side='sell', type='limit', price=null, timeStamp=1608935364}
 Order{id=35552, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608935364}
-Order{id=35553, symbol='AAPL', side='sell', type='market', price=131.97, timeStamp=1608935365}
 Order{id=35554, symbol='FB', side='sell', type='limit', price=266.7, timeStamp=1608935365}
 Order{id=35555, symbol='FB', side='buy', type='limit', price=266.21, timeStamp=1608935366}
+Order{id=35560, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608935368}
 Order{id=35561, symbol='FB', side='buy', type='limit', price=265.65, timeStamp=1608935369}
 Order{id=35566, symbol='FB', side='buy', type='market', price=null, timeStamp=1608935371}
 Order{id=35567, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608935372}
@@ -19718,11 +19696,11 @@ Order{id=35996, symbol='GOOG', side='sell', type='limit', price=1733.39, timeSta
 Order{id=35999, symbol='FB', side='buy', type='market', price=null, timeStamp=1608935586}
 Order{id=36001, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608935587}
 Order{id=36002, symbol='GOOG', side='sell', type='limit', price=1733.34, timeStamp=1608935587}
-Order{id=36004, symbol='AAPL', side='sell', type='market', price=130.98, timeStamp=1608935589}
 Order{id=36006, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608935590}
 Order{id=36009, symbol='GOOG', side='sell', type='limit', price=1732.67, timeStamp=1608935591}
 Order{id=36010, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608935592}
 Order{id=36012, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608935592}
+Order{id=36013, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608935592}
 Order{id=36014, symbol='FB', side='sell', type='limit', price=266.81, timeStamp=1608935593}
 Order{id=36018, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608935596}
 Order{id=36019, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608935597}
@@ -20007,7 +19985,6 @@ Order{id=36570, symbol='FB', side='buy', type='limit', price=266.37, timeStamp=1
 Order{id=36571, symbol='FB', side='sell', type='market', price=null, timeStamp=1608935874}
 Order{id=36572, symbol='FB', side='sell', type='market', price=null, timeStamp=1608935874}
 Order{id=36576, symbol='GOOG', side='buy', type='limit', price=1733.99, timeStamp=1608935875}
-Order{id=36578, symbol='TSLA', side='sell', type='market', price=659.18, timeStamp=1608935877}
 Order{id=36579, symbol='GOOG', side='buy', type='market', price=1733.8, timeStamp=1608935877}
 Order{id=36580, symbol='FB', side='sell', type='market', price=null, timeStamp=1608935877}
 Order{id=36582, symbol='FB', side='buy', type='limit', price=265.02, timeStamp=1608935878}
@@ -20123,6 +20100,7 @@ Order{id=36794, symbol='GOOG', side='sell', type='limit', price=1732.23, timeSta
 Order{id=36795, symbol='FB', side='sell', type='market', price=null, timeStamp=1608935989}
 Order{id=36800, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608935990}
 Order{id=36801, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608935991}
+Order{id=36804, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608935993}
 Order{id=36806, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608935993}
 Order{id=36807, symbol='FB', side='sell', type='market', price=null, timeStamp=1608935994}
 Order{id=36809, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608935995}
@@ -20446,7 +20424,6 @@ Order{id=37408, symbol='FB', side='sell', type='limit', price=266.31, timeStamp=
 Order{id=37409, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608936280}
 Order{id=37410, symbol='GOOG', side='sell', type='limit', price=1733.65, timeStamp=1608936281}
 Order{id=37411, symbol='FB', side='buy', type='market', price=null, timeStamp=1608936281}
-Order{id=37413, symbol='AMZN', side='sell', type='market', price=3171.76, timeStamp=1608936282}
 Order{id=37416, symbol='FB', side='sell', type='market', price=null, timeStamp=1608936283}
 Order{id=37422, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608936287}
 Order{id=37427, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608936288}
@@ -20465,7 +20442,6 @@ Order{id=37443, symbol='GOOG', side='buy', type='market', price=null, timeStamp=
 Order{id=37444, symbol='FB', side='buy', type='market', price=null, timeStamp=1608936295}
 Order{id=37445, symbol='GOOG', side='sell', type='limit', price=1733.46, timeStamp=1608936295}
 Order{id=37447, symbol='GOOG', side='sell', type='limit', price=1732.16, timeStamp=1608936296}
-Order{id=37448, symbol='AMZN', side='sell', type='market', price=3171.6, timeStamp=1608936296}
 Order{id=37451, symbol='FB', side='buy', type='market', price=null, timeStamp=1608936297}
 Order{id=37452, symbol='FB', side='buy', type='limit', price=265.64, timeStamp=1608936298}
 Order{id=37454, symbol='FB', side='buy', type='market', price=null, timeStamp=1608936299}
@@ -20486,6 +20462,7 @@ Order{id=37478, symbol='AAPL', side='buy', type='market', price=null, timeStamp=
 Order{id=37481, symbol='GOOG', side='buy', type='limit', price=1732.76, timeStamp=1608936313}
 Order{id=37483, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608936314}
 Order{id=37484, symbol='FB', side='sell', type='market', price=null, timeStamp=1608936314}
+Order{id=37485, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608936315}
 Order{id=37486, symbol='FB', side='sell', type='market', price=null, timeStamp=1608936315}
 Order{id=37488, symbol='FB', side='sell', type='limit', price=266.89, timeStamp=1608936316}
 Order{id=37489, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608936317}
@@ -20497,6 +20474,7 @@ Order{id=37500, symbol='FB', side='sell', type='market', price=null, timeStamp=1
 Order{id=37503, symbol='FB', side='sell', type='market', price=null, timeStamp=1608936323}
 Order{id=37505, symbol='AAPL', side='buy', type='limit', price=null, timeStamp=1608936325}
 Order{id=37506, symbol='FB', side='buy', type='market', price=null, timeStamp=1608936325}
+Order{id=37507, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608936326}
 Order{id=37511, symbol='FB', side='sell', type='market', price=null, timeStamp=1608936328}
 Order{id=37512, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608936328}
 Order{id=37513, symbol='GOOG', side='buy', type='limit', price=null, timeStamp=1608936329}
@@ -20559,7 +20537,6 @@ Order{id=37628, symbol='FB', side='sell', type='market', price=null, timeStamp=1
 Order{id=37629, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608936392}
 Order{id=37630, symbol='FB', side='sell', type='market', price=null, timeStamp=1608936392}
 Order{id=37631, symbol='FB', side='sell', type='market', price=null, timeStamp=1608936392}
-Order{id=37634, symbol='TSLA', side='sell', type='market', price=658.66, timeStamp=1608936393}
 Order{id=37635, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608936394}
 Order{id=37636, symbol='GOOG', side='buy', type='limit', price=1732.52, timeStamp=1608936394}
 Order{id=37637, symbol='GOOG', side='sell', type='market', price=1733.83, timeStamp=1608936394}
@@ -20567,6 +20544,7 @@ Order{id=37639, symbol='AMZN', side='buy', type='market', price=null, timeStamp=
 Order{id=37643, symbol='GOOG', side='buy', type='limit', price=1732.18, timeStamp=1608936396}
 Order{id=37646, symbol='FB', side='buy', type='limit', price=266.84, timeStamp=1608936397}
 Order{id=37647, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608936398}
+Order{id=37648, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608936398}
 Order{id=37649, symbol='GOOG', side='sell', type='limit', price=1732.51, timeStamp=1608936399}
 Order{id=37652, symbol='GOOG', side='buy', type='limit', price=1732.11, timeStamp=1608936401}
 Order{id=37657, symbol='FB', side='sell', type='limit', price=null, timeStamp=1608936403}
@@ -20818,7 +20796,6 @@ Order{id=38089, symbol='FB', side='buy', type='market', price=null, timeStamp=16
 Order{id=38090, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608936629}
 Order{id=38092, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608936630}
 Order{id=38093, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608936631}
-Order{id=38095, symbol='AAPL', side='sell', type='market', price=131.76, timeStamp=1608936632}
 Order{id=38099, symbol='FB', side='buy', type='market', price=null, timeStamp=1608936635}
 Order{id=38100, symbol='FB', side='buy', type='limit', price=null, timeStamp=1608936635}
 Order{id=38102, symbol='FB', side='buy', type='market', price=null, timeStamp=1608936636}
@@ -21024,7 +21001,6 @@ Order{id=38473, symbol='AAPL', side='buy', type='market', price=null, timeStamp=
 Order{id=38477, symbol='FB', side='sell', type='market', price=null, timeStamp=1608936812}
 Order{id=38478, symbol='FB', side='buy', type='limit', price=265.52, timeStamp=1608936812}
 Order{id=38482, symbol='FB', side='buy', type='limit', price=265.88, timeStamp=1608936814}
-Order{id=38483, symbol='AAPL', side='sell', type='market', price=131.36, timeStamp=1608936814}
 Order{id=38484, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608936815}
 Order{id=38485, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608936816}
 Order{id=38486, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608936816}
@@ -21049,7 +21025,6 @@ Order{id=38513, symbol='GOOG', side='buy', type='market', price=null, timeStamp=
 Order{id=38515, symbol='GOOG', side='sell', type='limit', price=1732.38, timeStamp=1608936829}
 Order{id=38516, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608936829}
 Order{id=38517, symbol='FB', side='buy', type='limit', price=266.35, timeStamp=1608936830}
-Order{id=38518, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608936830}
 Order{id=38519, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608936830}
 Order{id=38523, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608936833}
 Order{id=38525, symbol='GOOG', side='sell', type='market', price=1732.64, timeStamp=1608936833}
@@ -21202,7 +21177,6 @@ Order{id=38790, symbol='FB', side='sell', type='market', price=null, timeStamp=1
 Order{id=38791, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608936969}
 Order{id=38792, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608936969}
 Order{id=38793, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608936970}
-Order{id=38796, symbol='TSLA', side='sell', type='market', price=659.76, timeStamp=1608936970}
 Order{id=38797, symbol='GOOG', side='sell', type='market', price=1733.69, timeStamp=1608936970}
 Order{id=38798, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608936971}
 Order{id=38799, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608936972}
@@ -21241,6 +21215,7 @@ Order{id=38861, symbol='FB', side='sell', type='limit', price=265.45, timeStamp=
 Order{id=38864, symbol='GOOG', side='buy', type='limit', price=1733.24, timeStamp=1608937001}
 Order{id=38866, symbol='FB', side='buy', type='market', price=null, timeStamp=1608937002}
 Order{id=38869, symbol='FB', side='sell', type='market', price=null, timeStamp=1608937003}
+Order{id=38871, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608937004}
 Order{id=38872, symbol='FB', side='sell', type='limit', price=266.73, timeStamp=1608937004}
 Order{id=38873, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608937005}
 Order{id=38876, symbol='FB', side='buy', type='market', price=null, timeStamp=1608937007}
@@ -21296,6 +21271,7 @@ Order{id=38967, symbol='FB', side='buy', type='limit', price=null, timeStamp=160
 Order{id=38968, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608937056}
 Order{id=38973, symbol='FB', side='buy', type='limit', price=266.68, timeStamp=1608937058}
 Order{id=38974, symbol='FB', side='sell', type='limit', price=266.13, timeStamp=1608937059}
+Order{id=38976, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608937060}
 Order{id=38977, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608937061}
 Order{id=38978, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608937062}
 Order{id=38979, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608937062}
@@ -21529,7 +21505,6 @@ Order{id=39371, symbol='GOOG', side='sell', type='market', price=null, timeStamp
 Order{id=39372, symbol='GOOG', side='sell', type='limit', price=1732.67, timeStamp=1608937258}
 Order{id=39373, symbol='GOOG', side='buy', type='limit', price=1732.06, timeStamp=1608937258}
 Order{id=39376, symbol='GOOG', side='sell', type='limit', price=1733.49, timeStamp=1608937260}
-Order{id=39378, symbol='AAPL', side='sell', type='market', price=130.63, timeStamp=1608937261}
 Order{id=39382, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608937263}
 Order{id=39383, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608937264}
 Order{id=39385, symbol='FB', side='buy', type='limit', price=266.31, timeStamp=1608937264}
@@ -21563,6 +21538,7 @@ Order{id=39445, symbol='TSLA', side='sell', type='market', price=null, timeStamp
 Order{id=39446, symbol='FB', side='buy', type='limit', price=265.45, timeStamp=1608937298}
 Order{id=39447, symbol='FB', side='sell', type='limit', price=266.35, timeStamp=1608937298}
 Order{id=39448, symbol='FB', side='sell', type='limit', price=266.61, timeStamp=1608937299}
+Order{id=39449, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608937299}
 Order{id=39451, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608937300}
 Order{id=39452, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608937301}
 Order{id=39453, symbol='FB', side='sell', type='market', price=266.01, timeStamp=1608937301}
@@ -21734,7 +21710,6 @@ Order{id=39746, symbol='FB', side='sell', type='limit', price=265.61, timeStamp=
 Order{id=39748, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608937453}
 Order{id=39750, symbol='FB', side='sell', type='market', price=null, timeStamp=1608937454}
 Order{id=39751, symbol='FB', side='buy', type='market', price=null, timeStamp=1608937455}
-Order{id=39754, symbol='AMZN', side='sell', type='market', price=3171.15, timeStamp=1608937457}
 Order{id=39756, symbol='GOOG', side='buy', type='limit', price=1732.7, timeStamp=1608937458}
 Order{id=39757, symbol='GOOG', side='buy', type='limit', price=1732.4, timeStamp=1608937458}
 Order{id=39758, symbol='GOOG', side='sell', type='limit', price=1733.83, timeStamp=1608937458}
@@ -21799,6 +21774,7 @@ Order{id=39855, symbol='FB', side='buy', type='limit', price=266.38, timeStamp=1
 Order{id=39858, symbol='GOOG', side='sell', type='limit', price=1732.17, timeStamp=1608937506}
 Order{id=39861, symbol='GOOG', side='sell', type='limit', price=1732.86, timeStamp=1608937507}
 Order{id=39862, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608937507}
+Order{id=39863, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608937508}
 Order{id=39864, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608937508}
 Order{id=39865, symbol='FB', side='sell', type='market', price=null, timeStamp=1608937509}
 Order{id=39867, symbol='FB', side='sell', type='limit', price=265.25, timeStamp=1608937510}
@@ -21875,7 +21851,6 @@ Order{id=39984, symbol='FB', side='buy', type='limit', price=265.45, timeStamp=1
 Order{id=39985, symbol='GOOG', side='sell', type='limit', price=null, timeStamp=1608937576}
 Order{id=39990, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608937579}
 Order{id=39991, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608937580}
-Order{id=39994, symbol='TSLA', side='sell', type='market', price=659.38, timeStamp=1608937581}
 Order{id=39995, symbol='GOOG', side='sell', type='limit', price=1732.42, timeStamp=1608937581}
 Order{id=39996, symbol='GOOG', side='buy', type='limit', price=1732.18, timeStamp=1608937581}
 Order{id=40000, symbol='AMZN', side='buy', type='limit', price=null, timeStamp=1608937583}
@@ -21887,6 +21862,7 @@ Order{id=40011, symbol='TSLA', side='sell', type='limit', price=null, timeStamp=
 Order{id=40012, symbol='GOOG', side='sell', type='limit', price=1732.44, timeStamp=1608937588}
 Order{id=40015, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608937589}
 Order{id=40016, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608937590}
+Order{id=40017, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608937590}
 Order{id=40018, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608937590}
 Order{id=40019, symbol='TSLA', side='buy', type='limit', price=null, timeStamp=1608937591}
 Order{id=40020, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608937591}
@@ -22095,7 +22071,6 @@ Order{id=40428, symbol='GOOG', side='sell', type='market', price=null, timeStamp
 Order{id=40432, symbol='GOOG', side='buy', type='limit', price=1733.05, timeStamp=1608937800}
 Order{id=40434, symbol='GOOG', side='buy', type='limit', price=1732.82, timeStamp=1608937801}
 Order{id=40435, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608937802}
-Order{id=40437, symbol='AMZN', side='sell', type='market', price=3170.86, timeStamp=1608937803}
 Order{id=40439, symbol='GOOG', side='sell', type='limit', price=1733.53, timeStamp=1608937805}
 Order{id=40441, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608937806}
 Order{id=40442, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608937807}
@@ -22115,6 +22090,7 @@ Order{id=40462, symbol='FB', side='sell', type='limit', price=266.42, timeStamp=
 Order{id=40464, symbol='FB', side='sell', type='limit', price=266.15, timeStamp=1608937817}
 Order{id=40465, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608937818}
 Order{id=40466, symbol='GOOG', side='buy', type='limit', price=1733.61, timeStamp=1608937818}
+Order{id=40467, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608937819}
 Order{id=40468, symbol='FB', side='buy', type='limit', price=266.79, timeStamp=1608937819}
 Order{id=40470, symbol='GOOG', side='buy', type='limit', price=1732.59, timeStamp=1608937820}
 Order{id=40471, symbol='GOOG', side='sell', type='limit', price=1732.77, timeStamp=1608937820}
@@ -22194,11 +22170,9 @@ Order{id=40593, symbol='TSLA', side='sell', type='market', price=null, timeStamp
 Order{id=40597, symbol='FB', side='buy', type='limit', price=266.93, timeStamp=1608937879}
 Order{id=40598, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608937880}
 Order{id=40599, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608937880}
-Order{id=40600, symbol='AMZN', side='sell', type='market', price=3171.63, timeStamp=1608937880}
 Order{id=40603, symbol='FB', side='buy', type='market', price=null, timeStamp=1608937882}
 Order{id=40604, symbol='GOOG', side='buy', type='limit', price=1732.71, timeStamp=1608937882}
 Order{id=40605, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608937883}
-Order{id=40606, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608937884}
 Order{id=40608, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608937884}
 Order{id=40612, symbol='FB', side='buy', type='market', price=null, timeStamp=1608937886}
 Order{id=40616, symbol='FB', side='buy', type='limit', price=266.96, timeStamp=1608937887}
@@ -22562,7 +22536,6 @@ Order{id=41249, symbol='FB', side='sell', type='market', price=null, timeStamp=1
 Order{id=41250, symbol='FB', side='sell', type='limit', price=266.15, timeStamp=1608938208}
 Order{id=41251, symbol='FB', side='sell', type='market', price=null, timeStamp=1608938209}
 Order{id=41252, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608938210}
-Order{id=41253, symbol='TSLA', side='sell', type='market', price=658.77, timeStamp=1608938210}
 Order{id=41255, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608938211}
 Order{id=41256, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608938211}
 Order{id=41258, symbol='GOOG', side='sell', type='limit', price=1732.32, timeStamp=1608938213}
@@ -22582,6 +22555,7 @@ Order{id=41283, symbol='GOOG', side='buy', type='market', price=null, timeStamp=
 Order{id=41284, symbol='FB', side='buy', type='market', price=null, timeStamp=1608938227}
 Order{id=41288, symbol='GOOG', side='buy', type='limit', price=1732.87, timeStamp=1608938228}
 Order{id=41289, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608938229}
+Order{id=41291, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608938230}
 Order{id=41292, symbol='FB', side='buy', type='limit', price=266.29, timeStamp=1608938230}
 Order{id=41295, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608938231}
 Order{id=41296, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608938232}
@@ -23452,7 +23426,6 @@ Order{id=42807, symbol='GOOG', side='sell', type='market', price=1733.43, timeSt
 Order{id=42808, symbol='FB', side='sell', type='limit', price=266.7, timeStamp=1608938991}
 Order{id=42809, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608938992}
 Order{id=42811, symbol='FB', side='sell', type='market', price=null, timeStamp=1608938993}
-Order{id=42813, symbol='AMZN', side='sell', type='market', price=3171.45, timeStamp=1608938994}
 Order{id=42814, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608938995}
 Order{id=42816, symbol='FB', side='sell', type='market', price=null, timeStamp=1608938996}
 Order{id=42817, symbol='AMZN', side='buy', type='limit', price=null, timeStamp=1608938996}
@@ -23541,6 +23514,7 @@ Order{id=42964, symbol='GOOG', side='sell', type='limit', price=1732.2, timeStam
 Order{id=42965, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608939076}
 Order{id=42966, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608939077}
 Order{id=42967, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608939077}
+Order{id=42968, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608939078}
 Order{id=42969, symbol='FB', side='buy', type='market', price=null, timeStamp=1608939078}
 Order{id=42970, symbol='FB', side='sell', type='limit', price=266.91, timeStamp=1608939079}
 Order{id=42972, symbol='GOOG', side='buy', type='limit', price=1733.92, timeStamp=1608939081}
@@ -23583,8 +23557,8 @@ Order{id=43037, symbol='FB', side='buy', type='limit', price=266.1, timeStamp=16
 Order{id=43038, symbol='FB', side='buy', type='limit', price=265.98, timeStamp=1608939113}
 Order{id=43040, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608939115}
 Order{id=43042, symbol='GOOG', side='buy', type='limit', price=1733.58, timeStamp=1608939116}
-Order{id=43043, symbol='TSLA', side='sell', type='market', price=659.69, timeStamp=1608939116}
 Order{id=43044, symbol='FB', side='sell', type='market', price=null, timeStamp=1608939116}
+Order{id=43045, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608939116}
 Order{id=43046, symbol='FB', side='buy', type='limit', price=265.63, timeStamp=1608939117}
 Order{id=43048, symbol='FB', side='sell', type='market', price=null, timeStamp=1608939118}
 Order{id=43049, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608939118}
@@ -23649,13 +23623,13 @@ Order{id=43142, symbol='GOOG', side='buy', type='limit', price=null, timeStamp=1
 Order{id=43143, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608939162}
 Order{id=43145, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608939163}
 Order{id=43146, symbol='FB', side='sell', type='market', price=null, timeStamp=1608939163}
-Order{id=43148, symbol='AMZN', side='sell', type='market', price=3171.51, timeStamp=1608939164}
 Order{id=43149, symbol='GOOG', side='buy', type='limit', price=null, timeStamp=1608939165}
 Order{id=43150, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608939165}
 Order{id=43151, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608939165}
 Order{id=43153, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608939166}
 Order{id=43157, symbol='FB', side='buy', type='limit', price=265.68, timeStamp=1608939168}
 Order{id=43161, symbol='FB', side='sell', type='market', price=null, timeStamp=1608939170}
+Order{id=43162, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608939171}
 Order{id=43163, symbol='GOOG', side='sell', type='limit', price=1733.16, timeStamp=1608939172}
 Order{id=43164, symbol='FB', side='sell', type='limit', price=266.16, timeStamp=1608939172}
 Order{id=43166, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608939173}
@@ -24065,7 +24039,6 @@ Order{id=43905, symbol='FB', side='buy', type='limit', price=266.12, timeStamp=1
 Order{id=43907, symbol='FB', side='buy', type='market', price=null, timeStamp=1608939554}
 Order{id=43909, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608939554}
 Order{id=43911, symbol='GOOG', side='sell', type='limit', price=1733.78, timeStamp=1608939555}
-Order{id=43912, symbol='AMZN', side='sell', type='market', price=3171.43, timeStamp=1608939555}
 Order{id=43913, symbol='GOOG', side='buy', type='limit', price=null, timeStamp=1608939555}
 Order{id=43914, symbol='FB', side='sell', type='market', price=null, timeStamp=1608939556}
 Order{id=43915, symbol='FB', side='sell', type='limit', price=266.42, timeStamp=1608939557}
@@ -24127,12 +24100,12 @@ Order{id=44028, symbol='FB', side='sell', type='limit', price=265.38, timeStamp=
 Order{id=44030, symbol='GOOG', side='buy', type='limit', price=1733.6, timeStamp=1608939615}
 Order{id=44035, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608939616}
 Order{id=44036, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608939617}
-Order{id=44041, symbol='AAPL', side='sell', type='market', price=131.53, timeStamp=1608939619}
 Order{id=44043, symbol='FB', side='sell', type='limit', price=265.58, timeStamp=1608939620}
 Order{id=44047, symbol='GOOG', side='buy', type='limit', price=1732.11, timeStamp=1608939622}
 Order{id=44048, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608939623}
 Order{id=44052, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608939625}
 Order{id=44053, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608939626}
+Order{id=44054, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608939626}
 Order{id=44056, symbol='FB', side='buy', type='limit', price=265.44, timeStamp=1608939626}
 Order{id=44057, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608939627}
 Order{id=44058, symbol='FB', side='buy', type='market', price=null, timeStamp=1608939627}
@@ -24418,7 +24391,6 @@ Order{id=44587, symbol='AAPL', side='sell', type='market', price=null, timeStamp
 Order{id=44588, symbol='FB', side='sell', type='market', price=null, timeStamp=1608939886}
 Order{id=44592, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608939887}
 Order{id=44594, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608939889}
-Order{id=44600, symbol='AMZN', side='buy', type='market', price=null, timeStamp=1608939892}
 Order{id=44601, symbol='TSLA', side='buy', type='market', price=null, timeStamp=1608939892}
 Order{id=44604, symbol='FB', side='sell', type='limit', price=265.82, timeStamp=1608939894}
 Order{id=44606, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608939895}
@@ -24428,7 +24400,7 @@ Order{id=44611, symbol='FB', side='buy', type='market', price=null, timeStamp=16
 Order{id=44613, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608939898}
 Order{id=44614, symbol='FB', side='sell', type='limit', price=null, timeStamp=1608939899}
 Order{id=44615, symbol='AMZN', side='buy', type='market', price=3170.75, timeStamp=1608939899}
-Order{id=44616, symbol='AMZN', side='sell', type='market', price=3171.63, timeStamp=1608939899}
+Order{id=44617, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608939899}
 Order{id=44618, symbol='AAPL', side='sell', type='market', price=131.29, timeStamp=1608939900}
 Order{id=44619, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608939900}
 Order{id=44621, symbol='FB', side='sell', type='limit', price=265.16, timeStamp=1608939901}
@@ -24569,7 +24541,6 @@ Order{id=44842, symbol='GOOG', side='buy', type='market', price=null, timeStamp=
 Order{id=44846, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608940018}
 Order{id=44848, symbol='FB', side='sell', type='limit', price=266.69, timeStamp=1608940019}
 Order{id=44849, symbol='AAPL', side='buy', type='limit', price=null, timeStamp=1608940019}
-Order{id=44850, symbol='AMZN', side='sell', type='market', price=3171.53, timeStamp=1608940020}
 Order{id=44853, symbol='GOOG', side='buy', type='limit', price=1732.8, timeStamp=1608940022}
 Order{id=44857, symbol='GOOG', side='sell', type='limit', price=1733.06, timeStamp=1608940023}
 Order{id=44858, symbol='FB', side='sell', type='market', price=null, timeStamp=1608940023}
@@ -24619,6 +24590,7 @@ Order{id=44943, symbol='FB', side='buy', type='market', price=null, timeStamp=16
 Order{id=44945, symbol='GOOG', side='buy', type='limit', price=1733.21, timeStamp=1608940061}
 Order{id=44948, symbol='FB', side='sell', type='limit', price=266.42, timeStamp=1608940062}
 Order{id=44949, symbol='AAPL', side='buy', type='limit', price=null, timeStamp=1608940063}
+Order{id=44950, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608940063}
 Order{id=44954, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608940065}
 Order{id=44956, symbol='FB', side='buy', type='limit', price=266.21, timeStamp=1608940066}
 Order{id=44958, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608940067}
@@ -24871,13 +24843,13 @@ Order{id=45397, symbol='GOOG', side='buy', type='limit', price=1732.18, timeStam
 Order{id=45400, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608940299}
 Order{id=45402, symbol='FB', side='sell', type='market', price=null, timeStamp=1608940300}
 Order{id=45403, symbol='FB', side='buy', type='market', price=null, timeStamp=1608940300}
-Order{id=45404, symbol='TSLA', side='sell', type='market', price=659.12, timeStamp=1608940301}
 Order{id=45405, symbol='AAPL', side='buy', type='limit', price=null, timeStamp=1608940302}
 Order{id=45406, symbol='FB', side='buy', type='market', price=null, timeStamp=1608940302}
 Order{id=45410, symbol='FB', side='buy', type='market', price=null, timeStamp=1608940304}
 Order{id=45411, symbol='TSLA', side='buy', type='limit', price=null, timeStamp=1608940305}
 Order{id=45413, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608940306}
 Order{id=45417, symbol='FB', side='buy', type='limit', price=266.41, timeStamp=1608940308}
+Order{id=45418, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608940309}
 Order{id=45425, symbol='TSLA', side='sell', type='market', price=null, timeStamp=1608940312}
 Order{id=45429, symbol='FB', side='sell', type='limit', price=265.77, timeStamp=1608940315}
 Order{id=45430, symbol='FB', side='sell', type='market', price=265.6, timeStamp=1608940315}
@@ -25172,12 +25144,9 @@ Order{id=45955, symbol='FB', side='buy', type='limit', price=266.66, timeStamp=1
 Order{id=45956, symbol='AAPL', side='sell', type='market', price=null, timeStamp=1608940570}
 Order{id=45961, symbol='AAPL', side='buy', type='limit', price=null, timeStamp=1608940573}
 Order{id=45962, symbol='FB', side='sell', type='market', price=null, timeStamp=1608940573}
-Order{id=45963, symbol='AAPL', side='sell', type='market', price=131.94, timeStamp=1608940574}
-Order{id=45970, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608940579}
 Order{id=45972, symbol='GOOG', side='buy', type='limit', price=1732.4, timeStamp=1608940579}
 Order{id=45973, symbol='GOOG', side='sell', type='market', price=null, timeStamp=1608940579}
 Order{id=45974, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608940580}
-Order{id=45975, symbol='AMZN', side='sell', type='market', price=3170.89, timeStamp=1608940580}
 Order{id=45976, symbol='GOOG', side='sell', type='limit', price=1732.46, timeStamp=1608940581}
 Order{id=45977, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608940582}
 Order{id=45978, symbol='FB', side='sell', type='market', price=null, timeStamp=1608940582}
@@ -25331,6 +25300,7 @@ Order{id=46257, symbol='AAPL', side='buy', type='market', price=null, timeStamp=
 Order{id=46259, symbol='GOOG', side='buy', type='limit', price=1733.45, timeStamp=1608940729}
 Order{id=46260, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608940729}
 Order{id=46262, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608940730}
+Order{id=46263, symbol='AMZN', side='sell', type='market', price=null, timeStamp=1608940731}
 Order{id=46264, symbol='AAPL', side='buy', type='market', price=null, timeStamp=1608940731}
 Order{id=46265, symbol='FB', side='sell', type='limit', price=null, timeStamp=1608940732}
 Order{id=46266, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608940732}
@@ -25381,7 +25351,6 @@ Order{id=46346, symbol='FB', side='buy', type='market', price=null, timeStamp=16
 Order{id=46348, symbol='FB', side='sell', type='market', price=null, timeStamp=1608940774}
 Order{id=46349, symbol='GOOG', side='sell', type='limit', price=1733.27, timeStamp=1608940774}
 Order{id=46350, symbol='GOOG', side='buy', type='market', price=null, timeStamp=1608940775}
-Order{id=46354, symbol='AMZN', side='sell', type='market', price=3170.98, timeStamp=1608940776}
 Order{id=46356, symbol='TSLA', side='buy', type='limit', price=null, timeStamp=1608940777}
 Order{id=46357, symbol='FB', side='buy', type='limit', price=265.43, timeStamp=1608940778}
 Order{id=46358, symbol='GOOG', side='sell', type='limit', price=1733.39, timeStamp=1608940778}
