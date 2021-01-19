@@ -12,14 +12,14 @@ https://github.com/MJP32/MatchingEngine.git
 
 ## Usage
 
-```python
+```
 run SimpleMatchingEngine.java
 
 needs two input files
 - input/orders.csv
 - input/symbols.csv
 
-output will be in 
+output will be in 3 files
 - output/results/orderbook.txt
 - output/results/rejected.txt
 - output/results/trades.txt
