@@ -13,7 +13,7 @@ https://github.com/MJP32/MatchingEngine.git
 ## Usage
 
 ```
-run SimpleMatchingEngine.java
+run matching/SimpleMatchingEngine.java
 
 needs two input files
 - input/orders.csv
@@ -23,6 +23,13 @@ output will be in 3 files
 - output/results/orderbook.txt
 - output/results/rejected.txt
 - output/results/trades.txt
+
+
+```
+## Nice to add
+```
+Read Input from stream
+Add more unit tests
 
 
 ```
