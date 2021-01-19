@@ -4,18 +4,27 @@ import java.math.BigDecimal;
 import java.util.*;
 
 public class Exchange {
-    /*
-    <AAPL,<130.98, <1608917401, 1608917401 >>>
-          <130.99, <1608917401, 1608917401 >>>
-    */
 
-    public static final Map<Order, Order> matchedOrders = new HashMap<>();
-    private final OrderBook buyOrderBook = OrderBook.createOrderBook("buy");
+    /*
+        sell book
+        <AAPL,<130.98, <1608917401, 1608917401 >>>
+              <130.99, <1608917401, 1608917401 >>>
+    */
     private final OrderBook sellOrderBook = OrderBook.createOrderBook("sell");
+
+    /*
+        buy book
+        <AAPL,<130.99, <1608917401, 1608917401 >>>
+              <130.98, <1608917401, 1608917401 >>>
+    */
+    private final OrderBook buyOrderBook = OrderBook.createOrderBook("buy");
 
     //<AAPL,<1608917401, 3>
     public final Map<String, Map<Long, Integer>> symbolTimeCount = new HashMap<>();
+
+    public static final Map<Order, Order> matchedOrders = new HashMap<>();
     public List<Order> rejectedOrders = new LinkedList<>();
+
 
     public void processTrades(List<Order> orders, Set<String> haltedSymbols) {
         //process orders one at a time
